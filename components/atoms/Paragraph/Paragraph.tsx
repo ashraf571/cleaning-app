@@ -1,13 +1,15 @@
-import React from 'react'
+import React from "react";
 
 interface ParagraphIF {
-    paragraph: string,
-    font: string
+  paragraph: string;
+  font: string;
 }
 const Paragraph = ({ paragraph, font }: ParagraphIF) => {
   return (
-    <div style={{ fontSize: font }} >{paragraph}</div>
-  )
-}
+    <div className="text-cyanblue" style={{ fontSize: font }}>
+      {paragraph}
+    </div>
+  );
+};
 
-export default Paragraph
+export default Paragraph;
