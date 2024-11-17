@@ -1,8 +1,12 @@
 import React from 'react'
 
+import HeroArea from '@/components/molecules/HeroArea/HeroArea'
+
 const page = () => {
   return (
-    <div>About</div>
+    <div>
+        <HeroArea />
+    </div>
   )
 }
 

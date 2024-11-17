@@ -1,8 +1,11 @@
+import HeroArea from '@/components/molecules/HeroArea/HeroArea'
 import React from 'react'
 
 const service = () => {
   return (
-    <div>service</div>
+    <div>
+        <HeroArea />
+    </div>
   )
 }
 

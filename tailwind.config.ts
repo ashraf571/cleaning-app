@@ -60,6 +60,9 @@ const config: Config = {
         md: "calc(var(--radius) - 2px)",
         sm: "calc(var(--radius) - 4px)",
       },
+        background: "var(--background)",
+        foreground: "var(--foreground)",
+      }
     },
   },
   plugins: [require("tailwindcss-animate")],
