@@ -14,7 +14,7 @@ const HeroArea = () => {
     <div className="relative">
         {capitlizeFirstLetter.length > 0 && capitlizeFirstLetter !== "Blog" ? 
             <BackgroundSection imageUrl={imagePath}>
-                <div className= "flex text-white flex-col justify-center items-center h-full">
+                <div className= "flex font-bold text-white flex-col justify-center items-center h-full">
                     {/* <h1 className="text-5xl font-bold">Welcom My App</h1> */}
                     <HeroAreaHeading heading={capitlizeFirstLetter} />
                     <HeroAreaSubHeading path={capitlizeFirstLetter} />

@@ -9,7 +9,7 @@ interface BackgroundSectionIF{
 const BackgroundSection = ({ children, imageUrl }: BackgroundSectionIF) => {
   return (
     <div
-      className=" opacity-40 max-md:h-[380px] h-[411px] bg-cover bg-center bg-no-repeat"
+      className=" opacity-70 max-md:h-[380px] h-[411px] bg-cover bg-center bg-no-repeat"
       style={{ backgroundImage: `url(${imageUrl})` }}
     >
       {children}
