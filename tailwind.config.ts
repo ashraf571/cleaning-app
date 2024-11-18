@@ -14,8 +14,8 @@ const config: Config = {
         foreground: "hsl(var(--foreground))",
         white: "#ffffff",
         cyanblue: "#004976",
-
         skyblue: "#21aaeb",
+        iceblue: "#f7fbff",
         card: {
           DEFAULT: "hsl(var(--card))",
           foreground: "hsl(var(--card-foreground))",
@@ -60,9 +60,6 @@ const config: Config = {
         md: "calc(var(--radius) - 2px)",
         sm: "calc(var(--radius) - 4px)",
       },
-        background: "var(--background)",
-        foreground: "var(--foreground)",
-      }
     },
   },
   plugins: [require("tailwindcss-animate")],
