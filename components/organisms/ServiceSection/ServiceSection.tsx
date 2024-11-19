@@ -32,7 +32,7 @@ import Image from "next/image";
 
 const ServiceSection = () => {
   return (
-    <div className="mt-10 mx-10">
+    <div className="mt-10 mx-14">
       <div className="flex justify-center">
         <Heading heading="Service" font="48px" />
       </div>
