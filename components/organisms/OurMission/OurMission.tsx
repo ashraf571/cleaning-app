@@ -56,7 +56,7 @@ const OurMission = () => {
           {cardsJson.map((card: any, index: number) => (
             <motion.div
               key={card}
-              className={` flex items-center p-6 rounded shadow-lg ${
+              className={` flex items-center p-6 ${
                 index === 0
                   ? "bg-primaryYellow text-cyanblue"
                   : index === 2

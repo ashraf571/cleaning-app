@@ -34,6 +34,7 @@ const config: Config = {
         lightGreen: "#04569f",
         darkGreen: '#004876',
         primaryYellow: "#FBDD1D",
+        lightGray: "#f0f5f9",
         iceblue: "#f7fbff",
         card: {
           DEFAULT: "hsl(var(--card))",
