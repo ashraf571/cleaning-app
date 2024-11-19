@@ -48,7 +48,7 @@ const OurMission = () => {
     <div className="relative w-full">
       <div className="p-6 flex justify-center items-center">
         <motion.div
-          className="flex justify-center flex-wrap max-w-[1280px] gap-4"
+          className=" grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8 w-full max-w-[1280px]"
           variants={containerVariants}
           initial="hidden"
           animate="visible"
@@ -56,7 +56,7 @@ const OurMission = () => {
           {cardsJson.map((card: any, index: number) => (
             <motion.div
               key={card}
-              className={` flex w-[28%] items-center p-6 rounded shadow-lg ${
+              className={` flex items-center p-6 rounded shadow-lg ${
                 index === 0
                   ? "bg-primaryYellow text-cyanblue"
                   : index === 2
@@ -71,7 +71,7 @@ const OurMission = () => {
                 <p>{card.paragraph}</p>
                 <br />
 
-                <div className="mission-lists mt-35">
+                <div className="mt-35">
                   <ul className="">
                     {card.list.map((item: any, index: number) => {
                       return (
