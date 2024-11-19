@@ -37,7 +37,7 @@ const ServiceSection = () => {
         <Heading heading="Service" font="48px" />
       </div>
 
-      <div className="grid grid-cols-3 gap-x-8 gap-y-0 mt-10">
+      <div className="grid  grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-x-8 gap-y-0 mt-10">
         {ServiceData.map((Item, index) => {
           return (
             <div key={index} className="">
