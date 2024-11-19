@@ -75,7 +75,7 @@ const OurMission = () => {
                   <ul className="">
                     {card.list.map((item: any, index: number) => {
                       return (
-                        <li key={index} className="flex">
+                        <li key={index} className="flex mb-2 max-lg:justify-center max-lg:items-center">
                           <FaCircleCheck color="#ffffff" size={30} />
                           <span className=" mt-1 ml-6"> {item} </span>
                         </li>
