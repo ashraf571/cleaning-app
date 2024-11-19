@@ -31,6 +31,9 @@ const config: Config = {
         white: "#ffffff",
         cyanblue: "#004976",
         skyblue: "#21aaeb",
+        lightGreen: "#04569f",
+        darkGreen: '#004876',
+        primaryYellow: "#FBDD1D",
         iceblue: "#f7fbff",
         card: {
           DEFAULT: "hsl(var(--card))",

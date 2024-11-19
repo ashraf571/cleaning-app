@@ -2,16 +2,17 @@
 
 import React from "react";
 import { motion } from "framer-motion";
-import Tilt from "react-parallax-tilt";
+// import Tilt from "react-parallax-tilt";
+import {Tilt}  from "react-tilt";
 
 const MovingImage = ({ image }: { image: string }) => {
   return (
     <div className="h-[350px] w-[320px]">
-      <Tilt
-        tiltMaxAngleX={5}
-        tiltMaxAngleY={5}
-        scale={1}
-        transitionSpeed={100}
+      <Tilt options={{ max: 25, scale: 1, speed: 400 }}
+        // tiltMaxAngleX={5}
+        // tiltMaxAngleY={5}
+        // scale={1}
+        // transitionSpeed={100}
         style={{
           width: "570px",
           height: "855px",
