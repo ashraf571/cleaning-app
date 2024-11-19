@@ -41,7 +41,7 @@ const ServiceSection = () => {
         {ServiceData.map((Item, index) => {
           return (
             <div key={index} className="">
-              <Image src={Item.image} alt="" />
+              <Image src={Item.image} alt="" className=" " />
 
               <div className="flex justify-center">
                 <div

@@ -10,19 +10,19 @@ const config: Config = {
   theme: {
     extend: {
       screens: {
-        'sm': '640px',
+        sm: "640px",
         // => @media (min-width: 640px) { ... }
-  
-        'md': '768px',
+
+        md: "768px",
         // => @media (min-width: 768px) { ... }
-  
-        'lg': '992px',
+
+        lg: "992px",
         // => @media (min-width: 1024px) { ... }
-  
-        'xl': '1200px',
+
+        xl: "1200px",
         // => @media (min-width: 1280px) { ... }
-  
-        '2xl': '1536px',
+
+        "2xl": "1536px",
         // => @media (min-width: 1536px) { ... }
       },
       colors: {
@@ -36,6 +36,9 @@ const config: Config = {
         primaryYellow: "#FBDD1D",
         lightGray: "#f0f5f9",
         iceblue: "#f7fbff",
+        cloudblue: "#f7fbff",
+        darkocean: "#004976",
+        darkcyan: "#012540",
         card: {
           DEFAULT: "hsl(var(--card))",
           foreground: "hsl(var(--card-foreground))",

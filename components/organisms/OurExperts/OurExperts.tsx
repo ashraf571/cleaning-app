@@ -11,7 +11,7 @@ import Image from "next/image";
 
 const OurExperts = () => {
   return (
-    <div className="mt-10 mx-10">
+    <div className="mt-20 mx-10 pb-5">
       <div className="flex justify-center">
         <Heading heading="Our Experts" font="48px" />
       </div>
@@ -21,9 +21,9 @@ const OurExperts = () => {
           return (
             <div
               key={index}
-              className="flex flex-col gap-5 items-center bg-iceblue py-5"
+              className="flex flex-col gap-5 items-center bg-iceblue  py-5"
             >
-              <Image src={Item.image} alt="" />
+              <Image src={Item.image} alt="" className="rounded-full" />
               <span className="text-cyanblue font-semibold text-xl">
                 {Item.name}
               </span>
