@@ -6,7 +6,7 @@ import React from 'react'
 const service = () => {
   return (
     <div>
-        <Topbar />
+        {/* <Topbar /> */}
         <HeroArea />
         <ServiceSection />
     </div>

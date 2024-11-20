@@ -9,7 +9,6 @@ import Topbar from '@/components/organisms/Topbar/Topbar'
 const page = () => {
   return (
     <div>
-        <Topbar />
         <HeroArea />
         {/* <WhoAreWe /> */}
         <OurMission />

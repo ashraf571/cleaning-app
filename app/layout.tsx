@@ -3,6 +3,8 @@ import localFont from "next/font/local";
 import { Roboto } from "next/font/google";
 import "./globals.css";
 import { cn } from "@/lib/utils";
+import Topbar from "@/components/organisms/Topbar/Topbar";
+import Footer from "@/components/organisms/FooterSection/Footer";
 
 const geistSans = localFont({
   src: "./fonts/GeistVF.woff",
@@ -38,7 +40,9 @@ export default function RootLayout({
         className={`${geistSans.variable}  ${roboto.variable} antialiased`}
         // className={cn("text-foreground antialiased", roboto.variable)}
       >
+        <Topbar />
         {children}
+        <Footer />
       </body>
     </html>
   );

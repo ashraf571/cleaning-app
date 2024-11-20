@@ -9,12 +9,10 @@ import Footer from "@/components/organisms/FooterSection/Footer";
 const Home = () => {
   return (
     <div>
-      <Topbar />
       <AboutSection />
       <ServiceSection />
       <TypesCleaning />
       <OurExperts />
-      <Footer />
     </div>
   );
 };
