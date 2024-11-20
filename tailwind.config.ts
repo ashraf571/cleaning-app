@@ -20,7 +20,7 @@ const config: Config = {
         // => @media (min-width: 1024px) { ... }
 
         xl: "1200px",
-        // => @media (min-width: 1280px) { ... }
+        // => @media (min-width: 1200px) { ... }
 
         "2xl": "1536px",
         // => @media (min-width: 1536px) { ... }

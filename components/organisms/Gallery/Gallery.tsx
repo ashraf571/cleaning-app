@@ -27,7 +27,7 @@ const Gallery = () => {
   return (
     <div>
       <div className="p-6 flex flex-col justify-center items-center">
-        <div className=" p-10 grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-4 gap-x-3 w-full max-w-[1280px]">
+        <div className=" p-10 grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-4 gap-x-3 w-full max-w-[1200px]">
             {ImagesArray.map(( image: any, index: number ) => {
                 return(
                 <Image className="w-full" width={100} height={100} key={index} src={image.src} alt=" sink home toilet " />

@@ -1,5 +1,6 @@
 import HeroArea from '@/components/molecules/HeroArea/HeroArea'
 import IntouchSection from '@/components/molecules/InTouchSection/IntouchSection'
+import ContactUsSection from '@/components/organisms/ContactUsSection/ContactUsSection'
 import React from 'react'
 
 const Contact = () => {
@@ -7,6 +8,7 @@ const Contact = () => {
     <div>
         <HeroArea />
         <IntouchSection />
+        <ContactUsSection />
     </div>
   )
 }
