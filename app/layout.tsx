@@ -40,7 +40,9 @@ export default function RootLayout({
         className={`${geistSans.variable}  ${roboto.variable} antialiased`}
         // className={cn("text-foreground antialiased", roboto.variable)}
       >
-        <Topbar />
+        <div className="mb-44">
+          <Topbar />
+        </div>
         {children}
         <Footer />
       </body>
