@@ -1,92 +1,93 @@
-import React from "react";
+"use client";
+
+import Heading48 from "@/components/atoms/Heading48/Heading48";
+import InputField from "@/components/atoms/InputField/InputField";
+import React, { useState } from "react";
 
 const ContactForm = () => {
+  const [signUpForm, setSignUpForm] = useState({
+    name: "",
+    subject: "",
+    email: "",
+    message: "",
+  });
+
+
+
+  const submitForm = (e: any) => {
+    e.preventDefault()
+    const {name, email, subject, message} = signUpForm
+    if(!name || !email|| !subject || !message) {
+      console.log("Please fill all the required field", signUpForm);
+
+      return
+    }
+
+    console.log(signUpForm);
+    
+  }
   return (
-    <div className=" w-full h-[500px] ">
-      <div className="bg-slate-300 ">
-        <div className="cta-form mt-none-10 mb-75">
-          <div className="">
-            <form className="">
-              <div className="form-group mt-10">
-                <p>
-                  <label id="d">
-                    <i className="fal fa-user"></i>
-                  </label>
-                  <span className="wpcf7-form-control-wrap" data-name="s-name">
-                    <input
-                      className=""
-                      placeholder="Enter your name"
-                      value=""
-                      type="text"
-                      name="s-name"
-                    />
-                  </span>
-                </p>
-              </div>
-              <div className="form-group mt-10">
-                <p>
-                  <label id="s">
-                    <i className="fal fa-envelope"></i>
-                  </label>
-                  <span className="wpcf7-form-control-wrap" data-name="s-email">
-                    <input
-                      className=""
-                      placeholder="Enter your email"
-                      value=""
-                      type="email"
-                      name="s-email"
-                    />
-                  </span>
-                </p>
-              </div>
-              <div className="form-group mt-10">
-                <p>
-                  <label id="s">
-                    <i className="fal fa-book"></i>
-                  </label>
-                  <span
-                    className="wpcf7-form-control-wrap"
-                    data-name="s-subject"
-                  >
-                    <input
-                      placeholder="Enter your subject"
-                      value=""
-                      type="text"
-                      name="s-subject"
-                    />
-                  </span>
-                </p>
-              </div>
-              <div className="form-group mt-10">
-                <p>
-                  <label id="a">
-                    <i className="fal fa-edit"></i>
-                  </label>
-                  <span
-                    className="wpcf7-form-control-wrap"
-                    data-name="s-textarea"
-                  >
-                    <textarea
-                    //   cols="40"
-                    //   rows="10"
-                      placeholder="Enter your message"
-                      name="s-textarea"
-                    ></textarea>
-                  </span>
-                </p>
-              </div>
-              <div className="form-group mt-10">
-                <p>
-                  <input
-                    className="wpcf7-form-control wpcf7-submit has-spinner site-btn boxed"
-                    type="submit"
-                    value="Submit Request"
-                  />
-                  <span className="wpcf7-spinner"></span>
-                </p>
-              </div>
-            </form>
-          </div>
+    <div className=" max-lg:w-full w-[60%] h-[900px] ">
+      <div className=" flex w-full max-lg:pl-0 pl-28 h-full items-end">
+        <div className=" w-full text-cyanblue">
+          <Heading48 heading="Contact Us" />
+          <br />
+          <br />
+          <br />
+
+          <form onSubmit={submitForm} className="flex w-full flex-col gap-2">
+            {/* <div className="relative flex"> */}
+            <InputField
+              name={"name"}
+              value={signUpForm.name}
+              type={"text"}
+              onChangeTest={(e: any) =>
+                setSignUpForm({ ...signUpForm, name: e })
+              }
+              placeholderText={"Enter your name"}
+            />
+            <InputField
+              name={"email"}
+              value={signUpForm.email}
+              type={"email"}
+              onChangeTest={(e: any) =>
+                setSignUpForm({ ...signUpForm, email: e })
+              }
+              placeholderText={"Enter your email"}
+            />
+            <InputField
+              name={"subject"}
+              value={signUpForm.subject}
+              type={"text"}
+              onChangeTest={(e: any) =>
+                setSignUpForm({ ...signUpForm, subject: e })
+              }
+              placeholderText={"Enter your subject"}
+            />
+
+            <textarea
+              className="text-lg w-full bg-lightGrey pl-10 py-6 font-medium placeholder-cyanblue focus:outline-none"
+              rows={10}
+              onChange={(e: any) =>
+                setSignUpForm({ ...signUpForm, message: e.target.value })
+              }
+              placeholder="Enter your message "
+              cols={40}
+              name="message"
+            ></textarea>
+            <div className=" my-3">
+              <p>
+                <input
+                  className="bg-skyblue text-cyanblue py-[23px] px-[30px] text-center w-full "
+                  type="submit"
+                  value="Submit Request"
+                />
+              </p>
+            </div>
+            {/* {!show && <span onClick={() => setShow((prev) => !prev)} className='absolute h-[20px] right-6 top-[3.1vw] md:top-[1.7vw] lg:top-[1.2vw] 3xl:top-[1vw]'> <FiEye color='#B59D90' size="25px" /></span>}
+                {show && <span onClick={() => setShow((prev) => !prev)} className='absolute h-[20px] right-6 top-[3.7vw] md:top-[1.7vw] lg:top-[1.2vw] 3xl:top-[1vw]'> <FiEyeOff color='#B59D90' size="25px" /></span>} */}
+            {/* </div> */}
+          </form>
         </div>
       </div>
     </div>

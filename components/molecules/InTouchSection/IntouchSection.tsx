@@ -19,7 +19,7 @@ const IntouchSection = () => {
         </p>
         <br />
 
-        <div className="grid grid-cols-1 lg:grid-cols-3 gap-4 w-full">
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-4 w-full">
           <div className="bg-primaryGray p-12">
             <h2 className="text-xl text-cyanblue font-semibold">Address</h2>{" "}
             <p className="text-secondryGray mt-2">
