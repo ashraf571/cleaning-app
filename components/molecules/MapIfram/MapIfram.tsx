@@ -12,15 +12,6 @@ const MapIfram = () => {
         loading="lazy"
         referrerPolicy="no-referrer-when-downgrade"
       ></iframe>
-      {/* <iframe
-        src="https://maps.google.com/maps?q=8ajvBmTWZuG9zyCM6&output=embed"
-        width="100%"
-        height="100%"
-        style={{ border: 0 }}
-        allowFullScreen
-        loading="lazy"
-        referrerPolicy="no-referrer-when-downgrade"
-      ></iframe> */}
     </div>
   );
 };
