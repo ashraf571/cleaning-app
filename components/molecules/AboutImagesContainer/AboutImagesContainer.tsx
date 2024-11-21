@@ -16,7 +16,7 @@ const AboutImagesContainer = () => {
         alt="MenCleaner"
         className="h-auto w-full md:w-[314px]"
       />
-      <div className="relative mt-3 md:mt-12 bg-red-500">
+      <div className="relative mt-3 md:mt-12 bg-red500">
         <Image
           src={WomenCleanerImage}
           alt="WomenCleaner"
