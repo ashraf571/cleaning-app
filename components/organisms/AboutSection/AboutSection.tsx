@@ -3,7 +3,7 @@ import AboutImagesContainer from "@/components/molecules/AboutImagesContainer/Ab
 import AboutContentContainer from "@/components/molecules/AboutContentContainer/AboutContentContainer";
 const AboutSection = () => {
   return (
-    <div className="grid md:grid-cols-2 gap-10 mx-10 py-5 ">
+    <div className="grid sm:grid-cols-1 md:grid-cols-2 gap-10 mx-10 py-5 ">
       <AboutImagesContainer />
       <AboutContentContainer />
     </div>

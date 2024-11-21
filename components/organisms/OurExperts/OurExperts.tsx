@@ -16,7 +16,7 @@ const OurExperts = () => {
         <Heading heading="Our Experts" font="48px" />
       </div>
 
-      <div className="grid grid-cols-4 gap-x-8 mt-10 ">
+      <div className="grid sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-x-8 mt-10 ">
         {ExpertData.map((Item, index) => {
           return (
             <div

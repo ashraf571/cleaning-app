@@ -20,7 +20,7 @@ const AboutContentContainer = () => {
       />
 
       <div className="flex justify-start">
-        <Button className="rounded-3xl text-cyanblue text-base font-semibold bg-skyblue hover:bg-skyblue px-12 py-5 hover:text-white">
+        <Button className="rounded-3xl text-cyanblue text-base font-semibold bg-skyblue hover:bg-skyblue px-8 md:px-12 py-3 md:py-5 hover:text-white">
           Read More
         </Button>
       </div>

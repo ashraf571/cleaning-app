@@ -35,11 +35,11 @@ export default Topbar;
 export const TopbarData = [
   {
     name: "Home",
-    link: "",
+    link: "/",
   },
   {
     name: "About",
-    link: "",
+    link: "about",
   },
   {
     name: "Services",
@@ -55,6 +55,6 @@ export const TopbarData = [
   },
   {
     name: "Contact",
-    link: "",
+    link: "contact",
   },
 ];
