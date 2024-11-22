@@ -8,9 +8,20 @@ import ContactUs from "./ContactUs";
 const Footer = () => {
   return (
     <div className="mt-20">
-      <Image src={footerImage} alt="" className="absolute h-auto" />
+      <Image
+        src={footerImage}
+        alt=""
+        className="absolute h-full md:h-auto w-full "
+        layout="absolute"
+      />
+      {/* <Image
+        src={footerImage}
+        alt=""
+        className="w-full object-cover absolute h-auto "
+        layout="fill" // Ensures the image covers the entire section
+      /> */}
 
-      <div className="relative bg-darkcyan text-white  bg-opacity-90 px-5 md:px-10 pt-10 flex flex-col gap-9">
+      <div className="relative bg-darkcyan  text-white  bg-opacity-90 px-5 md:px-10 pt-10 flex flex-col gap-9">
         <div className="grid grid-cols-1 md:grid-cols-2 gap-5 md:gap-0">
           <div className="grid grid-cols-1 md:grid-cols-2 gap-5 md:gap-0">
             <div className="flex flex-col gap-5">
@@ -25,7 +36,9 @@ const Footer = () => {
                     <Link href={Item.link} key={index} className="">
                       <div className="flex gap-2">
                         <ChevronRight size={16} />
-                        <span className="font-semibold">{Item.name}</span>
+                        <span className="font-semibold hover:text-lightblue">
+                          {Item.name}
+                        </span>
                       </div>
                     </Link>
                   );
@@ -47,7 +60,9 @@ const Footer = () => {
                     <Link href={Item.link} key={index} className="">
                       <div className="flex gap-2">
                         <ChevronRight size={16} />
-                        <span className="font-semibold">{Item.name}</span>
+                        <span className="font-semibold hover:text-lightblue">
+                          {Item.name}
+                        </span>
                       </div>
                     </Link>
                   );
@@ -102,18 +117,18 @@ export const footerServices = [
 export const QuickLinks = [
   {
     name: "About",
-    link: "",
+    link: "about",
   },
   {
     name: "Services",
-    link: "",
+    link: "service",
   },
   {
     name: "Gallery",
-    link: "",
+    link: "gallery",
   },
   {
     name: "Blog",
-    link: "",
+    link: "blog",
   },
 ];
