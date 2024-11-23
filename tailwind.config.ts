@@ -28,6 +28,8 @@ const config: Config = {
       colors: {
         background: "hsl(var(--background))",
         foreground: "hsl(var(--foreground))",
+        lightGray10:"#525f82",
+        lightGray20:"#ededed",
         white: "#ffffff",
         cyanblue: "#004976",
         skyblue: "#21aaeb",

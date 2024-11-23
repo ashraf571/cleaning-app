@@ -1,21 +1,24 @@
-import BlogNavigationHeading from '@/components/atoms/BlogNavigationHeading/BlogNavigationHeading'
-import BlogNavigationImage from '@/components/atoms/BlogNavigationImage/BlogNavigationImage'
-import React from 'react'
+import BlogNavigationHeading from "@/components/atoms/BlogNavigationHeading/BlogNavigationHeading";
+import BlogNavigationImage from "@/components/atoms/BlogNavigationImage/BlogNavigationImage";
+import React from "react";
 
 interface BlogCardData {
-    imageUrl: string,
-    heading: string,
-    date: string,
-    index: number
+  imageUrl: string;
+  heading: string;
+  date: string;
 }
 
-const BlogNavigationCard = ({ imageUrl, heading , date, index}:BlogCardData) => {
+const BlogNavigationCard = ({
+  imageUrl,
+  heading,
+  date,
+}: BlogCardData) => {
   return (
-    <div className='flex' key={index}>
-        <BlogNavigationImage imageUrl={imageUrl} />
-        <BlogNavigationHeading heading={heading} date={ date } />
-    </div>
-  )
-}
+    <>
+      <BlogNavigationImage imageUrl={imageUrl} />
+      <BlogNavigationHeading heading={heading} date={date} />
+    </>
+  );
+};
 
-export default BlogNavigationCard
+export default BlogNavigationCard;
