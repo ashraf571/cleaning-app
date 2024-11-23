@@ -28,6 +28,7 @@ const Blogs = () => {
 
 const blogsData = [
   {
+    blogId: 1,
     heading:
       "The Importance of Eco-Friendly Cleaning: A Cleaner Home, A Healthier Planet",
     cardHeading: "The Importance of Eco-Friendly Cleaning",
@@ -36,8 +37,8 @@ const blogsData = [
     role: "Admin",
     discription:
       "In recent years, the demand for eco-friendly products and services has grown tremendously, and for a good reason. Many traditional cleaning products contain harmful chemicals that can negatively affect both our health and the environment. We prioritize the use of eco-friendly, natural cleaning products that not only leave your home or office spotless but also contribute to a healthier planet. Here’s why choosing eco-friendly cleaning services is the best choice for you and the environment.",
-    image: manOfficeFloor,
-    cardImage: manOfficeFloor,
+    image: manOfficeFloor.src,
+    cardImage: manOfficeFloor.src,
     numberOfComments: 0,
     noteHeading: "Book Your Eco-Friendly Clean Today!",
     noteDiscription:
@@ -82,6 +83,7 @@ const blogsData = [
     tags: [],
   },
   {
+    blogId: 2,
     heading: "How a Deep Clean Can Transform Your Space",
     cardHeading: "How a Deep Clean Can Transform",
     auther: "akshak",
@@ -89,8 +91,8 @@ const blogsData = [
     role: "Admin",
     discription:
       "Every space, whether a home or office, needs a deep clean from time to time. Even with regular cleaning, dust and grime can accumulate in hard-to-reach places, and surfaces can lose their shine. That’s where a professional deep clean comes in.  We specialize in transforming spaces with our thorough and detail-oriented deep cleaning services. Here’s why a deep clean might be exactly what your space needs.",
-    image: careCleaning,
-    cardImage: cardCareCleaning,
+    image: careCleaning.src,
+    cardImage: cardCareCleaning.src,
     numberOfComments: 0,
     noteHeading: "Schedule Your Deep Clean Today!",
     noteDiscription:
@@ -135,6 +137,7 @@ const blogsData = [
     tags: [],
   },
   {
+    blogId: 3,
     heading:
       "Why a Professional Cleaning Service Is a Must for Your Home or Office",
     cardHeading: "Why a Professional Cleaning Service",
@@ -143,8 +146,8 @@ const blogsData = [
     role: "Admin",
     discription:
       "In today’s fast-paced world, keeping up with cleaning can be a challenge. Between work, family, and social commitments, finding time to keep your home or office spotless can feel impossible. That’s where professional cleaning services like we come in. With expertise and dedication, we make spaces shine so you can focus on what really matters.",
-    image: mediumPeople,
-    cardImage: cardMediumPeople,
+    image: mediumPeople.src,
+    cardImage: cardMediumPeople.src,
     numberOfComments: 0,
     noteHeading: "Book Your First Cleaning Today!",
     noteDiscription:
@@ -190,6 +193,7 @@ const blogsData = [
   },
 
   {
+    blogId: 4,
     heading: "The Benefits of Regular Cleaning: Why Consistency is Key",
     cardHeading: "The Benefits of Regular Cleaning: Why",
     auther: "akshak",
@@ -197,8 +201,8 @@ const blogsData = [
     role: "Admin",
     discription:
       "Keeping your home or office clean can sometimes feel like a never-ending task. However, regular cleaning is essential—not just for appearances, but for your health, productivity, and peace of mind. We understand the importance of maintaining a clean space and are here to make it easier than ever with our flexible and reliable cleaning solutions.",
-    image: cleanerLivingRoom,
-    cardImage: cardCleanerLivingRoom,
+    image: cleanerLivingRoom.src,
+    cardImage: cardCleanerLivingRoom.src,
     numberOfComments: 0,
     noteHeading: "Get in Touch Today!",
     noteDiscription:
