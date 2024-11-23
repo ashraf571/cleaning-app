@@ -1,25 +1,45 @@
-import React from "react";
-import BlogsNavigationSection from "../BlogsNavigationSection/BlogsNavigationSection";
+"use client";
+
+import React, { useEffect, useState } from "react";
 
 import manOfficeFloor from "@/assets/images/blogs/manOfficeFloor.jpg";
 import cleanerLivingRoom from "@/assets/images/blogs/cleanerLivingRoom.jpg";
 import careCleaning from "@/assets/images/blogs/careCleaning.jpg";
 import mediumPeople from "@/assets/images/blogs/mediumPeople.jpg";
 
-import cardCleanerLivingRoom from "@/assets/images/blogs/card-cleanerLivingRoom.jpg";
-import cardCareCleaning from "@/assets/images/blogs/card-careCleaning.jpg";
-import cardMediumPeople from "@/assets/images/blogs/card-mediumPeople.jpg";
-
+import BlogsNavigationSection from "../BlogsNavigationSection/BlogsNavigationSection";
 import BlogsMapSection from "../BlogsMapSection/BlogsMapSection";
-
+import BlogDetailSection from "../BlogDetailSection/BlogDetailSection";
 
 const Blogs = () => {
+  const [blogId, setBlogId] = useState(0);
+  const [blog, setBlog] = useState<any>({})
+
+  useEffect(() => {
+    console.log("blogId", blogId);
+
+    if(blogId) {
+      let selectedBlog = blogsData.find((blog: any) => blog.blogId === blogId)
+      setBlog(selectedBlog)
+    }
+  },[blogId])
+
+
   return (
     <div className="w-full flex justify-center items-center">
       <div className=" max-w-[1200px] py-16 w-full flex justify-center items-center ">
         <div className="flex text-cyanblue w-full max-md:w-full max-xl:w-[90%] max-lg:flex-col gap-x-4 mx-5 md:mx-8 ">
-          <BlogsMapSection blogs={blogsData} />
-          <BlogsNavigationSection blogs={blogsData} />
+          {blogId > 0 && Object.keys(blog).length > 0 ?  (
+            <BlogDetailSection
+              blog={blog}
+            />
+          ) : (
+            <BlogsMapSection
+              onSelectblog={(id) => setBlogId(id)}
+              blogs={blogsData}
+            />
+          )}
+          <BlogsNavigationSection onSelectblog={(id) => setBlogId(id)} />
         </div>
       </div>
     </div>
@@ -31,14 +51,12 @@ const blogsData = [
     blogId: 1,
     heading:
       "The Importance of Eco-Friendly Cleaning: A Cleaner Home, A Healthier Planet",
-    cardHeading: "The Importance of Eco-Friendly Cleaning",
     auther: "akshak",
     createdAt: "October 6, 2024",
     role: "Admin",
     discription:
       "In recent years, the demand for eco-friendly products and services has grown tremendously, and for a good reason. Many traditional cleaning products contain harmful chemicals that can negatively affect both our health and the environment. We prioritize the use of eco-friendly, natural cleaning products that not only leave your home or office spotless but also contribute to a healthier planet. Here’s why choosing eco-friendly cleaning services is the best choice for you and the environment.",
     image: manOfficeFloor.src,
-    cardImage: manOfficeFloor.src,
     numberOfComments: 0,
     noteHeading: "Book Your Eco-Friendly Clean Today!",
     noteDiscription:
@@ -85,14 +103,12 @@ const blogsData = [
   {
     blogId: 2,
     heading: "How a Deep Clean Can Transform Your Space",
-    cardHeading: "How a Deep Clean Can Transform",
     auther: "akshak",
     createdAt: "October 6, 2024",
     role: "Admin",
     discription:
       "Every space, whether a home or office, needs a deep clean from time to time. Even with regular cleaning, dust and grime can accumulate in hard-to-reach places, and surfaces can lose their shine. That’s where a professional deep clean comes in.  We specialize in transforming spaces with our thorough and detail-oriented deep cleaning services. Here’s why a deep clean might be exactly what your space needs.",
     image: careCleaning.src,
-    cardImage: cardCareCleaning.src,
     numberOfComments: 0,
     noteHeading: "Schedule Your Deep Clean Today!",
     noteDiscription:
@@ -140,14 +156,12 @@ const blogsData = [
     blogId: 3,
     heading:
       "Why a Professional Cleaning Service Is a Must for Your Home or Office",
-    cardHeading: "Why a Professional Cleaning Service",
     auther: "akshak",
     createdAt: "July 21, 2020",
     role: "Admin",
     discription:
       "In today’s fast-paced world, keeping up with cleaning can be a challenge. Between work, family, and social commitments, finding time to keep your home or office spotless can feel impossible. That’s where professional cleaning services like we come in. With expertise and dedication, we make spaces shine so you can focus on what really matters.",
     image: mediumPeople.src,
-    cardImage: cardMediumPeople.src,
     numberOfComments: 0,
     noteHeading: "Book Your First Cleaning Today!",
     noteDiscription:
@@ -195,14 +209,12 @@ const blogsData = [
   {
     blogId: 4,
     heading: "The Benefits of Regular Cleaning: Why Consistency is Key",
-    cardHeading: "The Benefits of Regular Cleaning: Why",
     auther: "akshak",
     createdAt: "July 21, 2020",
     role: "Admin",
     discription:
       "Keeping your home or office clean can sometimes feel like a never-ending task. However, regular cleaning is essential—not just for appearances, but for your health, productivity, and peace of mind. We understand the importance of maintaining a clean space and are here to make it easier than ever with our flexible and reliable cleaning solutions.",
     image: cleanerLivingRoom.src,
-    cardImage: cardCleanerLivingRoom.src,
     numberOfComments: 0,
     noteHeading: "Get in Touch Today!",
     noteDiscription:

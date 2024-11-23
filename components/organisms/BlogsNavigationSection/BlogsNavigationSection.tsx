@@ -1,8 +1,13 @@
+'use client'
+
 import BlogNavigationCard from "@/components/molecules/BlogNavigationCard/BlogNavigationCard";
 import React from "react";
 
-const BlogsNavigationSection = ({ blogs }: { blogs: any }) => {
-  let cardsBlogs = blogs.reverse().slice(0, 3);
+import cardCleanerLivingRoom from "@/assets/images/blogs/card-cleanerLivingRoom.jpg";
+import cardCareCleaning from "@/assets/images/blogs/card-careCleaning.jpg";
+import cardMediumPeople from "@/assets/images/blogs/card-mediumPeople.jpg";
+
+const BlogsNavigationSection = ({ onSelectblog }: { onSelectblog: (id: number)=> void }) => {
   return (
     <div className="w-full lg:w-[35%]">
       <div className="p-8 w-full border-2 border-lightGray20 shadow-md shadow-slate-600">
@@ -10,9 +15,9 @@ const BlogsNavigationSection = ({ blogs }: { blogs: any }) => {
           Recent Post
         </span>
         <div className="flex w-full pt-5 flex-col gap-x-4">
-          {cardsBlogs.map((blog: any, index: number) => {
+          {blogsData.map((blog: any, index: number) => {
             return (
-              <div className="flex pb-4" key={index}>
+              <div className="flex pb-4 cursor-pointer" key={index} onClick={() => onSelectblog(blog.blogId) }>
                 <BlogNavigationCard
                   imageUrl={blog.cardImage}
                   heading={blog.cardHeading}
@@ -26,5 +31,30 @@ const BlogsNavigationSection = ({ blogs }: { blogs: any }) => {
     </div>
   );
 };
+
+const blogsData = [
+  {
+    blogId: 4,
+    cardHeading: "The Benefits of Regular Cleaning: Why",
+    cardImage: cardCleanerLivingRoom.src,
+    createdAt: "July 21, 2020",
+  },
+  
+  {
+    blogId: 3,
+    cardHeading: "Why a Professional Cleaning Service",
+    cardImage: cardMediumPeople.src,
+    createdAt: "July 21, 2020",
+
+  },
+  {
+    blogId: 2,
+    cardHeading: "How a Deep Clean Can Transform",
+    cardImage: cardCareCleaning.src,
+    createdAt: "October 6, 2024",
+  },
+
+  
+];
 
 export default BlogsNavigationSection;
