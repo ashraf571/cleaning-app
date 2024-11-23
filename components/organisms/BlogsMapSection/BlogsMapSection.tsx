@@ -19,8 +19,8 @@ const BlogsMapSection = ({ blogs , onSelectblog}: { blogs: any, onSelectblog: (i
             />
             <div className="px-5 md:px-12 py-12 flex flex-col gap-6" >
               <BlogsBasicInfo date={blog.createdAt} role={blog.role} />
-              <h2 onClick={() => onSelectblog(blog.blogId)} className="lg:text-4xl text-3xl cursor-pointer"> {blog.heading} </h2>
-              <p> {blog.discription} </p>
+              <h2 onClick={() => onSelectblog(blog.blogId)} className=" font-bold lg:text-4xl text-3xl cursor-pointer"> {blog.heading} </h2>
+              <p className="text-base font-normal"> {blog.discription} </p>
             </div>
           </div>
         );

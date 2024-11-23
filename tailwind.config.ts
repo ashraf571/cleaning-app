@@ -30,6 +30,8 @@ const config: Config = {
         foreground: "hsl(var(--foreground))",
         lightGray10:"#525f82",
         lightGray20:"#ededed",
+        lightGray30: "#eaedff",
+        lightGray40: "#7b8491",
         white: "#ffffff",
         cyanblue: "#004976",
         skyblue: "#21aaeb",

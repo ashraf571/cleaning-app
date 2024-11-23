@@ -13,24 +13,34 @@ const BlogDetailSection = ({ blog }: { blog: any }) => {
           width={100}
           alt=" office floor house cleaning clean"
         />
-        <div className="px-5 md:px-12 py-12 flex flex-col gap-6">
+        <div className="font-normal text-base px-5 md:px-12 py-12 flex flex-col gap-6">
           <BlogsBasicInfo date={blog.createdAt} role={blog.role} />
-          <h2 className="lg:text-4xl text-3xl "> {blog.heading} </h2>
+          <h2 className="lg:text-4xl text-3xl font-bold "> {blog.heading} </h2>
           <p> {blog.discription} </p>
           {blog.descriptionList.map((details: any, index: number) => {
             return (
-              <div key={index}>
-                <h2 className="lg:text-4xl text-3xl "> {details.heading} </h2>
+              <div className="pt-1" key={index}>
+                <h2 className="font-bold text-3xl "> {details.heading} </h2>
                 <p> {details.description} </p>
               </div>
             );
           })}
 
-          <p> <span>{blog.noteHeading}</span> { blog.noteDiscription } </p>
-
-          {blog.tags.map((tag: string, index: number) => {
-            <span key={index}> {tag} </span>
-          })}
+          <p>
+            {" "}
+            <span className="font-semibold">{blog.noteHeading}</span>{" "}
+            {blog.noteDiscription}{" "}
+          </p>
+          {blog.tags.length > 0 ? (
+            <h2 className="font-bold lg:text-4xl text-3xl ">Post tags </h2>
+          ) : (
+            ""
+          )}
+          <div className="flex">
+            {blog.tags.map((tag: string, index: number) => {
+              return <span className="font-medium text-xs border-2 py-2 px-6 mr-4 rounded-full border-lightGray30" key={index}> {tag} </span>;
+            })}
+          </div>
         </div>
       </div>
     </div>
