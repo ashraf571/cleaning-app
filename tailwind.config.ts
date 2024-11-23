@@ -42,7 +42,12 @@ const config: Config = {
         darkocean: "#004976",
         darkcyan: "#012540",
         primaryBlue: "#007bff",
-        lightGrey: '#f3f8ff',
+        lightGrey: "#f3f8ff",
+        darkblue: "#0c1923",
+        darkblack: "#010203",
+        darkgray: "#565f66",
+        plusgray: "#474b4e",
+
         card: {
           DEFAULT: "hsl(var(--card))",
           foreground: "hsl(var(--card-foreground))",
