@@ -123,15 +123,15 @@ export const TopbarData = [
   },
   {
     name: "Services",
-    link: "",
+    link: "sevice",
   },
   {
     name: "Gallery",
-    link: "",
+    link: "gallery",
   },
   {
     name: "Blog",
-    link: "",
+    link: "blog",
   },
   {
     name: "Contact",
