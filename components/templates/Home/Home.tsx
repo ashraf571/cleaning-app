@@ -5,6 +5,7 @@ import TypesCleaning from "@/components/organisms/TypesCleaning/TypesCleaning";
 import OurExperts from "@/components/organisms/OurExperts/OurExperts";
 import Footer from "@/components/organisms/FooterSection/Footer";
 import HomeCarousel from "@/components/organisms/HomeCarousel/HomeCarousel";
+import TestinomialSlider from "@/components/organisms/TestinomialSlider/TestinomialSlider";
 // import { Drawertest } from "@/components/organisms/Drawer/Drawer";
 
 const Home = () => {
@@ -16,6 +17,7 @@ const Home = () => {
       <ServiceSection />
       <TypesCleaning />
       <OurExperts />
+      <TestinomialSlider />
     </div>
   );
 };

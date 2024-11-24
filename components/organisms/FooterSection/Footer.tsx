@@ -8,12 +8,12 @@ import ContactUs from "./ContactUs";
 const Footer = () => {
   return (
     <div className="mt-20">
-      <Image
+      {/* <Image
         src={footerImage}
         alt=""
         className="absolute h-full md:h-auto w-full "
         layout="absolute"
-      />
+      /> */}
       {/* <Image
         src={footerImage}
         alt=""

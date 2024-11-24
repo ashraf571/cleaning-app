@@ -21,7 +21,7 @@ import { Button } from "@/components/ui/button";
 import { useRouter } from "next/navigation";
 
 const HomeCarousel = () => {
-  const router = useRouter()
+  const router = useRouter();
   // const plugin = React.useRef(
   //   Autoplay({ delay: 1500, stopOnInteraction: true })
   // );
@@ -60,7 +60,7 @@ const HomeCarousel = () => {
                     {Item.haeding}{" "}
                   </span>
 
-                  <Button onClick={()=> router.push('/service')} className="font-semibold text-base text-white bg-lightblue rounded-full w-28 md:w-48 py-4 md:py-8 px-4 md:px-8 shadow-lg">
+                  <Button className="font-semibold text-base text-white bg-lightblue rounded-full w-28 md:w-48 py-4 md:py-8 px-4 md:px-8 shadow-2xl hover:bg-orange ">
                     Our Services
                   </Button>
                 </div>

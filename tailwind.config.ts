@@ -28,8 +28,8 @@ const config: Config = {
       colors: {
         background: "hsl(var(--background))",
         foreground: "hsl(var(--foreground))",
-        lightGray10:"#525f82",
-        lightGray20:"#ededed",
+        lightGray10: "#525f82",
+        lightGray20: "#ededed",
         lightGray30: "#eaedff",
         lightGray40: "#7b8491",
         white: "#ffffff",
@@ -51,6 +51,11 @@ const config: Config = {
         darkblack: "#010203",
         darkgray: "#565f66",
         plusgray: "#474b4e",
+        testimonialb1: "#336d92",
+        testimonialb2: "#0a4f7b",
+        orange: "#c86f08",
+        mangoyellow: "#f0c877",
+        navyblue: "#002542",
 
         card: {
           DEFAULT: "hsl(var(--card))",
