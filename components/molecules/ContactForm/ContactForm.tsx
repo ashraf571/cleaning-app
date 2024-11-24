@@ -29,7 +29,7 @@ const ContactForm = () => {
   return (
     <div className=" max-lg:w-full w-[60%] h-[900px] ">
       <div className=" flex w-full max-lg:pl-0 pl-28 h-full items-end">
-        <div className=" w-full text-cyanblue">
+        <div className=" w-full lg:w-[95%] text-cyanblue">
           <Heading48 heading="Contact Us" />
           <br />
           <br />
