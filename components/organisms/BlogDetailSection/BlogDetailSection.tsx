@@ -5,7 +5,7 @@ import React from "react";
 const BlogDetailSection = ({ blog }: { blog: any }) => {
   return (
     <div className=" flex flex-col w-full lg:w-[65%] gap-12 ">
-      <div className=" flex flex-col w-full border-2 border-lightGray20">
+      <div className=" flex flex-col w-full">
         <Image
           className="w-full"
           src={blog.image}
@@ -13,7 +13,7 @@ const BlogDetailSection = ({ blog }: { blog: any }) => {
           width={100}
           alt=" office floor house cleaning clean"
         />
-        <div className="font-normal text-base px-5 md:px-12 py-12 flex flex-col gap-6">
+        <div className="font-normal text-base py-12 flex flex-col gap-6">
           <BlogsBasicInfo date={blog.createdAt} role={blog.role} />
           <h2 className="lg:text-4xl text-3xl font-bold "> {blog.heading} </h2>
           <p> {blog.discription} </p>

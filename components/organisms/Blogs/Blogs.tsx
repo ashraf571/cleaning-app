@@ -16,7 +16,6 @@ const Blogs = () => {
   const [blog, setBlog] = useState<any>({})
 
   useEffect(() => {
-    console.log("blogId", blogId);
 
     if(blogId) {
       let selectedBlog = blogsData.find((blog: any) => blog.blogId === blogId)
