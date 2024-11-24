@@ -1,6 +1,5 @@
 import React from "react";
 import { Phone } from "lucide-react";
-import { div } from "framer-motion/client";
 import Link from "next/link";
 
 const ContactUs = () => {
@@ -29,7 +28,7 @@ const ContactUs = () => {
               </span>
             </div>
 
-            <Phone size={40} className="text-mangoyellow -rotate-90" />
+            <Phone size={44} className="text-mangoyellow -rotate-90" />
           </div>
         </div>
       </div>

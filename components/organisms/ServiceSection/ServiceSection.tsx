@@ -1,5 +1,8 @@
+"use client";
 import Heading from "@/components/atoms/Heading/page";
 import React from "react";
+import { motion } from "framer-motion";
+import { useInView } from "react-intersection-observer";
 
 // Images
 import CommercialImage from "@/assets/images/serviceSectionImage/CommercialImage.jpg";
@@ -31,39 +34,71 @@ import OvenIcon from "@/assets/images/serviceSectionImage/bbq-cleaning.png";
 import Image from "next/image";
 
 const ServiceSection = () => {
+  const { ref, inView } = useInView({ threshold: 0.1, triggerOnce: false });
+
+  const animationVariants = {
+    hidden: { y: "20vh", opacity: 0 },
+    visible: {
+      y: 0,
+      opacity: 1,
+      transition: { duration: 1, ease: "easeInOut" },
+    },
+  };
+
+  const ServiceVariants = {
+    hidden: { y: "-20vh", opacity: 0 },
+    visible: {
+      y: 0,
+      opacity: 1,
+      transition: { duration: 1, ease: "easeInOut" },
+    },
+  };
+
+  console.log("In view:", inView); // Debugging log
+
   return (
     <div className="mt-10 mx-14">
-      <div className="flex justify-center">
+      <motion.div
+        className="flex justify-center"
+        variants={ServiceVariants}
+        ref={ref}
+        initial="hidden"
+        animate={inView ? "visible" : "hidden"}
+      >
         <Heading heading="Service" font="48px" />
-      </div>
+      </motion.div>
 
-      <div className="grid  grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-x-8 gap-y-0 mt-10">
-        {ServiceData.map((Item, index) => {
-          return (
-            <div key={index} className="">
-              <Image src={Item.image} alt="" className=" " />
-
-              <div className="flex justify-center">
+      {/* <div ref={ref}> */}
+      <motion.div
+        className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-x-8 gap-y-0 mt-10"
+        variants={animationVariants}
+        ref={ref}
+        initial="hidden"
+        animate={inView ? "visible" : "hidden"}
+      >
+        {ServiceData.map((Item, index) => (
+          <div key={index} className="">
+            <Image src={Item.image} alt="" className=" " />
+            <div className="flex justify-center">
+              <div
+                className="py-12 px-7 bg-white relative bottom-14"
+                style={{ boxShadow: "10px 3px 30px rgba(0, 0, 0, 0.10)" }}
+              >
+                <span className="text-cyanblue text-base font-semibold">
+                  {Item.text}
+                </span>
                 <div
-                  className="py-12 px-7 bg-red300 w-[84%] bg-white relative bottom-14"
+                  className="rounded-full h-20 w-20 bg-white flex justify-center items-center absolute -top-10 right-8"
                   style={{ boxShadow: "10px 3px 30px rgba(0, 0, 0, 0.10)" }}
                 >
-                  <span className="text-cyanblue text-base font-semibold">
-                    {Item.text}
-                  </span>
-
-                  <div
-                    className="rounded-full h-20 w-20 bg-yellow300 bg-white flex justify-center items-center absolute -top-10 right-8  "
-                    style={{ boxShadow: "10px 3px 30px rgba(0, 0, 0, 0.10)" }}
-                  >
-                    <Image src={Item.icon} alt="" width={40} height={40} />
-                  </div>
+                  <Image src={Item.icon} alt="" width={40} height={40} />
                 </div>
               </div>
             </div>
-          );
-        })}
-      </div>
+          </div>
+        ))}
+      </motion.div>
+      {/* </div> */}
     </div>
   );
 };

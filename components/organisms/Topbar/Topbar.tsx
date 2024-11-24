@@ -24,10 +24,12 @@ const Topbar = () => {
   return (
     <div>
       <div
-        className="flex gap-4 items-center p-2.5 bg-white fixed top-0 left-0 right-0 z-20 "
+        className="flex gap-4 items-center p-[10px] px-8 bg-white fixed top-0 left-0 right-0 z-20 "
         style={{ boxShadow: "10px 3px 30px rgba(0, 0, 0, 0.10)" }}
       >
-        <Image src={Logo} alt="L0go" height={120} width={120}></Image>
+        <Link href={"/"}>
+          <Image src={Logo} alt="L0go" height={138} width={138}></Image>
+        </Link>
 
         <div className=" w-full">
           <div className=" gap-10 justify-end hidden md:flex">
@@ -86,8 +88,7 @@ const Topbar = () => {
 
           <div
             className={`fixed inset-x-0 top-32 bg-white shadow-lg z-20 transition-transform duration-300 
-        ${servicesOpen ? "translate-y-0" : "hidden"}
-         `}
+            ${servicesOpen ? "translate-y-0" : "hidden"}`}
           >
             <div className="relative w-full">
               <div className="flex flex-col bg-darkblue gap-3">

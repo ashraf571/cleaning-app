@@ -1,4 +1,4 @@
-'use client'
+"use client";
 
 import React from "react";
 import Heading from "@/components/atoms/Heading/page";
@@ -12,7 +12,7 @@ const AboutContentContainer = () => {
       <Heading heading="About Us" font="48px" />
 
       <div
-        className="border-l-[6px] border-cyanblue p-10 text-cyanblue bg-white"
+        className="border-l-[6px] border-lightblue p-10 text-cyanblue bg-white"
         style={{ boxShadow: "10px 3px 30px rgba(0, 0, 0, 0.10)" }}
       >
         PCDC Cleaning: eco-friendly, professional cleaning for homes and
@@ -26,7 +26,7 @@ const AboutContentContainer = () => {
       <div className="flex justify-start">
         <Button
           onClick={() => router.push("/about")}
-          className="rounded-3xl text-cyanblue text-base font-semibold bg-skyblue hover:bg-skyblue px-8 md:px-12 py-3 md:py-5 hover:text-white"
+          className="rounded-full text-cyanblue text-base font-semibold bg-skyblue hover:bg-skyblue px-8 md:px-12 py-3 md:py-8 hover:text-white"
         >
           Read More
         </Button>
