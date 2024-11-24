@@ -1,8 +1,12 @@
+'use client'
+
 import React from "react";
 import Heading from "@/components/atoms/Heading/page";
 import Paragraph from "@/components/atoms/Paragraph/Paragraph";
 import { Button } from "@/components/ui/button";
+import { useRouter } from "next/navigation";
 const AboutContentContainer = () => {
+  const router = useRouter();
   return (
     <div className=" flex flex-col gap-5">
       <Heading heading="About Us" font="48px" />
@@ -20,7 +24,10 @@ const AboutContentContainer = () => {
       />
 
       <div className="flex justify-start">
-        <Button className="rounded-3xl text-cyanblue text-base font-semibold bg-skyblue hover:bg-skyblue px-8 md:px-12 py-3 md:py-5 hover:text-white">
+        <Button
+          onClick={() => router.push("/about")}
+          className="rounded-3xl text-cyanblue text-base font-semibold bg-skyblue hover:bg-skyblue px-8 md:px-12 py-3 md:py-5 hover:text-white"
+        >
           Read More
         </Button>
       </div>

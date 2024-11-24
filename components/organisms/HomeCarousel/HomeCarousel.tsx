@@ -1,4 +1,5 @@
 "use client";
+
 import React from "react";
 import {
   Carousel,
@@ -17,8 +18,10 @@ import GreenCircle from "@/assets/images/HomeSliderImages/greenshape.png";
 
 import Image from "next/image";
 import { Button } from "@/components/ui/button";
+import { useRouter } from "next/navigation";
 
 const HomeCarousel = () => {
+  const router = useRouter()
   // const plugin = React.useRef(
   //   Autoplay({ delay: 1500, stopOnInteraction: true })
   // );
@@ -57,7 +60,7 @@ const HomeCarousel = () => {
                     {Item.haeding}{" "}
                   </span>
 
-                  <Button className="font-semibold text-base text-white bg-lightblue rounded-full w-28 md:w-48 py-4 md:py-8 px-4 md:px-8 shadow-lg">
+                  <Button onClick={()=> router.push('/service')} className="font-semibold text-base text-white bg-lightblue rounded-full w-28 md:w-48 py-4 md:py-8 px-4 md:px-8 shadow-lg">
                     Our Services
                   </Button>
                 </div>
