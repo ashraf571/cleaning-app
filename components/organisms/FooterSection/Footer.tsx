@@ -1,11 +1,25 @@
+"use client";
 import Image from "next/image";
 import React from "react";
 import footerImage from "@/assets/images/FooterImages/footer-1-bg-1.jpeg";
-import { ChevronRight } from "lucide-react";
+import { ChevronRight, ChevronUp } from "lucide-react";
 import Link from "next/link";
 import ContactUs from "./ContactUs";
+import { useInView } from "react-intersection-observer";
+import { motion } from "framer-motion";
 
 const Footer = () => {
+  const { ref, inView } = useInView({ threshold: 0.1, triggerOnce: false });
+
+  const itemVariants = {
+    hidden: { y: "-100vh", opacity: 0 },
+    visible: {
+      y: 0,
+      opacity: 1,
+      transition: { duration: 1, ease: "easeInOut" },
+    },
+  };
+
   return (
     <div className="mt-20">
       {/* <Image
@@ -13,12 +27,6 @@ const Footer = () => {
         alt=""
         className="absolute h-full md:h-auto w-full "
         layout="absolute"
-      /> */}
-      {/* <Image
-        src={footerImage}
-        alt=""
-        className="w-full object-cover absolute h-auto "
-        layout="fill" // Ensures the image covers the entire section
       /> */}
 
       <div className="relative bg-darkcyan  text-white  bg-opacity-90 px-5 md:px-10 pt-10 flex flex-col gap-9">
@@ -34,8 +42,8 @@ const Footer = () => {
                 {footerServices.map((Item, index) => {
                   return (
                     <Link href={Item.link} key={index} className="">
-                      <div className="flex gap-2">
-                        <ChevronRight size={16} />
+                      <div className="flex items-center gap-2">
+                        <ChevronRight size={16} className="text-lightblue" />
                         <span className="font-semibold hover:text-lightblue">
                           {Item.name}
                         </span>
@@ -58,8 +66,8 @@ const Footer = () => {
                 {QuickLinks.map((Item, index) => {
                   return (
                     <Link href={Item.link} key={index} className="">
-                      <div className="flex gap-2">
-                        <ChevronRight size={16} />
+                      <div className="flex items-center gap-2">
+                        <ChevronRight size={16} className="text-lightblue" />
                         <span className="font-semibold hover:text-lightblue">
                           {Item.name}
                         </span>

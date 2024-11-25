@@ -60,7 +60,7 @@ const ServiceSection = () => {
   console.log("In view:", inView); // Debugging log
 
   return (
-    <div className="mt-10 mx-14">
+    <div className="mt-10 mx-7 md:mx-14">
       <motion.div
         className="flex justify-center"
         variants={ServiceVariants}

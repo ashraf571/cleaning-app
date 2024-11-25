@@ -24,7 +24,7 @@ const Topbar = () => {
   return (
     <div>
       <div
-        className="flex gap-4 items-center p-[10px] px-8 bg-white fixed top-0 left-0 right-0 z-20 "
+        className="flex gap-4 items-center p-[10px] px-3 md:px-8 bg-white fixed top-0 left-0 right-0 z-20 "
         style={{ boxShadow: "10px 3px 30px rgba(0, 0, 0, 0.10)" }}
       >
         <Link href={"/"}>
@@ -56,11 +56,11 @@ const Topbar = () => {
       {/* Drawer for mobile */}
 
       <div
-        className={`fixed inset-x-0 top-32 bg-white shadow-lg z-10 transition-transform duration-300 mx-4 ${
-          isOpen ? "translate-y-0" : "-translate-y-full"
+        className={`fixed inset-x-0 top-24 md:top-28 bg-white shadow-lg z-10 transition-transform duration-300 mx-4 ${
+          isOpen ? "translate-y-0 top-[108px] " : "-translate-y-full"
         }`}
       >
-        <div className="relative w-full">
+        <div className="relative w-full ">
           <div className=" gap-3 flex flex-col bg-darkblue ">
             {TopbarData.map((Item, index) => {
               return (
