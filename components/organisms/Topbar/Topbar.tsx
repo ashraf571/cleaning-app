@@ -141,16 +141,16 @@ export const TopbarData = [
 ];
 
 export const ServiceData = [
-  { text: "Commercial Cleaning", link: "" },
-  { text: "Domestic Cleaning", link: "" },
-  { text: "Office Cleaning", link: "" },
-  { text: "School Cleaning", link: "" },
-  { text: "Strata Cleaning", link: "" },
-  { text: "Window Cleaning", link: "" },
-  { text: "Industrial Cleaning", link: "" },
-  { text: "High Pressure Cleaning", link: "" },
-  { text: "Tiles and Grout Cleaning", link: "" },
-  { text: "Carpet/Upholstery Cleaning", link: "" },
-  { text: "Vacate/End-of-Lease Cleaning", link: "" },
-  { text: "Oven/BBQ/Splashback Cleaning", link: "" },
+  { text: "Commercial Cleaning", link: "commercial-cleaning" },
+  { text: "Domestic Cleaning", link: "domestic-cleaning" },
+  { text: "Office Cleaning", link: "office-cleaning" },
+  { text: "School Cleaning", link: "school-cleaning" },
+  { text: "Strata Cleaning", link: "strata-cleaning" },
+  { text: "Window Cleaning", link: "window-cleaning" },
+  { text: "Industrial Cleaning", link: "industrial-cleaning" },
+  { text: "High Pressure Cleaning", link: "high-pressure-cleaning" },
+  { text: "Tiles and Grout Cleaning", link: "tiles-and-grout-cleaning" },
+  { text: "Carpet/Upholstery Cleaning", link: "carpet-upholstery-cleaning" },
+  { text: "Vacate/End-of-Lease Cleaning", link: "vacate-end-of-lease-cleaning" },
+  { text: "Oven/BBQ/Splashback Cleaning", link: "oven-bbq-splashback Cleaning" },
 ];

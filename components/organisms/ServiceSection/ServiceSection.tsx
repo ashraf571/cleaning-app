@@ -32,8 +32,11 @@ import CarpetIcon from "@/assets/images/serviceSectionImage/carpet-1.png";
 import VacateIcon from "@/assets/images/serviceSectionImage/rental-cleaning.png";
 import OvenIcon from "@/assets/images/serviceSectionImage/bbq-cleaning.png";
 import Image from "next/image";
+import { usePathname, useRouter } from "next/navigation";
 
 const ServiceSection = () => {
+  const pathName = usePathname();
+  const router = useRouter();
   const { ref, inView } = useInView({ threshold: 0.1, triggerOnce: false });
 
   const animationVariants = {
@@ -78,13 +81,16 @@ const ServiceSection = () => {
       >
         {ServiceData.map((Item, index) => (
           <div key={index} className="">
-            <Image src={Item.image} alt="" className=" " />
+            <Image src={Item.image} alt={Item.text} className=" " />
             <div className="flex justify-center">
               <div
                 className="py-12 px-7 bg-white relative bottom-14"
                 style={{ boxShadow: "10px 3px 30px rgba(0, 0, 0, 0.10)" }}
               >
-                <span className="text-cyanblue text-base font-semibold">
+                <span
+                  onClick={() => router.push("/" + Item.slug)}
+                  className="text-cyanblue text-base font-semibold"
+                >
                   {Item.text}
                 </span>
                 <div
@@ -109,63 +115,75 @@ export const ServiceData = [
   {
     image: CommercialImage,
     text: "Commercial Cleaning",
+    slug: "commercial-cleaning",
     icon: CommercialIcon,
   },
 
   {
     image: DomesticImage,
     text: "Domestic Cleaning",
+    slug: "domestic-cleaning",
     icon: DomesticIcon,
   },
   {
     image: OfficeImage,
     text: "Office Cleaning",
+    slug: "office-cleaning",
     icon: OfficeIcon,
   },
   {
     image: SchoolImage,
     text: "School Cleaning",
+    slug: "school-cleaning",
     icon: SchoolIcon,
   },
   {
     image: StrataImage,
     text: "Strata Cleaning",
+    slug: "strata-cleaning",
     icon: StrataIcon,
   },
 
   {
     image: WindowImage,
     text: "Window Cleaning",
+    slug: "window-cleaning",
     icon: WindowIcon,
   },
   {
     image: IndustrialImage,
     text: "Industrial Cleaning",
+    slug: "industrial-cleaning",
     icon: IndustrialIcon,
   },
   {
     image: HighPressureImage,
     text: "High Pressure Cleaning",
+    slug: "high-pressure-cleaning",
     icon: HighPressureIcon,
   },
   {
     image: TilesImage,
     text: "Tiles and Grout Cleaning",
+    slug: "tiles-and-grout-cleaning",
     icon: TilesIcon,
   },
   {
     image: CarpetImage,
     text: "Carpet/Upholstry Cleaning",
+    slug: "carpet-pholstry-cleaning",
     icon: CarpetIcon,
   },
   {
     image: VacateImage,
     text: "Vacate/End-of-Lease Cleaning",
+    slug: "vacate-end-of-lease-cleaning",
     icon: VacateIcon,
   },
   {
     image: OvenImage,
     text: "Oven/BBQ/Splashback Cleaning",
+    slug: "oven-bbq-splashback-cleaning",
     icon: OvenIcon,
   },
 ];

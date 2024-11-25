@@ -94,23 +94,23 @@ export default Footer;
 export const footerServices = [
   {
     name: "Commercial Cleaning",
-    link: "",
+    link: "commercial-cleaning",
   },
   {
     name: "Office Cleaning",
-    link: "",
+    link: "office-cleaning",
   },
   {
     name: "Domestic Cleaning",
-    link: "",
+    link: "domestic-cleaning",
   },
   {
     name: "School Cleaning",
-    link: "",
+    link: "school-cleaning",
   },
   {
     name: "Carpet Cleaning",
-    link: "",
+    link: "carpet-cleaning",
   },
 ];
 
