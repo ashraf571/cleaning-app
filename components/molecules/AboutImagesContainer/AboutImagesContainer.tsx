@@ -6,7 +6,7 @@ import Image from "next/image";
 
 const AboutImagesContainer = () => {
   return (
-    <div className="grid grid-cols-2 gap-8">
+    <div className="grid sm:grid-cols-1 md:grid-cols-2 gap-5 md:gap-8 ml-0 ">
       <Image
         src={MenCleanerImage}
         alt="MenCleaner"

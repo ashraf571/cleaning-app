@@ -32,10 +32,9 @@ import CarpetIcon from "@/assets/images/serviceSectionImage/carpet-1.png";
 import VacateIcon from "@/assets/images/serviceSectionImage/rental-cleaning.png";
 import OvenIcon from "@/assets/images/serviceSectionImage/bbq-cleaning.png";
 import Image from "next/image";
-import { usePathname, useRouter } from "next/navigation";
+import { useRouter } from "next/navigation";
 
 const ServiceSection = () => {
-  const pathName = usePathname();
   const router = useRouter();
   const { ref, inView } = useInView({ threshold: 0.1, triggerOnce: false });
 
@@ -57,10 +56,8 @@ const ServiceSection = () => {
     },
   };
 
-  console.log("In view:", inView); // Debugging log
-
   return (
-    <div className="mt-10 mx-7 md:mx-14">
+    <div className="mt-10 md:mx-auto w-full max-w-[1200px] ml-0 px-4">
       <motion.div
         className="flex justify-center"
         variants={ServiceVariants}
@@ -71,20 +68,19 @@ const ServiceSection = () => {
         <Heading heading="Service" font="48px" />
       </motion.div>
 
-      {/* <div ref={ref}> */}
       <motion.div
-        className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-x-8 gap-y-0 mt-10"
+        className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-x-8 gap-y-32 mt-10"
         variants={animationVariants}
         ref={ref}
         initial="hidden"
         animate={inView ? "visible" : "hidden"}
       >
         {ServiceData.map((Item, index) => (
-          <div key={index} className="">
+          <div key={index} className="relative ">
             <Image src={Item.image} alt={Item.text} className=" " />
-            <div className="flex justify-center">
+            <div className="absolute  -bottom-24 left-1/2 -translate-x-1/2 ">
               <div
-                className="py-12 px-7 bg-white relative bottom-14"
+                className="py-7 md:py-12 px-4 md:px-7 w-80 bg-white relative bottom-14 "
                 style={{ boxShadow: "10px 3px 30px rgba(0, 0, 0, 0.10)" }}
               >
                 <span
@@ -104,7 +100,6 @@ const ServiceSection = () => {
           </div>
         ))}
       </motion.div>
-      {/* </div> */}
     </div>
   );
 };

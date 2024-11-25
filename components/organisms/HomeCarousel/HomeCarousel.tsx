@@ -26,7 +26,7 @@ const HomeCarousel = () => {
   //   Autoplay({ delay: 1500, stopOnInteraction: true })
   // );
   return (
-    <div className="w-full mb-5">
+    <div className="w-full mb-5 max-w-[1200px]">
       <Carousel
         // plugins={[plugin.current]}
         className="relative w-full"

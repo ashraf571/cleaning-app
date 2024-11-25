@@ -41,8 +41,8 @@ const TestinomialSlider = () => {
   };
 
   return (
-    <div className="bg-darkocean">
-      <div className="flex flex-col gap-10 mt-10 mx-5 md:mx-14 pb-20 pt-16">
+    <div className="bg-darkocean w-full ml-0 md:mx-auto max-w-[1200px]">
+      <div className="flex flex-col gap-10 mt-10 mx-4 md:mx-14 pb-20 pt-16 ">
         <motion.div
           className="flex justify-center"
           ref={ref}
