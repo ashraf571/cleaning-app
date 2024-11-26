@@ -31,7 +31,7 @@ const ServicesDetailesSection = ({ params }: { params: any }) => {
   );
 };
 
-import commercialCleaningImage from "@/assets/images/serviceSectionImage/commercial-cleaning.jpg"
+import commercialCleaningImage from "@/assets/images/serviceSectionImage/commercial-cleaning.jpg";
 import domesticCleaning1 from "@/assets/images/serviceSectionImage/domistic-cleaning.jpg";
 import domesticCleaning2 from "@/assets/images/serviceSectionImage/domestic-cleaning2.jpg";
 import officeCleaningSection1 from "@/assets/images/serviceSectionImage/office-section1.jpg";
@@ -65,19 +65,18 @@ import leaseGerage from "@/assets/images/serviceSectionImage/lease-gerage.jpeg";
 
 const ServiceData = [
   {
-    //   image: CommercialImage,
     text: "Commercial Cleaning",
     slug: "commercial-cleaning",
     sections: [
-        {
-            image: commercialCleaningImage.src,
-            pararaphs: [
-                "Domestic and Commercial Cleaning Services is proud to serve businesses and residential properties across South Australia, Sydney, Melbourne, Brisbane, and Adelaide with exceptional cleaning solutions. Our goal is to maintain a pristine environment for your space. We employ skilled and dedicated staff who utilize state-of-the-art commercial cleaning equipment and eco-friendly, plant-based cleaning products to deliver top-notch services. With us handling the cleaning, you can enjoy peace of mind.",
-                "We prioritize professionalism and reliability, assessing your space to identify the specific cleaning services you need, ensuring we only provide what’s necessary. Remember, we offer a diverse range of commercial cleaning services, and we’ll leave you smiling when we finish.",
-                "When you sign up, you’ll receive a complimentary initial deep cleaning and a 10% discount on all future appointments. We also offer additional savings for regular cleaning services."
-            ]
-        }
-    ]
+      {
+        image: commercialCleaningImage.src,
+        pararaphs: [
+          "Domestic and Commercial Cleaning Services is proud to serve businesses and residential properties across South Australia, Sydney, Melbourne, Brisbane, and Adelaide with exceptional cleaning solutions. Our goal is to maintain a pristine environment for your space. We employ skilled and dedicated staff who utilize state-of-the-art commercial cleaning equipment and eco-friendly, plant-based cleaning products to deliver top-notch services. With us handling the cleaning, you can enjoy peace of mind.",
+          "We prioritize professionalism and reliability, assessing your space to identify the specific cleaning services you need, ensuring we only provide what’s necessary. Remember, we offer a diverse range of commercial cleaning services, and we’ll leave you smiling when we finish.",
+          "When you sign up, you’ll receive a complimentary initial deep cleaning and a 10% discount on all future appointments. We also offer additional savings for regular cleaning services.",
+        ],
+      },
+    ],
   },
   {
     text: "Domestic Cleaning",
@@ -177,7 +176,7 @@ const ServiceData = [
       {
         image: officeKitchen.src,
         heading: "Kitchen & Break Rooms",
-        list: [
+        listDash: [
           "Dust and wipe down all accessible areas.",
           "Clean and sanitize high-touch points, including doors and handles.",
           "Disinfect all surfaces and frequently touched areas.",
@@ -281,7 +280,7 @@ const ServiceData = [
           "Carpet Shampooing",
           "Exterior Building Cleaning",
         ],
-        paragraph: [
+        paragraphs1: [
           "Our experienced strata cleaning team is equipped to handle properties of any size and offers a wide range of strata cleaning services.",
         ],
       },
@@ -303,6 +302,7 @@ const ServiceData = [
       },
       {
         image: windowCleanShower.src,
+        isBold: true,
         list: [
           "Guaranteed Customer Satisfaction",
           "Dependable, Trustworthy, and Professional",
@@ -327,7 +327,7 @@ const ServiceData = [
           "Maintaining clean and hygienic facilities is essential for factory and industrial sites to meet Occupational Health, Safety, and Welfare (OHS&W) standards. A clean workplace is vital for employee satisfaction and productivity, as unclean conditions can lead to dissatisfaction and reduced efficiency.",
           "We collaborate closely with our clients to meet all of their cleaning requirements, following a philosophy of continuous quality improvement. Our services include, but are not limited to:",
         ],
-        list: [
+        listDash: [
           "Routine Building Cleaning",
           "Hard Floor Maintenance",
           "Car Park Cleaning",
@@ -375,7 +375,7 @@ const ServiceData = [
           "Removes graffiti effectively",
           "Promotes health and safety",
         ],
-        paragraphs2: [
+        paragraphs1: [
           "We also offer industrial cleaning services, with machines operating at pressures from 2700 PSI to 6000 PSI. Additionally, we can address any gaps left after each clean.",
         ],
       },
@@ -459,7 +459,7 @@ const ServiceData = [
           "Thorough Sanitization",
           "Eco-Friendly Products",
         ],
-        paragraphs2: [
+        paragraphs1: [
           "Revitalizing carpets, rugs, and upholstery through deodorizing and sanitizing after cleaning is essential. We offer this service for free!",
           "Furthermore, we also provide services for odor elimination, soil extraction, and stain removal.",
         ],
@@ -496,93 +496,92 @@ const ServiceData = [
         image: leaseSink.src,
         heading: "Kitchen and Dining Area",
         list: [
-            "Cooking Areas: We’ll thoroughly clean the oven, racks, trays, exhaust, range hood, and range hood filters, as well as the stove top.",
-            "Sinks: We will clean the sinks and drains, ensuring taps and water spouts are spotless.",
-            "Benches and Walls: We’ll clean all bench tops, walls, and tiled areas.",
-            "Dishwasher: We’ll clean both the interior and exterior, including all racks, rubbers, and the filter.",
-            "Refrigerator: We’ll clean inside and out, including all racks and those hard-to-reach corners.",
-            "Cupboards: We’ll clean both the interiors and exteriors of cupboards.",
-            "Mirrors and Glass Surfaces: We’ll polish all mirrors and glass surfaces using glass cleaner.",
-            "Windows: We’ll clean windows inside and out and wash fly screens.",
-            "Blinds: We offer cleaning for blinds.",
-            "Doors and Frames: We’ll wipe down doors, door frames, window frames, and remove dirt from sills.",
-            "Vents and Light Fittings: We’ll clean AC vents and light fittings.",
-            "Cobwebs: We will remove all cobwebs.",
-            "Disinfection: All surfaces and touch points will be cleaned and disinfected.",
-            "Walls and Skirting Boards: We’ll clean the walls and skirting boards.",
-            "Final Touches: We’ll sanitize, disinfect, and polish all areas for a pristine finis"
-        ]
+          "Cooking Areas: We’ll thoroughly clean the oven, racks, trays, exhaust, range hood, and range hood filters, as well as the stove top.",
+          "Sinks: We will clean the sinks and drains, ensuring taps and water spouts are spotless.",
+          "Benches and Walls: We’ll clean all bench tops, walls, and tiled areas.",
+          "Dishwasher: We’ll clean both the interior and exterior, including all racks, rubbers, and the filter.",
+          "Refrigerator: We’ll clean inside and out, including all racks and those hard-to-reach corners.",
+          "Cupboards: We’ll clean both the interiors and exteriors of cupboards.",
+          "Mirrors and Glass Surfaces: We’ll polish all mirrors and glass surfaces using glass cleaner.",
+          "Windows: We’ll clean windows inside and out and wash fly screens.",
+          "Blinds: We offer cleaning for blinds.",
+          "Doors and Frames: We’ll wipe down doors, door frames, window frames, and remove dirt from sills.",
+          "Vents and Light Fittings: We’ll clean AC vents and light fittings.",
+          "Cobwebs: We will remove all cobwebs.",
+          "Disinfection: All surfaces and touch points will be cleaned and disinfected.",
+          "Walls and Skirting Boards: We’ll clean the walls and skirting boards.",
+          "Final Touches: We’ll sanitize, disinfect, and polish all areas for a pristine finis",
+        ],
       },
       {
         image: leaseToilet.src,
         heading: "Bathrooms and Toilets",
-        list:[
-            "Cupboards: We’ll clean both the inside and outside of all cupboards.",
-            "Tile and Grout: We’ll scrub and clean tile and grout thoroughly.",
-            "Shower Glass and Doors: We’ll provide professional cleaning for shower glass and doors.",
-            "Knickknacks: We’ll carefully clean all knickknacks.",
-            "Sinks and Drains: We’ll clean sinks and drains, including taps and water spouts",
-            "Toilets: We’ll ensure a detailed clean for all toilets.",
-            "Faucets: We’ll give faucets, sinks, and drains a thorough cleaning.",
-            "Soap Scum and Hard Water Deposits: We’ll do our best to remove soap scum and hard water deposits.",
-            "Cobwebs: All cobwebs will be removed.",
-            "Windows: We’ll clean windows inside and out and wash fly screens.",
-            "Doors and Frames: We’ll wipe down doors, door frames, and window frames, removing dirt from sills.",
-            "Blinds: We offer cleaning services for blinds.",
-            "Mirrors and Glass Surfaces: We’ll clean all mirrors and glass surfaces with glass cleaner.",
-            "Vents and Light Fittings: We’ll clean AC vents and light fittings.",
-            "Disinfection: We’ll clean and disinfect all surfaces and touch points.",
-            "Walls and Skirting Boards: We’ll clean the walls and skirting boards.",
-            "Final Touches: We’ll sanitize, disinfect, and polish all areas for a spotless finish.",
-        ]
+        list: [
+          "Cupboards: We’ll clean both the inside and outside of all cupboards.",
+          "Tile and Grout: We’ll scrub and clean tile and grout thoroughly.",
+          "Shower Glass and Doors: We’ll provide professional cleaning for shower glass and doors.",
+          "Knickknacks: We’ll carefully clean all knickknacks.",
+          "Sinks and Drains: We’ll clean sinks and drains, including taps and water spouts",
+          "Toilets: We’ll ensure a detailed clean for all toilets.",
+          "Faucets: We’ll give faucets, sinks, and drains a thorough cleaning.",
+          "Soap Scum and Hard Water Deposits: We’ll do our best to remove soap scum and hard water deposits.",
+          "Cobwebs: All cobwebs will be removed.",
+          "Windows: We’ll clean windows inside and out and wash fly screens.",
+          "Doors and Frames: We’ll wipe down doors, door frames, and window frames, removing dirt from sills.",
+          "Blinds: We offer cleaning services for blinds.",
+          "Mirrors and Glass Surfaces: We’ll clean all mirrors and glass surfaces with glass cleaner.",
+          "Vents and Light Fittings: We’ll clean AC vents and light fittings.",
+          "Disinfection: We’ll clean and disinfect all surfaces and touch points.",
+          "Walls and Skirting Boards: We’ll clean the walls and skirting boards.",
+          "Final Touches: We’ll sanitize, disinfect, and polish all areas for a spotless finish.",
+        ],
       },
       {
         heading: "Bedrooms, Living areas and office areas",
-        image:officeOutdoor.src,
+        image: officeOutdoor.src,
         list: [
-            "Thorough cleaning of cupboards, both inside and out.",
-            "Professional cleaning of knickknacks.",
-            "Floor cleaning services.",
-            "Window cleaning inside and out, along with washing fly screens.",
-            "Wiping down doors, door frames, window frames, and removing dirt from sills.",
-            "Cleaning of AC vents and light fixtures.",
-            "Cleaning all mirrors and glass surfaces with appropriate glass cleaner.",
-            "Disinfecting all surfaces and frequently touched points.",
-            "Wall and skirting board cleaning.",
-            "Cleaning underneath furniture in furnished properties.",
-            "Surface cleaning in furnished properties.",
-            "Removal of cobwebs.",
-            "Blind cleaning services available.",
-            "Sanitizing, disinfecting, and polishing all areas."
-
-        ]
+          "Thorough cleaning of cupboards, both inside and out.",
+          "Professional cleaning of knickknacks.",
+          "Floor cleaning services.",
+          "Window cleaning inside and out, along with washing fly screens.",
+          "Wiping down doors, door frames, window frames, and removing dirt from sills.",
+          "Cleaning of AC vents and light fixtures.",
+          "Cleaning all mirrors and glass surfaces with appropriate glass cleaner.",
+          "Disinfecting all surfaces and frequently touched points.",
+          "Wall and skirting board cleaning.",
+          "Cleaning underneath furniture in furnished properties.",
+          "Surface cleaning in furnished properties.",
+          "Removal of cobwebs.",
+          "Blind cleaning services available.",
+          "Sanitizing, disinfecting, and polishing all areas.",
+        ],
       },
       {
         image: leaseOutdoor.src,
         heading: "Outdoor Cleaning",
         list: [
-            "Removal of all cobwebs.",
-            "Pressure cleaning for patios, verandahs, and decks.",
-            "BBQ cleaning services.",
-            "Gardening services available."
-        ]
+          "Removal of all cobwebs.",
+          "Pressure cleaning for patios, verandahs, and decks.",
+          "BBQ cleaning services.",
+          "Gardening services available.",
+        ],
       },
       {
         image: leaseGerage.src,
         heading: "Garage",
         list: [
-            "We’ll clear all rubbish and sweep the area.",
-            "Wall and skirting cleaning services are available.",
-            "Wiping down doors, door frames, window frames, and removing dirt from sills.",
-            "Removal of all cobwebs.",
-            "Cleaning of AC vents and light fixtures.",
-            "Blind cleaning services offered.",
-            "Cleaning of AC vents and light fixtures.",
-            "Garage door cleaning is also available.",
-            "High-pressure cleaning for the floor.",
-            "We will clean and disinfect all surfaces and frequently touched points.",
-        ]
-      }
+          "We’ll clear all rubbish and sweep the area.",
+          "Wall and skirting cleaning services are available.",
+          "Wiping down doors, door frames, window frames, and removing dirt from sills.",
+          "Removal of all cobwebs.",
+          "Cleaning of AC vents and light fixtures.",
+          "Blind cleaning services offered.",
+          "Cleaning of AC vents and light fixtures.",
+          "Garage door cleaning is also available.",
+          "High-pressure cleaning for the floor.",
+          "We will clean and disinfect all surfaces and frequently touched points.",
+        ],
+      },
     ],
   },
 
@@ -591,73 +590,73 @@ const ServiceData = [
     text: "Oven/BBQ/Splashback Cleaning",
     slug: "oven-bbq-splashback-cleaning",
     sections: [
-        {
-            image: officeOutdoor.src,
-            paragraphs: [
-                "For ultimate peace of mind, it’s essential to reach out to a qualified specialist for oven cleaning. While it may seem straightforward, attention to detail is crucial. It’s not just about the cleaning process but also about the methods and products used. With the right tools and natural cleaning agents, the task can be quick and efficient. Additionally, adhering to proper food safety protocols is important.",
-                "Let us handle the job, and you can enjoy our exceptional service. We’ll give your oven, barbecue, cooktop, and range hood a thorough makeover.",
-                "Feel free to inquire about our charcoal BBQ and hotplate cleaning services as well. We specialize in cleaning ovens, racks, trays, fan covers, fans, door glass, the spaces between glasses, cooktops, gas hobs, range hoods, and filters.",
-                "We take the time to ensure the best results for you. It will all be worth it. Our clients often refer to us as the best, smiling as they bid us farewell when we finish our work.",
-            ]
-        },
-        {
-            image: officeOutdoor.src,
-            heading: "Our Features",
-            list: [
-                "Owner-Operated: Personal touch and dedication in every service.",
-                "Natural Products: We use eco-friendly cleaning solutions for your peace of mind.",
-                "Financially Affordable: Quality cleaning services that won’t break the bank.",
-                "Proper Management: Efficient and effective service tailored to your needs.",
-                "100% Customer Satisfaction: Our top priority is ensuring you’re completely satisfied.",
-                "Flexible Schedule: We work around your availability for ultimate convenience.",
-            ]
-        },
-        {
-            image: officeOutdoor.src,
-            heading: "Our Comprehensive Oven Cleaning Process",
-            list: [
-                "Cooking Areas: We’ll thoroughly clean the oven, racks, trays, exhaust, range hood, and range hood filters, as well as the stove top.",
-                "Sinks: We will clean the sinks and drains, ensuring taps and water spouts are spotless.",
-                "Benches and Walls: We’ll clean all bench tops, walls, and tiled areas.",
-                "Dishwasher: We’ll clean both the interior and exterior, including all racks, rubbers, and the filter.",
-                "Refrigerator: We’ll clean inside and out, including all racks and those hard-to-reach corners.",
-                "Cupboards: We’ll clean both the interiors and exteriors of cupboards.",
-                "Mirrors and Glass Surfaces: We’ll polish all mirrors and glass surfaces using glass cleaner.",
-                "Windows: We’ll clean windows inside and out and wash fly screens.",
-                "Blinds: We offer cleaning for blinds.",
-                "Doors and Frames: We’ll wipe down doors, door frames, window frames, and remove dirt from sills.",
-                "Vents and Light Fittings: We’ll clean AC vents and light fittings.",
-                "Cobwebs: We will remove all cobwebs.",
-                "Disinfection: All surfaces and touch points will be cleaned and disinfected.",
-                "Walls and Skirting Boards: We’ll clean the walls and skirting boards.",
-                "Final Touches: We’ll sanitize, disinfect, and polish all areas for a pristine finis"
-            ]
-        },
-        {
-            image: officeOutdoor.src,
-            heading: "Our Comprehensive BBQ Cleaning Process",
-            list: [
-                "Initial Inspection: We begin by checking all corners of your BBQ to assess its working condition, and we will inform you of any issues.",
-                "Removal of Parts: All removable components are carefully taken off for a thorough clean.",
-                "Pre-Heating: The BBQ is pre-heated slightly to help with the cleaning process.",
-                "Gas Disconnection: We ensure the gas is safely disconnected before proceeding.",
-                "Eco-Friendly Products: Our specially formulated eco-friendly cleaning products are applied.",
-                "Stain Removal: We remove fats, burnt residues, and excess dirt from all surfaces.",
-                "Comprehensive Cleaning: All parts, both interior and exterior, are cleaned meticulously.",
-                "Drying: We dry all parts of the BBQ to prevent any moisture retention.",
-                "Reassembly: Once everything is cleaned and dried, we carefully reassemble all parts.",
-                "Clean-Up: We tidy up our workspace, ensuring no mess is left behind.",
-                "Disinfection and Sanitization: The BBQ is disinfected and sanitized for your safety.",
-                "Final Testing: Before we leave, we conduct a final test to ensure everything is functioning correctly. We’ll leave the BBQ open for 15 minutes to allow any remaining cleaning products to dissipate.",
-                "Charcoal BBQ Inquiry: Please inquire about our charcoal BBQ cleaning services as well.",
-                "We also clean: ",
-                "Range Hoods",
-                "Cooktops",
-                "Hot Plates",
-                "Charcoal BBQ"
-            ]
-        }
-    ]
+      {
+        image: officeOutdoor.src,
+        paragraphs: [
+          "For ultimate peace of mind, it’s essential to reach out to a qualified specialist for oven cleaning. While it may seem straightforward, attention to detail is crucial. It’s not just about the cleaning process but also about the methods and products used. With the right tools and natural cleaning agents, the task can be quick and efficient. Additionally, adhering to proper food safety protocols is important.",
+          "Let us handle the job, and you can enjoy our exceptional service. We’ll give your oven, barbecue, cooktop, and range hood a thorough makeover.",
+          "Feel free to inquire about our charcoal BBQ and hotplate cleaning services as well. We specialize in cleaning ovens, racks, trays, fan covers, fans, door glass, the spaces between glasses, cooktops, gas hobs, range hoods, and filters.",
+          "We take the time to ensure the best results for you. It will all be worth it. Our clients often refer to us as the best, smiling as they bid us farewell when we finish our work.",
+        ],
+      },
+      {
+        image: officeOutdoor.src,
+        heading: "Our Features",
+        list: [
+          "Owner-Operated: Personal touch and dedication in every service.",
+          "Natural Products: We use eco-friendly cleaning solutions for your peace of mind.",
+          "Financially Affordable: Quality cleaning services that won’t break the bank.",
+          "Proper Management: Efficient and effective service tailored to your needs.",
+          "100% Customer Satisfaction: Our top priority is ensuring you’re completely satisfied.",
+          "Flexible Schedule: We work around your availability for ultimate convenience.",
+        ],
+      },
+      {
+        image: officeOutdoor.src,
+        heading: "Our Comprehensive Oven Cleaning Process",
+        list: [
+          "Cooking Areas: We’ll thoroughly clean the oven, racks, trays, exhaust, range hood, and range hood filters, as well as the stove top.",
+          "Sinks: We will clean the sinks and drains, ensuring taps and water spouts are spotless.",
+          "Benches and Walls: We’ll clean all bench tops, walls, and tiled areas.",
+          "Dishwasher: We’ll clean both the interior and exterior, including all racks, rubbers, and the filter.",
+          "Refrigerator: We’ll clean inside and out, including all racks and those hard-to-reach corners.",
+          "Cupboards: We’ll clean both the interiors and exteriors of cupboards.",
+          "Mirrors and Glass Surfaces: We’ll polish all mirrors and glass surfaces using glass cleaner.",
+          "Windows: We’ll clean windows inside and out and wash fly screens.",
+          "Blinds: We offer cleaning for blinds.",
+          "Doors and Frames: We’ll wipe down doors, door frames, window frames, and remove dirt from sills.",
+          "Vents and Light Fittings: We’ll clean AC vents and light fittings.",
+          "Cobwebs: We will remove all cobwebs.",
+          "Disinfection: All surfaces and touch points will be cleaned and disinfected.",
+          "Walls and Skirting Boards: We’ll clean the walls and skirting boards.",
+          "Final Touches: We’ll sanitize, disinfect, and polish all areas for a pristine finis",
+        ],
+      },
+      {
+        image: officeOutdoor.src,
+        heading: "Our Comprehensive BBQ Cleaning Process",
+        list: [
+          "Initial Inspection: We begin by checking all corners of your BBQ to assess its working condition, and we will inform you of any issues.",
+          "Removal of Parts: All removable components are carefully taken off for a thorough clean.",
+          "Pre-Heating: The BBQ is pre-heated slightly to help with the cleaning process.",
+          "Gas Disconnection: We ensure the gas is safely disconnected before proceeding.",
+          "Eco-Friendly Products: Our specially formulated eco-friendly cleaning products are applied.",
+          "Stain Removal: We remove fats, burnt residues, and excess dirt from all surfaces.",
+          "Comprehensive Cleaning: All parts, both interior and exterior, are cleaned meticulously.",
+          "Drying: We dry all parts of the BBQ to prevent any moisture retention.",
+          "Reassembly: Once everything is cleaned and dried, we carefully reassemble all parts.",
+          "Clean-Up: We tidy up our workspace, ensuring no mess is left behind.",
+          "Disinfection and Sanitization: The BBQ is disinfected and sanitized for your safety.",
+          "Final Testing: Before we leave, we conduct a final test to ensure everything is functioning correctly. We’ll leave the BBQ open for 15 minutes to allow any remaining cleaning products to dissipate.",
+          "Charcoal BBQ Inquiry: Please inquire about our charcoal BBQ cleaning services as well.",
+          "We also clean: ",
+          "Range Hoods",
+          "Cooktops",
+          "Hot Plates",
+          "Charcoal BBQ",
+        ],
+      },
+    ],
   },
 ];
 
