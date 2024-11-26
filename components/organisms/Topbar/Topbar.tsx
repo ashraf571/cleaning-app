@@ -22,9 +22,9 @@ const Topbar = () => {
   console.log("value is", servicesOpen);
 
   return (
-    <div>
+    <div className="">
       <div
-        className="flex gap-4 items-center p-[10px] px-3 md:px-8 bg-white fixed top-0 left-0 right-0 z-20 "
+        className="flex gap-4 items-center p-[10px] px-3 md:px-8 bg-white fixed top-0 left-0 right-0 z-20 mx-auto w-full max-w-[1200px]"
         style={{ boxShadow: "10px 3px 30px rgba(0, 0, 0, 0.10)" }}
       >
         <Link href={"/"}>
@@ -56,7 +56,7 @@ const Topbar = () => {
       {/* Drawer for mobile */}
 
       <div
-        className={`fixed inset-x-0 top-24 md:top-28 bg-white shadow-lg z-10 transition-transform duration-300 mx-4 ${
+        className={`fixed inset-x-0 top-24 md:top-28 bg-white shadow-lg z-10 transition-transform duration-300 mx-auto w-full max-w-[1200px] ${
           isOpen ? "translate-y-0 top-[108px] " : "-translate-y-full"
         }`}
       >
@@ -151,6 +151,12 @@ export const ServiceData = [
   { text: "High Pressure Cleaning", link: "high-pressure-cleaning" },
   { text: "Tiles and Grout Cleaning", link: "tiles-and-grout-cleaning" },
   { text: "Carpet/Upholstery Cleaning", link: "carpet-upholstery-cleaning" },
-  { text: "Vacate/End-of-Lease Cleaning", link: "vacate-end-of-lease-cleaning" },
-  { text: "Oven/BBQ/Splashback Cleaning", link: "oven-bbq-splashback Cleaning" },
+  {
+    text: "Vacate/End-of-Lease Cleaning",
+    link: "vacate-end-of-lease-cleaning",
+  },
+  {
+    text: "Oven/BBQ/Splashback Cleaning",
+    link: "oven-bbq-splashback Cleaning",
+  },
 ];

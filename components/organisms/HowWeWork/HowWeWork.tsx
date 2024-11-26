@@ -62,7 +62,7 @@ const HowWeWork = () => {
               >
                 <div className=" relative font-bold flex justify-center flex-col text-base p-8">
                   <div className=" relative flex justify-center items-center">
-                    <span className="absolute text-lightGray text-[120px] leading-[86px] -z-1 -top-[55px] text-primaryGray">
+                    <span className="absolute text-[120px] leading-[86px] -z-1 -top-[55px] text-primaryGray">
                       {card.number}
                     </span>
                     <span className="h-16 w-16 shadow-lg shadow-[#0049764b] bg-white flex justify-center items-center rounded-[50%] absolute top-0 left-2 z-10">

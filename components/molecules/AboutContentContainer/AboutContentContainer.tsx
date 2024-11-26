@@ -8,7 +8,7 @@ import { useRouter } from "next/navigation";
 const AboutContentContainer = () => {
   const router = useRouter();
   return (
-    <div className=" flex flex-col gap-5">
+    <div className=" flex flex-col gap-5 mx-4">
       <Heading heading="About Us" font="48px" />
 
       <div

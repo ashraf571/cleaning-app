@@ -35,7 +35,7 @@ const OurExperts = () => {
   };
 
   return (
-    <div className="mt-20 mx-5 md:mx-10 pb-5">
+    <div className="mt-20 ml-0 md:mx-auto pb-5 w-full max-w-[1200px] px-4">
       <motion.div
         className="flex justify-center"
         ref={ref}

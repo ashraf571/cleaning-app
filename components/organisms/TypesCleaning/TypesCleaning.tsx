@@ -38,7 +38,7 @@ const TypesCleaning = () => {
   };
 
   return (
-    <div className="bg-cloudblue">
+    <div className="bg-cloudblue w-full mx-auto max-w-[1200px]">
       <div className="mt-10 mx-5 md::mx-10">
         <motion.div
           className="flex justify-center pt-8"
