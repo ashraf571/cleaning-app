@@ -22,9 +22,9 @@ const Topbar = () => {
   console.log("value is", servicesOpen);
 
   return (
-    <div className="">
+    <div className="mx-auto w-full max-w-[1200px]">
       <div
-        className="flex gap-4 items-center p-[10px] px-3 md:px-8 bg-white fixed top-0 left-0 right-0 z-20 mx-auto w-full max-w-[1200px]"
+        className="flex gap-4 items-center p-[10px] px-3 md:px-8 bg-white fixed top-0 left-0 right-0 z-20 "
         style={{ boxShadow: "10px 3px 30px rgba(0, 0, 0, 0.10)" }}
       >
         <Link href={"/"}>

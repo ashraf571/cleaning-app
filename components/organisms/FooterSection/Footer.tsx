@@ -21,15 +21,8 @@ const Footer = () => {
   };
 
   return (
-    <div className="mt-20">
-      {/* <Image
-        src={footerImage}
-        alt=""
-        className="absolute h-full md:h-auto w-full "
-        layout="absolute"
-      /> */}
-
-      <div className="relative bg-darkcyan  text-white  bg-opacity-90 px-5 md:px-10 pt-10 flex flex-col gap-9 mx-auto w-full max-w-[1200px]">
+    <div className="mt-20 bg-darkcyan">
+      <div className="relative text-white  bg-opacity-90 px-5 md:px-10 pt-10 flex flex-col gap-9 mx-auto w-full max-w-[1200px]">
         <div className="grid grid-cols-1 md:grid-cols-2 gap-5 md:gap-0">
           <div className="grid grid-cols-1 md:grid-cols-2 gap-5 md:gap-0">
             <div className="flex flex-col gap-5">

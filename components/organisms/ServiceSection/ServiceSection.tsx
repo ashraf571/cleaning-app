@@ -85,7 +85,7 @@ const ServiceSection = () => {
               >
                 <span
                   onClick={() => router.push("/" + Item.slug)}
-                  className="text-cyanblue text-base font-semibold"
+                  className="text-cyanblue text-base font-semibold cursor-pointer"
                 >
                   {Item.text}
                 </span>

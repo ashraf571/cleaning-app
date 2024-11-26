@@ -8,7 +8,6 @@ import {
   CarouselNext,
   CarouselPrevious,
 } from "@/components/ui/carousel";
-import Autoplay from "embla-carousel-autoplay";
 
 import Banner1 from "@/assets/images/HomeSliderImages/banner1.png";
 import Banner2 from "@/assets/images/HomeSliderImages/banner2.png";
@@ -22,11 +21,8 @@ import { useRouter } from "next/navigation";
 
 const HomeCarousel = () => {
   const router = useRouter();
-  // const plugin = React.useRef(
-  //   Autoplay({ delay: 1500, stopOnInteraction: true })
-  // );
   return (
-    <div className="w-full mb-5 max-w-[1200px]">
+    <div className="w-full mb-5 ">
       <Carousel
         // plugins={[plugin.current]}
         className="relative w-full"

@@ -12,23 +12,20 @@ const ContactForm = () => {
     message: "",
   });
 
-
-
   const submitForm = (e: any) => {
-    e.preventDefault()
-    const {name, email, subject, message} = signUpForm
-    if(!name || !email|| !subject || !message) {
+    e.preventDefault();
+    const { name, email, subject, message } = signUpForm;
+    if (!name || !email || !subject || !message) {
       console.log("Please fill all the required field", signUpForm);
 
-      return
+      return;
     }
 
     console.log(signUpForm);
-    
-  }
+  };
   return (
     <div className=" max-lg:w-full w-[60%] h-[900px] ">
-      <div className=" flex w-full max-lg:pl-0 pl-28 h-full items-end">
+      <div className=" flex w-full max-lg:pl-0 pl-8 h-full items-end">
         <div className=" w-full lg:w-[95%] text-cyanblue">
           <Heading48 heading="Contact Us" />
           <br />
