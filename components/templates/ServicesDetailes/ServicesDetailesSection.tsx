@@ -31,6 +31,7 @@ const ServicesDetailesSection = ({ params }: { params: any }) => {
   );
 };
 
+import commercialCleaningImage from "@/assets/images/serviceSectionImage/commercial-cleaning.jpg"
 import domesticCleaning1 from "@/assets/images/serviceSectionImage/domistic-cleaning.jpg";
 import domesticCleaning2 from "@/assets/images/serviceSectionImage/domestic-cleaning2.jpg";
 import officeCleaningSection1 from "@/assets/images/serviceSectionImage/office-section1.jpg";
@@ -67,6 +68,16 @@ const ServiceData = [
     //   image: CommercialImage,
     text: "Commercial Cleaning",
     slug: "commercial-cleaning",
+    sections: [
+        {
+            image: commercialCleaningImage.src,
+            pararaphs: [
+                "Domestic and Commercial Cleaning Services is proud to serve businesses and residential properties across South Australia, Sydney, Melbourne, Brisbane, and Adelaide with exceptional cleaning solutions. Our goal is to maintain a pristine environment for your space. We employ skilled and dedicated staff who utilize state-of-the-art commercial cleaning equipment and eco-friendly, plant-based cleaning products to deliver top-notch services. With us handling the cleaning, you can enjoy peace of mind.",
+                "We prioritize professionalism and reliability, assessing your space to identify the specific cleaning services you need, ensuring we only provide what’s necessary. Remember, we offer a diverse range of commercial cleaning services, and we’ll leave you smiling when we finish.",
+                "When you sign up, you’ll receive a complimentary initial deep cleaning and a 10% discount on all future appointments. We also offer additional savings for regular cleaning services."
+            ]
+        }
+    ]
   },
   {
     text: "Domestic Cleaning",
@@ -276,7 +287,6 @@ const ServiceData = [
       },
     ],
   },
-
   {
     //   image: WindowImage,
     text: "Window Cleaning",
