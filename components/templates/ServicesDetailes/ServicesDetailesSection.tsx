@@ -4,6 +4,17 @@ import { motion } from "framer-motion";
 import Heading6040 from "@/components/atoms/Heading60-40-32/Heading60-40-32";
 import domesticCleaning from "@/assets/images/serviceSectionImage/domistic-cleaning.jpg";
 
+interface ServiceContentSectionIF {
+  heading?: string;
+  paragraphs?: string[];
+  paragraphs1?: string[];
+  list: string[];
+  listDash?: string[];
+  list1?: string[];
+  isBold?: boolean;
+  image: string;
+}
+
 const ServicesDetailesSection = ({ params }: { params: any }) => {
   const selectedService: any = ServiceData.find(
     (service: any) => service.slug === params.slug
@@ -14,8 +25,8 @@ const ServicesDetailesSection = ({ params }: { params: any }) => {
     visible: { opacity: 1, y: 0, transition: { duration: 0.5 } },
   };
   return (
-    <div className="relative w-full">
-      <div className=" w-full max-w-[1200px] flex justify-center">
+    <div className="relative w-full flex justify-center">
+      <div className=" w-full max-w-[1200px] flex flex-col">
         <motion.div
           className="w-full text-center"
           variants={cardVariants}
@@ -24,6 +35,15 @@ const ServicesDetailesSection = ({ params }: { params: any }) => {
         >
           <Heading6040 heading={selectedService.text} />
         </motion.div>
+
+        {selectedService.sections.map(
+          (section: ServiceContentSectionIF, index: number) =>
+            index % 2 === 0 ? (
+              <TextThenImageSection key={index} seviceCardData={section} />
+            ) : (
+              <ImageThenTextSection key={index} seviceCardData={section} />
+            )
+        )}
 
         {/* <p>{selectedService.text}</p> */}
       </div>
@@ -62,6 +82,8 @@ import leaseSink from "@/assets/images/serviceSectionImage/lease-sink.jpeg";
 import leaseToilet from "@/assets/images/serviceSectionImage/lease-toilet.jpeg";
 import leaseOutdoor from "@/assets/images/serviceSectionImage/lease-outdoor.jpg";
 import leaseGerage from "@/assets/images/serviceSectionImage/lease-gerage.jpeg";
+import TextThenImageSection from "@/components/organisms/TextThenImageSection/TextThenImageSection";
+import ImageThenTextSection from "@/components/organisms/ImageThenTextSection/ImageThenTextSection";
 
 const ServiceData = [
   {

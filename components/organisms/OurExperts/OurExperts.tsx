@@ -2,7 +2,7 @@
 import { useInView } from "react-intersection-observer";
 import { motion } from "framer-motion";
 
-import Heading from "@/components/atoms/Heading/page";
+import Heading from "@/components/atoms/Heading/heading";
 import React from "react";
 
 // expert Images

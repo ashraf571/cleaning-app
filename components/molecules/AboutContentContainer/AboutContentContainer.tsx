@@ -1,7 +1,7 @@
 "use client";
 
 import React from "react";
-import Heading from "@/components/atoms/Heading/page";
+import Heading from "@/components/atoms/Heading/heading";
 import Paragraph from "@/components/atoms/Paragraph/Paragraph";
 import { Button } from "@/components/ui/button";
 import { useRouter } from "next/navigation";
