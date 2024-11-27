@@ -37,12 +37,17 @@ const ServicesDetailesSection = ({ params }: { params: any }) => {
         </motion.div>
 
         {selectedService.sections.map(
-          (section: ServiceContentSectionIF, index: number) =>
-            index % 2 === 0 ? (
-              <TextThenImageSection key={index} seviceCardData={section} />
-            ) : (
-              <ImageThenTextSection key={index} seviceCardData={section} />
-            )
+          (section: ServiceContentSectionIF, index: number) => {
+            return (
+              <div key={index} className="w-full my-2 flex max-md:flex-col">
+                {index % 2 === 0 ? (
+                  <TextThenImageSection seviceCardData={section} />
+                ) : (
+                  <ImageThenTextSection seviceCardData={section} />
+                )}
+              </div>
+            );
+          }
         )}
 
         {/* <p>{selectedService.text}</p> */}

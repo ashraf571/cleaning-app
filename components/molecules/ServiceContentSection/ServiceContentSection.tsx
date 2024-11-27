@@ -1,5 +1,4 @@
 import Heading24 from "@/components/atoms/Heading24/Heading24";
-import Paragraph16 from "@/components/atoms/Paragraph16/Paragraph16";
 import React from "react";
 import ListSection from "../ListSections/ListSection";
 
@@ -33,7 +32,12 @@ const ServiceContentSection = ({
       {paragraphs &&
         paragraphs.length > 0 &&
         paragraphs.map((paragraph: string, index: number) => {
-          return <Paragraph16 key={index} paragraph={paragraph} />;
+          return (
+            <p key={index} className="text-base text-secondryGray font-normal">
+              {" "}
+              {paragraph}{" "}
+            </p>
+          );
         })}
 
       {list && list.length > 0 && <ListSection isBold={isBold} list={list} />}
@@ -44,7 +48,12 @@ const ServiceContentSection = ({
       {paragraphs1 &&
         paragraphs1.length > 0 &&
         paragraphs1.map((paragraph: string, index: number) => {
-          return <Paragraph16 key={index} paragraph={paragraph} />;
+          return (
+            <p key={index} className="text-base text-secondryGray font-normal">
+              {" "}
+              {paragraph}{" "}
+            </p>
+          );
         })}
 
       {list1 && list1.length > 0 && <ListSection list={list1} />}

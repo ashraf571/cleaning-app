@@ -15,17 +15,15 @@ interface ServiceContentSectionIF {
 
 const ImageThenTextSection =  ({
     seviceCardData,
-    key,
   }: {
     seviceCardData: ServiceContentSectionIF;
-    key: number;
   }) => {
     const { image, ...rest } = seviceCardData;
     return (
-      <div key={key} className="w-full my-2 flex max-md:flex-col">
+      <>
         <ImageSection imageUrl={image} />
         <ServiceContentSection sectionData={rest} />
-      </div>
+      </>
     );
   };
 
