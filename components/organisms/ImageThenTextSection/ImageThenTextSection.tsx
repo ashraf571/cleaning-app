@@ -8,7 +8,6 @@ interface ServiceContentSectionIF {
   paragraphs1?: string[];
   list: string[];
   listDash?: string[];
-  splitList?: boolean;
   list1?: string[];
   isBold?: boolean;
   image: string;

@@ -111,7 +111,7 @@ export const footerServices = [
   },
   {
     name: "Carpet Cleaning",
-    link: "carpet-cleaning",
+    link: "carpet-upholstry-cleaning",
   },
 ];
 

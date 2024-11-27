@@ -166,13 +166,13 @@ export const ServiceData = [
   {
     image: CarpetImage,
     text: "Carpet/Upholstry Cleaning",
-    slug: "carpet-pholstry-cleaning",
+    slug: "carpet-upholstry-cleaning",
     icon: CarpetIcon,
   },
   {
     image: VacateImage,
     text: "Vacate/End-of-Lease Cleaning",
-    slug: "vacate-end-of-lease-cleaning",
+    slug: "end-of-lease-cleaning",
     icon: VacateIcon,
   },
   {

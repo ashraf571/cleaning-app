@@ -7,7 +7,6 @@ interface ServiceContentSectionIF {
   paragraphs?: string[];
   paragraphs1?: string[];
   list: string[];
-  splitList: boolean,
   listDash: string[];
   list1?: string[];
   isBold?: boolean;
@@ -23,7 +22,6 @@ const ServiceContentSection = ({
     paragraphs,
     list,
     list1,
-    splitList= false,
     isBold = false,
     listDash,
     paragraphs1,
@@ -42,9 +40,9 @@ const ServiceContentSection = ({
           );
         })}
 
-      {list && list.length > 0 && <ListSection splitList={splitList} isDecore={true} isBold={isBold} list={list} />}
+      {list && list.length > 0 && <ListSection isDecore={true} isBold={isBold} list={list} />}
       {listDash && listDash.length > 0 && (
-        <ListSection splitList={splitList}  isDecore={false} list={listDash} />
+        <ListSection  isDecore={false} list={listDash} />
       )}
 
       {paragraphs1 &&
@@ -58,7 +56,7 @@ const ServiceContentSection = ({
           );
         })}
 
-      {list1 && list1.length > 0 && <ListSection splitList={splitList} isDecore={true} list={list1} />}
+      {list1 && list1.length > 0 && <ListSection isDecore={true} list={list1} />}
     </div>
   );
 };

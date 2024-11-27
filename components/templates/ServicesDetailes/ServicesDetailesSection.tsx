@@ -465,7 +465,7 @@ const ServiceData = [
   {
     //   image: CarpetImage,
     text: "Carpet/Upholstry Cleaning",
-    slug: "carpet-pholstry-cleaning",
+    slug: "carpet-upholstry-cleaning",
     sections: [
       {
         image: carpetImage.src,
@@ -494,8 +494,8 @@ const ServiceData = [
   },
   {
     //   image: VacateImage,
-    text: "Vacate/End-of-Lease Cleaning",
-    slug: "vacate-end-of-lease-cleaning",
+    text: "End of Lease Cleaning",
+    slug: "end-of-lease-cleaning",
     sections: [
       {
         image: leaseOven.src,
@@ -521,7 +521,6 @@ const ServiceData = [
       {
         image: leaseSink.src,
         heading: "Kitchen and Dining Area",
-        splitList: true,
         list: [
           "Cooking Areas: We’ll thoroughly clean the oven, racks, trays, exhaust, range hood, and range hood filters, as well as the stove top.",
           "Sinks: We will clean the sinks and drains, ensuring taps and water spouts are spotless.",
@@ -543,7 +542,6 @@ const ServiceData = [
       {
         image: leaseToilet.src,
         heading: "Bathrooms and Toilets",
-        splitList: true,
         list: [
           "Cupboards: We’ll clean both the inside and outside of all cupboards.",
           "Tile and Grout: We’ll scrub and clean tile and grout thoroughly.",
@@ -615,7 +613,7 @@ const ServiceData = [
 
   {
     //   image: OvenImage,
-    text: "Oven/BBQ/Splashback Cleaning",
+    text: "Oven /BBQ /Splashback Cleaning",
     slug: "oven-bbq-splashback-cleaning",
     sections: [
       {
@@ -630,7 +628,6 @@ const ServiceData = [
       {
         image: officeOutdoor.src,
         heading: "Our Features",
-        splitList: true,
         list: [
           "Owner-Operated: Personal touch and dedication in every service.",
           "Natural Products: We use eco-friendly cleaning solutions for your peace of mind.",
@@ -643,7 +640,6 @@ const ServiceData = [
       {
         image: officeOutdoor.src,
         heading: "Our Comprehensive Oven Cleaning Process",
-        splitList: true,
         list: [
           "Cooking Areas: We’ll thoroughly clean the oven, racks, trays, exhaust, range hood, and range hood filters, as well as the stove top.",
           "Sinks: We will clean the sinks and drains, ensuring taps and water spouts are spotless.",
@@ -665,7 +661,6 @@ const ServiceData = [
       {
         image: officeOutdoor.src,
         heading: "Our Comprehensive BBQ Cleaning Process",
-        splitList: true,
         list: [
           "Initial Inspection: We begin by checking all corners of your BBQ to assess its working condition, and we will inform you of any issues.",
           "Removal of Parts: All removable components are carefully taken off for a thorough clean.",

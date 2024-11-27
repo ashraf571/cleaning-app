@@ -29,9 +29,9 @@ export const retriveHeroAreaBackgroundImage = (pathName: string) : string => {
             return "/Images/tiles-and-grout-cleaning.jpg";
         // case 'Tiles-and-grout-cleaning':
         //     return "/Images/tiles-and-grout-cleaning.jpg";
-        case 'Carpet-cleaning':
+        case 'carpet-upholstry-cleaning':
             return "/Images/carpet-cleaning.jpg";
-        case 'Vacate-end-of-lease-cleaning':
+        case 'end-of-lease-cleaning':
         case 'End-of-lease-cleaning':
             return "/Images/end-of-lease-cleaning.jpg";
         case 'Oven-bbq-splashback-cleaning':
@@ -48,8 +48,8 @@ export const retriveHeroAreaTitle = (slug: string): string => {
     switch (slug) {
         case "Carpit-cleaning":
             return "Carpit Cleaning"
-        case "Carpit-upholstry-cleaning":
-            return "Carpit/Upholstry Cleaning"
+        case "Carpet-upholstry-cleaning":
+            return "Carpet/Upholstry Cleaning"
         case "Strata-cleaning":
             return "Strata Cleaning"
         case "Window-cleaning":
@@ -68,12 +68,12 @@ export const retriveHeroAreaTitle = (slug: string): string => {
             return "Office Cleaning"
         case "Tiles-and-grout-cleaning":
             return "Tiles and Grout Cleaning"
-        case "Vocate-end-of-lease-cleaning":
-            return "Vocate End of Lease Cleaning"
+        case "End-of-lease-cleaning":
+            return "End of Lease Cleaning"
         case "End-of-lease-cleaning":
             return "End of Lease Cleaning"
         case "Oven-bbq-splashback-cleaning":
-            return "Oven BBQ Splashback Cleaning"
+            return "Oven /BBQ /Splashback Cleaning"
         default:
             return slug;
     }

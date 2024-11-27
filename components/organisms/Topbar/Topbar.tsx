@@ -152,8 +152,8 @@ export const ServiceData = [
   { text: "Tiles and Grout Cleaning", link: "tiles-and-grout-cleaning" },
   { text: "Carpet/Upholstery Cleaning", link: "carpet-upholstery-cleaning" },
   {
-    text: "Vacate/End-of-Lease Cleaning",
-    link: "vacate-end-of-lease-cleaning",
+    text: "End-of-Lease Cleaning",
+    link: "end-of-lease-cleaning",
   },
   {
     text: "Oven/BBQ/Splashback Cleaning",
