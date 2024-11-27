@@ -157,6 +157,6 @@ export const ServiceData = [
   },
   {
     text: "Oven/BBQ/Splashback Cleaning",
-    link: "oven-bbq-splashback Cleaning",
+    link: "oven-bbq-splashback-cleaning",
   },
 ];
