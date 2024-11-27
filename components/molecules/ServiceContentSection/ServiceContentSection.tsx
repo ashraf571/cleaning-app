@@ -7,7 +7,8 @@ interface ServiceContentSectionIF {
   paragraphs?: string[];
   paragraphs1?: string[];
   list: string[];
-  listDash?: string[];
+  splitList: boolean,
+  listDash: string[];
   list1?: string[];
   isBold?: boolean;
 }
@@ -22,6 +23,7 @@ const ServiceContentSection = ({
     paragraphs,
     list,
     list1,
+    splitList= false,
     isBold = false,
     listDash,
     paragraphs1,
@@ -33,30 +35,30 @@ const ServiceContentSection = ({
         paragraphs.length > 0 &&
         paragraphs.map((paragraph: string, index: number) => {
           return (
-            <p key={index} className="text-base text-secondryGray font-normal">
+            <p key={index} className="text-base mb-4 text-secondryGray font-normal">
               {" "}
               {paragraph}{" "}
             </p>
           );
         })}
 
-      {list && list.length > 0 && <ListSection isBold={isBold} list={list} />}
+      {list && list.length > 0 && <ListSection splitList={splitList} isDecore={true} isBold={isBold} list={list} />}
       {listDash && listDash.length > 0 && (
-        <ListSection isBold={isBold} list={listDash} />
+        <ListSection splitList={splitList}  isDecore={false} list={listDash} />
       )}
 
       {paragraphs1 &&
         paragraphs1.length > 0 &&
         paragraphs1.map((paragraph: string, index: number) => {
           return (
-            <p key={index} className="text-base text-secondryGray font-normal">
+            <p key={index} className="text-base mb-1 leading-7 text-secondryGray font-normal">
               {" "}
               {paragraph}{" "}
             </p>
           );
         })}
 
-      {list1 && list1.length > 0 && <ListSection list={list1} />}
+      {list1 && list1.length > 0 && <ListSection splitList={splitList} isDecore={true} list={list1} />}
     </div>
   );
 };

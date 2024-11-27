@@ -26,9 +26,9 @@ const ServicesDetailesSection = ({ params }: { params: any }) => {
   };
   return (
     <div className="relative w-full flex justify-center">
-      <div className=" w-full max-w-[1200px] flex flex-col">
+      <div className=" w-full max-w-[1200px] gap-12 flex flex-col">
         <motion.div
-          className="w-full text-center"
+          className="w-full text-center mt-10"
           variants={cardVariants}
           initial="hidden"
           animate="visible"
@@ -39,7 +39,7 @@ const ServicesDetailesSection = ({ params }: { params: any }) => {
         {selectedService.sections.map(
           (section: ServiceContentSectionIF, index: number) => {
             return (
-              <div key={index} className="w-full my-2 flex max-md:flex-col">
+              <div key={index} className="w-full gap-5 flex max-md:flex-col">
                 {index % 2 === 0 ? (
                   <TextThenImageSection seviceCardData={section} />
                 ) : (
@@ -150,7 +150,7 @@ const ServiceData = [
     sections: [
       {
         image: officeCleaningSection1.src,
-        paragraph: [
+        paragraphs: [
           "Domestic and Commercial Cleaning Services is proud to serve businesses and residential properties across South Australia, Sydney, Melbourne, Brisbane, and Adelaide with exceptional cleaning solutions. Our goal is to maintain a pristine environment for your space. We employ skilled and dedicated staff who utilize state-of-the-art commercial cleaning equipment and eco-friendly, plant-based cleaning products to deliver top-notch services. With us handling the cleaning, you can enjoy peace of mind.",
           "We prioritize professionalism and reliability, assessing your space to identify the specific cleaning services you need, ensuring we only provide what's necessary. Remember, we offer a diverse range of commercial cleaning services, and we'll leave you smiling when we finish.",
           "When you sign up, you'll receive a complimentary initial deep cleaning and a 10% discount on all future appointments. We also offer additional savings for regular cleaning services.",
@@ -176,69 +176,69 @@ const ServiceData = [
         image: officeFloar.src,
         heading: "Work Areas, Common Areas, Cubicles, and Private Workspaces",
         listDash: [
-          "Dust and wipe down all reachable surfaces.",
-          "Sanitize all frequently touched points, such as doors and handles.",
-          "Use a glass cleaner to clean all mirrors and glass surfaces.",
-          "Clean all surfaces, including furniture and devices, thoroughly.",
-          "Professionally clean the floors.",
-          "Change out trash bins and remove waste and recyclables.",
-          "Clean the bins to prevent any unpleasant odors.",
-          "Disinfect all surfaces and high-touch areas.",
+          "- Dust and wipe down all reachable surfaces.",
+          "- Sanitize all frequently touched points, such as doors and handles.",
+          "- Use a glass cleaner to clean all mirrors and glass surfaces.",
+          "- Clean all surfaces, including furniture and devices, thoroughly.",
+          "- Professionally clean the floors.",
+          "- Change out trash bins and remove waste and recyclables.",
+          "- Clean the bins to prevent any unpleasant odors.",
+          "- Disinfect all surfaces and high-touch areas.",
         ],
       },
       {
         image: officeToilet.src,
         heading: "Bathrooms",
         listDash: [
-          "Clean, disinfect, and polish sinks.",
-          "Use glass cleaner to clean mirrors and glass surfaces.",
-          "Disinfect and polish countertops.",
-          "Dust and wipe down all accessible areas.",
-          "Replace toilet paper, paper towels, hand soap, and empty bins.",
-          "Ensure hand dryers are functioning properly.",
-          "Clean and disinfect hard surfaces, including floors and tiles.",
-          "Clean the bins.",
+          "- Clean, disinfect, and polish sinks.",
+          "- Use glass cleaner to clean mirrors and glass surfaces.",
+          "- Disinfect and polish countertops.",
+          "- Dust and wipe down all accessible areas.",
+          "- Replace toilet paper, paper towels, hand soap, and empty bins.",
+          "- Ensure hand dryers are functioning properly.",
+          "- Clean and disinfect hard surfaces, including floors and tiles.",
+          "- Clean the bins.",
         ],
       },
       {
         image: officeKitchen.src,
         heading: "Kitchen & Break Rooms",
         listDash: [
-          "Dust and wipe down all accessible areas.",
-          "Clean and sanitize high-touch points, including doors and handles.",
-          "Disinfect all surfaces and frequently touched areas.",
-          "Empty bins, replacing liners, and remove trash and recyclables.",
-          "Use glass cleaner to clean mirrors and glass surfaces.",
-          "Clean and sanitize countertops.",
-          "Thoroughly clean appliances, including the inside and outside of the microwave.",
-          "Clean bins and eliminate any unpleasant odors.",
-          "Disinfect and polish countertops.",
-          "Professionally clean the floors.",
+          "- Dust and wipe down all accessible areas.",
+          "- Clean and sanitize high-touch points, including doors and handles.",
+          "- Disinfect all surfaces and frequently touched areas.",
+          "- Empty bins, replacing liners, and remove trash and recyclables.",
+          "- Use glass cleaner to clean mirrors and glass surfaces.",
+          "- Clean and sanitize countertops.",
+          "- Thoroughly clean appliances, including the inside and outside of the microwave.",
+          "- Clean bins and eliminate any unpleasant odors.",
+          "- Disinfect and polish countertops.",
+          "- Professionally clean the floors.",
         ],
       },
       {
         image: officeHall.src,
         heading: "Reception, Boardrooms, Hallways & Waiting areas",
         listDash: [
-          "Dust and wipe all reachable surfaces.",
-          "Clean and sanitize high-touch areas like doors and handles.",
-          "Disinfect all surfaces and frequently touched points.",
-          "Replace bins and remove trash and recyclables.",
-          "Use glass cleaner to clean mirrors and glass surfaces.",
-          "Professionally clean the floors.",
+          "-  Dust and wipe all reachable surfaces.",
+          "- Clean and sanitize high-touch areas like doors and handles.",
+          "- Disinfect all surfaces and frequently touched points.",
+          "- Replace bins and remove trash and recyclables.",
+          "- Use glass cleaner to clean mirrors and glass surfaces.",
+          "- Professionally clean the floors.",
         ],
       },
       {
         image: officeOutdoor.src,
         heading: "Outdoor Areas",
         listDash: [
-          "Ensure welcome mats are clean and properly positioned.",
-          "Make sure the main or front door is spotless and shining.",
-          "Sweep away leaves and dirt near the front door.",
-          "Maintain the windows and doors, keeping them sparkling, according to prior cleaning discussions.",
-          "Ensure walkways are clear and free from any obstructions.",
-          "Inspect trash cans and bins, ensuring they are free from pests and unpleasant odors.",
-          "We will also clean and maintain your entrance, lift/stairs, and balcony areas.",
+          "- Ensure welcome mats are clean and properly positioned.",
+          "- Make sure the main or front door is spotless and shining.",
+          "- Sweep away leaves and dirt near the front door.",
+          "- Maintain the windows and doors, keeping them sparkling, according to prior cleaning discussions.",
+          "- Ensure walkways are clear and free from any obstructions.",
+          "- Inspect trash cans and bins, ensuring they are free from pests and unpleasant odors.",
+          "- We will also clean and maintain your entrance, lift/stairs, and balcony areas.",
         ],
       },
     ],
@@ -282,7 +282,7 @@ const ServiceData = [
           "Police Checks and Clearances for Working with Children",
           "Additional Hourly Rate Discounts for Daily Cleaning Services",
         ],
-        paragraph: [
+        paragraphs1: [
           "Domestic & Commercial Cleaning Services Adelaide is renowned for offering cost-effective cleaning services for educational institutions. We bring the expertise, knowledge, and experience required to ensure these learning environments remain clean, safe, and well-maintained.",
         ],
       },
@@ -329,7 +329,6 @@ const ServiceData = [
       },
       {
         image: windowCleanShower.src,
-        isBold: true,
         list: [
           "Guaranteed Customer Satisfaction",
           "Dependable, Trustworthy, and Professional",
@@ -355,13 +354,13 @@ const ServiceData = [
           "We collaborate closely with our clients to meet all of their cleaning requirements, following a philosophy of continuous quality improvement. Our services include, but are not limited to:",
         ],
         listDash: [
-          "Routine Building Cleaning",
-          "Hard Floor Maintenance",
-          "Car Park Cleaning",
-          "Window Washing",
-          "Pressure Washing",
-          "Carpet Shampooing",
-          "Exterior Building Cleaning",
+          "- Routine Building Cleaning",
+          "- Hard Floor Maintenance",
+          "- Car Park Cleaning",
+          "- Window Washing",
+          "- Pressure Washing",
+          "- Carpet Shampooing",
+          "- Exterior Building Cleaning",
         ],
       },
     ],
@@ -412,17 +411,17 @@ const ServiceData = [
           "Our high-pressure cleaning services include, but are not limited to:",
         ],
         listDash: [
-          "Brickwash",
-          "Driveway Cleaning",
-          "Patios",
-          "Paved Surfaces",
-          "Decks",
-          "Garage Cleaning",
-          "Exterior Pressure Washing",
-          "Builder’s Clean",
-          "Warehouse Cleaning",
-          "Car Parks",
-          "Tennis/Basketball Courts",
+          "- Brickwash",
+          "- Driveway Cleaning",
+          "- Patios",
+          "- Paved Surfaces",
+          "- Decks",
+          "- Garage Cleaning",
+          "- Exterior Pressure Washing",
+          "- Builder’s Clean",
+          "- Warehouse Cleaning",
+          "- Car Parks",
+          "- Tennis/Basketball Courts",
         ],
       },
     ],
@@ -443,22 +442,22 @@ const ServiceData = [
         heading: "Our Features",
         image: tilesSpunch.src,
         listDash: [
-          "Owner-Operated",
-          "Use of Natural Products",
-          "Cost-Effective Solutions",
-          "Efficient Management",
-          "100% Customer Satisfaction",
-          "Flexible Scheduling",
-          "Attractive Discounts",
+          "- Owner-Operated",
+          "- Use of Natural Products",
+          "- Cost-Effective Solutions",
+          "- Efficient Management",
+          "- 100% Customer Satisfaction",
+          "- Flexible Scheduling",
+          "- Attractive Discounts",
         ],
       },
       {
         heading: "Why is it essential?",
         image: tilesFloor.src,
         listDash: [
-          "Eliminates germs, bacteria, stains, and pollutants",
-          "Extends the lifespan of your floors",
-          "Promotes a healthier living environment",
+          "- Eliminates germs, bacteria, stains, and pollutants",
+          "- Extends the lifespan of your floors",
+          "- Promotes a healthier living environment",
         ],
       },
     ],
@@ -510,18 +509,19 @@ const ServiceData = [
         heading: "Our Features",
         image: officeOutdoor.src,
         listDash: [
-          "Owner-Operated",
-          "Use of Natural Products",
-          "Cost-Effective Solutions",
-          "Efficient Management",
-          "100% Customer Satisfaction",
-          "Flexible Scheduling",
-          "Attractive Discounts",
+          "- Owner-Operated",
+          "- Use of Natural Products",
+          "- Cost-Effective Solutions",
+          "- Efficient Management",
+          "- 100% Customer Satisfaction",
+          "- Flexible Scheduling",
+          "- Attractive Discounts",
         ],
       },
       {
         image: leaseSink.src,
         heading: "Kitchen and Dining Area",
+        splitList: true,
         list: [
           "Cooking Areas: We’ll thoroughly clean the oven, racks, trays, exhaust, range hood, and range hood filters, as well as the stove top.",
           "Sinks: We will clean the sinks and drains, ensuring taps and water spouts are spotless.",
@@ -543,6 +543,7 @@ const ServiceData = [
       {
         image: leaseToilet.src,
         heading: "Bathrooms and Toilets",
+        splitList: true,
         list: [
           "Cupboards: We’ll clean both the inside and outside of all cupboards.",
           "Tile and Grout: We’ll scrub and clean tile and grout thoroughly.",
@@ -629,6 +630,7 @@ const ServiceData = [
       {
         image: officeOutdoor.src,
         heading: "Our Features",
+        splitList: true,
         list: [
           "Owner-Operated: Personal touch and dedication in every service.",
           "Natural Products: We use eco-friendly cleaning solutions for your peace of mind.",
@@ -641,6 +643,7 @@ const ServiceData = [
       {
         image: officeOutdoor.src,
         heading: "Our Comprehensive Oven Cleaning Process",
+        splitList: true,
         list: [
           "Cooking Areas: We’ll thoroughly clean the oven, racks, trays, exhaust, range hood, and range hood filters, as well as the stove top.",
           "Sinks: We will clean the sinks and drains, ensuring taps and water spouts are spotless.",
@@ -662,6 +665,7 @@ const ServiceData = [
       {
         image: officeOutdoor.src,
         heading: "Our Comprehensive BBQ Cleaning Process",
+        splitList: true,
         list: [
           "Initial Inspection: We begin by checking all corners of your BBQ to assess its working condition, and we will inform you of any issues.",
           "Removal of Parts: All removable components are carefully taken off for a thorough clean.",

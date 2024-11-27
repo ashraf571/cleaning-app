@@ -7,6 +7,7 @@ interface ServiceContentSectionIF {
   paragraphs?: string[];
   paragraphs1?: string[];
   list: string[];
+  splitList?: boolean;
   listDash?: string[];
   list1?: string[];
   isBold?: boolean;
@@ -21,7 +22,7 @@ const TextThenImageSection = ({
   const { image, ...rest } = seviceCardData;
   return (
     <>
-      <ServiceContentSection sectionData={rest} />
+      <ServiceContentSection sectionData={rest as any} />
       <ImageSection imageUrl={image} />
     </>
   );
