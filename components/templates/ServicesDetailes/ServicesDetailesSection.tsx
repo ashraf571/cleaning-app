@@ -26,7 +26,7 @@ const ServicesDetailesSection = ({ params }: { params: any }) => {
   };
   return (
     <div className="relative w-full flex justify-center">
-      <div className=" w-full max-w-[1200px] gap-12 flex flex-col">
+      <div className=" px-4 w-full max-w-[1200px] gap-12 flex flex-col">
         <motion.div
           className="w-full text-center mt-10"
           variants={cardVariants}
