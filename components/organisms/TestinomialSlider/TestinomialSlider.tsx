@@ -139,7 +139,7 @@ export const testimonialData = [
   {
     image: testimonial1,
     description:
-      "I’ve used several cleaning services, but PCDC stands out. They always arrive on time, and their attention to detail is impressive. I highly recommend them!",
+      "I've used several cleaning services, but PCDC stands out. They always arrive on time, and their attention to detail is impressive. I highly recommend them!",
     name: "Ram Kaji",
   },
   {

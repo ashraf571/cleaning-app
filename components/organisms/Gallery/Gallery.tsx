@@ -28,7 +28,7 @@ const Gallery = () => {
     <div>
       <div className=" flex flex-col justify-center items-center">
         <div className=" p-12 grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-4 gap-x-1.5 w-full max-w-[1200px]">
-          {ImagesArray.map((image: any, index: number) => {
+          {ImagesArray.map((image: { src: string }, index: number) => {
             return (
               <Image
                 className="w-full"

@@ -20,7 +20,7 @@ const WhoAreWe = () => {
             widely recognized as a comprehensive cleaning provider, thanks to
             the skill, professionalism, and dedication of our expert team. We
             prioritize efficiency and quality, maintaining the high standards
-            we've set for our cleaning services. Offering a variety of
+            we&apos;ve set for our cleaning services. Offering a variety of
             specialized cleaning solutions, we serve homes, businesses, offices,
             and commercial spaces with an environmentally conscious approach.
           </p>
@@ -29,7 +29,7 @@ const WhoAreWe = () => {
             For your convenience, our services are available around the clock,
             including weekends, bank, and public holidays at no extra cost. This
             allows us to fit seamlessly into your schedule. We customize our
-            cleaning solutions to meet each client's specific needs, ensuring a
+            cleaning solutions to meet each client&apos;s specific needs, ensuring a
             hassle-free experience. With strong management, high-quality work, a
             professional approach, and responsive customer service, we guarantee
             complete customer satisfaction.

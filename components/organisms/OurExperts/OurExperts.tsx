@@ -1,13 +1,10 @@
 "use client";
 import { useInView } from "react-intersection-observer";
 import { motion } from "framer-motion";
-
-import Heading from "@/components/atoms/Heading/heading";
 import React from "react";
 
 // expert Images
 import Rosalina from "@/assets/images/expertImages/Rosalina.jpeg";
-import Rosalina2 from "@/assets/images/expertImages/Rosalina2.jpeg";
 import Hilixer from "@/assets/images/expertImages/Hilixer.jpeg";
 import Yokoloko from "@/assets/images/expertImages/Yokoloko.jpeg";
 import Miranda from "@/assets/images/expertImages/Miranda.jpeg";

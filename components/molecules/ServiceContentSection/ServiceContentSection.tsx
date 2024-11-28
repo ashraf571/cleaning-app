@@ -6,8 +6,8 @@ interface ServiceContentSectionIF {
   heading?: string;
   paragraphs?: string[];
   paragraphs1?: string[];
-  list: string[];
-  listDash: string[];
+  list?: string[];
+  listDash?: string[];
   list1?: string[];
   isBold?: boolean;
 }
@@ -33,30 +33,45 @@ const ServiceContentSection = ({
         paragraphs.length > 0 &&
         paragraphs.map((paragraph: string, index: number) => {
           return (
-            <p key={index} className="text-base mb-4 text-secondryGray font-normal">
+            <p
+              key={index}
+              className="text-base mb-4 text-secondryGray font-normal"
+            >
               {" "}
               {paragraph}{" "}
             </p>
           );
         })}
 
-      {list && list.length > 0 && <ListSection isDecore={true} isBold={isBold} list={list} />}
+      {list && list.length > 0 && (
+        <ListSection isDecore={true} isBold={isBold} list={list} />
+      )}
       {listDash && listDash.length > 0 && (
-        <ListSection  isDecore={false} list={listDash} />
+        <ListSection isDecore={false} list={listDash} />
       )}
 
       {paragraphs1 &&
         paragraphs1.length > 0 &&
         paragraphs1.map((paragraph: string, index: number) => {
           return (
-            <p key={index} className="text-base mb-1 leading-7 text-secondryGray font-normal">
+            <p
+              key={index}
+              className="text-base mb-1 leading-7 text-secondryGray font-normal"
+            >
               {" "}
               {paragraph}{" "}
             </p>
           );
         })}
-
-      {list1 && list1.length > 0 && <ListSection isDecore={true} list={list1} />}
+      {list && (
+        <p>
+          When performing a standard house cleaning, we cover the following
+          tasks:
+        </p>
+      )}
+      {list1 && list1.length > 0 && (
+        <ListSection isDecore={true} list={list1} />
+      )}
     </div>
   );
 };

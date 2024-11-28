@@ -2,7 +2,7 @@ import type { Metadata } from "next";
 import localFont from "next/font/local";
 import { Roboto } from "next/font/google";
 import "./globals.css";
-import { cn } from "@/lib/utils";
+// import { cn } from "@/lib/utils";
 import Topbar from "@/components/organisms/Topbar/Topbar";
 import Footer from "@/components/organisms/FooterSection/Footer";
 

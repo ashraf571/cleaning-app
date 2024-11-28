@@ -17,10 +17,8 @@ import GreenCircle from "@/assets/images/HomeSliderImages/greenshape.png";
 
 import Image from "next/image";
 import { Button } from "@/components/ui/button";
-import { useRouter } from "next/navigation";
 
 const HomeCarousel = () => {
-  const router = useRouter();
   return (
     <div className="w-full mb-5 ">
       <Carousel

@@ -19,7 +19,14 @@ const HowWeWork = () => {
     },
   };
 
-  const cardsJson = [
+  interface cardsJsonIF {
+    heading: string,
+    image: string,
+    number: string
+  }
+
+
+  const cardsJson : cardsJsonIF[] = [
     {
       heading: "Book an Appointment",
       image: personOfficeCleaning.src,
@@ -53,10 +60,10 @@ const HowWeWork = () => {
           initial="hidden"
           animate="visible"
         >
-          {cardsJson.map((card: any, index: number) => {
+          {cardsJson.map((card: cardsJsonIF, index: number) => {
             return (
               <motion.div
-                key={card}
+                key={index}
                 className="flex relative justify-center items-center"
                 variants={cardVariants}
               >

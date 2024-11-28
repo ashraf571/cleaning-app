@@ -12,10 +12,10 @@ const IntouchSection = () => {
         <br />
         
         <p className="text-base text-secondryGray text-center">
-          We're dedicated to keeping your space immaculate! If you have
+          We&apos;re dedicated to keeping your space immaculate! If you have
           any questions, need a quote, or wish to book a cleaning service, our
           friendly team is here to help. Contact us via phone, email, or our
-          easy online form. We can't wait to help your home or office sparkle!
+          easy online form. We can&apos;t wait to help your home or office sparkle!
         </p>
         <br />
 
