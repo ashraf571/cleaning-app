@@ -1,7 +1,15 @@
 import React from "react";
 
-const InputField = (props: any) => {
-  const onChangeTest = (e: any) => {
+interface InputFieldIF {
+  type:string,
+  value: string,
+  name: string,
+  placeholderText: string,
+  onChangeTest: ( value: string )=> void
+}
+
+const InputField = (props: InputFieldIF) => {
+  const onChangeTest = (e: {target: { value: string }}) => {
     props.onChangeTest(e.target.value);
   };
   return (

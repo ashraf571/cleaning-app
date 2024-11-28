@@ -38,7 +38,7 @@ const ContactForm = () => {
               name={"name"}
               value={signUpForm.name}
               type={"text"}
-              onChangeTest={(e: any) =>
+              onChangeTest={(e: string) =>
                 setSignUpForm({ ...signUpForm, name: e })
               }
               placeholderText={"Enter your name"}
@@ -47,7 +47,7 @@ const ContactForm = () => {
               name={"email"}
               value={signUpForm.email}
               type={"email"}
-              onChangeTest={(e: any) =>
+              onChangeTest={(e: string) =>
                 setSignUpForm({ ...signUpForm, email: e })
               }
               placeholderText={"Enter your email"}
@@ -56,7 +56,7 @@ const ContactForm = () => {
               name={"subject"}
               value={signUpForm.subject}
               type={"text"}
-              onChangeTest={(e: any) =>
+              onChangeTest={(e: string) =>
                 setSignUpForm({ ...signUpForm, subject: e })
               }
               placeholderText={"Enter your subject"}
@@ -65,7 +65,7 @@ const ContactForm = () => {
             <textarea
               className="text-lg w-full bg-lightGrey pl-10 py-6 font-medium placeholder-cyanblue focus:outline-none"
               rows={10}
-              onChange={(e: any) =>
+              onChange={(e: { target: {value: string} }) =>
                 setSignUpForm({ ...signUpForm, message: e.target.value })
               }
               placeholder="Enter your message "
