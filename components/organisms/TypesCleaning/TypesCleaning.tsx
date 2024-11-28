@@ -20,7 +20,7 @@ const TypesCleaning = () => {
   const { ref, inView } = useInView({ threshold: 0.1, triggerOnce: false });
 
   const CleaningVariants = {
-    hidden: { y: "20vh", opacity: 0 },
+    hidden: { y: "8vh", opacity: 0 },
     visible: {
       y: 0,
       opacity: 1,
@@ -29,7 +29,7 @@ const TypesCleaning = () => {
   };
 
   const CleaningHeadingVariants = {
-    hidden: { y: "-20vh", opacity: 0 },
+    hidden: { y: "-10vh", opacity: 0 },
     visible: {
       y: 0,
       opacity: 1,
@@ -38,7 +38,7 @@ const TypesCleaning = () => {
   };
 
   return (
-    <div className="bg-cloudblue w-full mx-auto max-w-[1200px]">
+    <div className="bg-cloudblue pt-10 w-full mx-auto max-w-[1200px]">
       <div className="mt-10 mx-5 md:mx-10">
         <motion.div
           className="flex justify-center pt-8"

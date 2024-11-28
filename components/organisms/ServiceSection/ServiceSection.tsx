@@ -39,7 +39,7 @@ const ServiceSection = () => {
   const { ref, inView } = useInView({ threshold: 0.1, triggerOnce: false });
 
   const animationVariants = {
-    hidden: { y: "20vh", opacity: 0 },
+    hidden: { y: "10vh", opacity: 0 },
     visible: {
       y: 0,
       opacity: 1,
@@ -48,7 +48,7 @@ const ServiceSection = () => {
   };
 
   const ServiceVariants = {
-    hidden: { y: "-20vh", opacity: 0 },
+    hidden: { y: "-5vh", opacity: 0 },
     visible: {
       y: 0,
       opacity: 1,
@@ -57,7 +57,7 @@ const ServiceSection = () => {
   };
 
   return (
-    <div className="mt-10 md:mx-auto w-full max-w-[1200px] ml-0 px-4">
+    <div className="mt-10 pb-20 md:mx-auto w-full max-w-[1200px] ml-0 px-4 ">
       <motion.div
         className="flex justify-center"
         variants={ServiceVariants}

@@ -102,6 +102,16 @@ const config: Config = {
         md: "calc(var(--radius) - 2px)",
         sm: "calc(var(--radius) - 4px)",
       },
+
+      keyframes: {
+        zoomOut: {
+          "0%": { transform: "scale(0.5)", opacity: "0" },
+          "100%": { transform: "scale(1)", opacity: "1" },
+        },
+      },
+      animation: {
+        zoomOut: "zoomOut 0.6s ease-out forwards",
+      },
     },
   },
   plugins: [require("tailwindcss-animate")],
