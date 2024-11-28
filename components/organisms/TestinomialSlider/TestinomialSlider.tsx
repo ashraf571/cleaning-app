@@ -51,7 +51,7 @@ const TestinomialSlider = () => {
             initial="hidden"
             animate={inView ? "visible" : "hidden"}
           >
-            <h2 className="font-semibold text-2xl md:text-[56px] text-white">
+            <h2 className="font-semibold md:text-[40px] lg:text-5xl xl:text-6xl  text-white">
               What Our Customers Say
             </h2>
           </motion.div>
@@ -101,7 +101,7 @@ const TestinomialSlider = () => {
                         {/* </div> */}
 
                         <div className="flex flex-col items-center  md:items-start gap-5">
-                          <span className="text-xl text-darkocean">
+                          <span className="text-base md:text-xl text-darkocean">
                             {Item.description}
                           </span>
 

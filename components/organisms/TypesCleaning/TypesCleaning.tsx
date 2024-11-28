@@ -43,7 +43,7 @@ const TypesCleaning = () => {
       <div className=" py-10 w-full max-w-[1200px]">
         <div className="">
           <motion.div
-            className="flex text-cyanblue justify-center"
+            className="flex text-center text-cyanblue justify-center"
             ref={ref}
             variants={CleaningHeadingVariants}
             initial="hidden"

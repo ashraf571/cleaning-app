@@ -12,12 +12,13 @@ import Hilixer from "@/assets/images/expertImages/Hilixer.jpeg";
 import Yokoloko from "@/assets/images/expertImages/Yokoloko.jpeg";
 import Miranda from "@/assets/images/expertImages/Miranda.jpeg";
 import Image from "next/image";
+import Heading604840 from "@/components/atoms/Heading60-48-40/Heading60-48-40";
 
 const OurExperts = () => {
   const { ref, inView } = useInView({ threshold: 0.1, triggerOnce: false });
 
   const ExpertHeadingVariants = {
-    hidden: { y: "-20vh", opacity: 0 },
+    hidden: { y: "-10vh", opacity: 0 },
     visible: {
       y: 0,
       opacity: 1,
@@ -26,7 +27,7 @@ const OurExperts = () => {
   };
 
   const ExpertVariants = {
-    hidden: { y: "20vh", opacity: 0 },
+    hidden: { y: "10vh", opacity: 0 },
     visible: {
       y: 0,
       opacity: 1,
@@ -43,7 +44,7 @@ const OurExperts = () => {
         initial="hidden"
         animate={inView ? "visible" : "hidden"}
       >
-        <Heading heading="Our Experts" font="48px" />
+        <Heading604840 heading="Our Experts" />
       </motion.div>
 
       <motion.div
