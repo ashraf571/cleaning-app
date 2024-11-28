@@ -54,12 +54,12 @@ const blogsData = [
     createdAt: "October 6, 2024",
     role: "Admin",
     discription:
-      "In recent years, the demand for eco-friendly products and services has grown tremendously, and for a good reason. Many traditional cleaning products contain harmful chemicals that can negatively affect both our health and the environment. We prioritize the use of eco-friendly, natural cleaning products that not only leave your home or office spotless but also contribute to a healthier planet. Here’s why choosing eco-friendly cleaning services is the best choice for you and the environment.",
+      "In recent years, the demand for eco-friendly products and services has grown tremendously, and for a good reason. Many traditional cleaning products contain harmful chemicals that can negatively affect both our health and the environment. We prioritize the use of eco-friendly, natural cleaning products that not only leave your home or office spotless but also contribute to a healthier planet. Here's why choosing eco-friendly cleaning services is the best choice for you and the environment.",
     image: manOfficeFloor.src,
     numberOfComments: 0,
     noteHeading: "Book Your Eco-Friendly Clean Today!",
     noteDiscription:
-      "Ready to experience the benefits of eco-friendly cleaning? Contact Us today to schedule a cleaning that’s good for your home, your health, and the planet.",
+      "Ready to experience the benefits of eco-friendly cleaning? Contact Us today to schedule a cleaning that's good for your home, your health, and the planet.",
     descriptionList: [
       {
         heading: "1. Safer for Your Health",
@@ -69,7 +69,7 @@ const blogsData = [
       {
         heading: "2. Better for the Environment",
         description:
-          "Eco-friendly cleaning isn’t just better for your health—it’s also better for the planet. Many traditional cleaning products contain chemicals that pollute our waterways and damage ecosystems when they’re washed down the drain. By choosing natural, biodegradable products, we reduce the amount of harmful chemicals entering the environment, helping to protect wildlife and preserve the earth for future generations.",
+          "Eco-friendly cleaning isn't just better for your health—it's also better for the planet. Many traditional cleaning products contain chemicals that pollute our waterways and damage ecosystems when they're washed down the drain. By choosing natural, biodegradable products, we reduce the amount of harmful chemicals entering the environment, helping to protect wildlife and preserve the earth for future generations.",
       },
       {
         heading: "3. Improved Indoor Air Quality",
@@ -84,17 +84,17 @@ const blogsData = [
       {
         heading: "5. Effective Cleaning Without Compromise",
         description:
-          "One of the misconceptions about eco-friendly cleaning products is that they are less effective than conventional cleaners. However, this couldn’t be further from the truth. Natural products are just as powerful at tackling dirt, grime, and bacteria, without the harsh side effects of chemical-based cleaners. Whether you need a deep clean for your kitchen, office, or bathroom, our eco-friendly products deliver sparkling results without compromising your health or the environment.",
+          "One of the misconceptions about eco-friendly cleaning products is that they are less effective than conventional cleaners. However, this couldn't be further from the truth. Natural products are just as powerful at tackling dirt, grime, and bacteria, without the harsh side effects of chemical-based cleaners. Whether you need a deep clean for your kitchen, office, or bathroom, our eco-friendly products deliver sparkling results without compromising your health or the environment.",
       },
       {
         heading: "6. Supporting a Sustainable Future",
         description:
-          "Choosing eco-friendly cleaning services isn’t just a one-time decision—it’s a step toward a more sustainable future. By supporting businesses that prioritize environmentally responsible practices, you’re helping to drive the demand for greener products and services. We’re proud to be part of the movement towards sustainability, offering a service that not only keeps your space clean but also aligns with your eco-conscious values.",
+          "Choosing eco-friendly cleaning services isn't just a one-time decision—it's a step toward a more sustainable future. By supporting businesses that prioritize environmentally responsible practices, you're helping to drive the demand for greener products and services. We're proud to be part of the movement towards sustainability, offering a service that not only keeps your space clean but also aligns with your eco-conscious values.",
       },
       {
         heading: "Conclusion: Clean Spaces, Clean Conscience",
         description:
-          "By choosing eco-friendly cleaning services, you’re making a decision that benefits both your immediate environment and the planet as a whole. We believe in delivering exceptional cleaning results without compromising on safety, health, or environmental responsibility. Whether you’re looking for regular residential cleaning or a one-time deep clean, you can trust our team to provide a service that leaves your space spotless and your conscience clear.",
+          "By choosing eco-friendly cleaning services, you're making a decision that benefits both your immediate environment and the planet as a whole. We believe in delivering exceptional cleaning results without compromising on safety, health, or environmental responsibility. Whether you're looking for regular residential cleaning or a one-time deep clean, you can trust our team to provide a service that leaves your space spotless and your conscience clear.",
       },
     ],
     tags: [],
@@ -106,7 +106,7 @@ const blogsData = [
     createdAt: "October 6, 2024",
     role: "Admin",
     discription:
-      "Every space, whether a home or office, needs a deep clean from time to time. Even with regular cleaning, dust and grime can accumulate in hard-to-reach places, and surfaces can lose their shine. That’s where a professional deep clean comes in.  We specialize in transforming spaces with our thorough and detail-oriented deep cleaning services. Here’s why a deep clean might be exactly what your space needs.",
+      "Every space, whether a home or office, needs a deep clean from time to time. Even with regular cleaning, dust and grime can accumulate in hard-to-reach places, and surfaces can lose their shine. That's where a professional deep clean comes in.  We specialize in transforming spaces with our thorough and detail-oriented deep cleaning services. Here's why a deep clean might be exactly what your space needs.",
     image: careCleaning.src,
     numberOfComments: 0,
     noteHeading: "Schedule Your Deep Clean Today!",
@@ -121,7 +121,7 @@ const blogsData = [
       {
         heading: "2. Improve Indoor Air Quality",
         description:
-          "Dust, allergens, and pollutants build up over time, especially in areas that don’t get cleaned regularly, like carpets, upholstery, and air vents. A deep clean helps improve indoor air quality by removing these hidden particles, making your home or office healthier for everyone. For individuals with allergies or respiratory conditions, this can make a noticeable difference in comfort and well-being.",
+          "Dust, allergens, and pollutants build up over time, especially in areas that don't get cleaned regularly, like carpets, upholstery, and air vents. A deep clean helps improve indoor air quality by removing these hidden particles, making your home or office healthier for everyone. For individuals with allergies or respiratory conditions, this can make a noticeable difference in comfort and well-being.",
       },
       {
         heading: "3. Extend the Life of Furniture and Appliances",
@@ -131,22 +131,22 @@ const blogsData = [
       {
         heading: "4. Prepare for Special Occasions or Seasonal Changes",
         description:
-          "Whether you’re hosting a special event or just preparing for a new season, a deep clean is the perfect way to get your space ready. Spring cleaning, holiday prep, or moving into a new home are all ideal times for a thorough clean. We offer seasonal deep cleaning options that ensure your space is spotless for any occasion. From top to bottom, we’ll make sure every detail is taken care of.",
+          "Whether you're hosting a special event or just preparing for a new season, a deep clean is the perfect way to get your space ready. Spring cleaning, holiday prep, or moving into a new home are all ideal times for a thorough clean. We offer seasonal deep cleaning options that ensure your space is spotless for any occasion. From top to bottom, we'll make sure every detail is taken care of.",
       },
       {
         heading: "5. Stress-Free End of Lease Cleaning",
         description:
-          "Moving out? End of lease cleaning can be stressful, especially with the pressure to meet the standards required to get your deposit back. Our expert team at Safa The Cleaning Services offers detailed end of lease cleaning that covers everything from carpet steam cleaning to oven scrubbing. We’ll help you leave your old place spotless and ensure it’s in the best condition possible, reducing any stress or last-minute cleaning tasks during your move.",
+          "Moving out? End of lease cleaning can be stressful, especially with the pressure to meet the standards required to get your deposit back. Our expert team at Safa The Cleaning Services offers detailed end of lease cleaning that covers everything from carpet steam cleaning to oven scrubbing. We'll help you leave your old place spotless and ensure it's in the best condition possible, reducing any stress or last-minute cleaning tasks during your move.",
       },
       {
         heading: "6. Maintain a Professional Image for Businesses",
         description:
-          "For commercial spaces, a deep clean is more than just a fresh start—it’s essential for maintaining a professional appearance. Whether you run an office, a gym, or a commercial kitchen, first impressions matter. A sparkling, well-maintained space sends the right message to clients and customers, showcasing your attention to detail and commitment to quality .We provide comprehensive commercial deep cleaning services that meet industry standards and ensure a welcoming environment for everyone.",
+          "For commercial spaces, a deep clean is more than just a fresh start—it's essential for maintaining a professional appearance. Whether you run an office, a gym, or a commercial kitchen, first impressions matter. A sparkling, well-maintained space sends the right message to clients and customers, showcasing your attention to detail and commitment to quality .We provide comprehensive commercial deep cleaning services that meet industry standards and ensure a welcoming environment for everyone.",
       },
       {
         heading: "Conclusion: Experience the Power of a Deep Clean",
         description:
-          "If you’re looking to refresh your space, improve air quality, or prepare for a big event, a deep clean is the way to go. We take pride in offering top-tier deep cleaning services tailored to your specific needs. With our use of natural, eco-friendly products and our commitment to customer satisfaction, you can trust us to deliver results that exceed your expectations.",
+          "If you're looking to refresh your space, improve air quality, or prepare for a big event, a deep clean is the way to go. We take pride in offering top-tier deep cleaning services tailored to your specific needs. With our use of natural, eco-friendly products and our commitment to customer satisfaction, you can trust us to deliver results that exceed your expectations.",
       },
     ],
     tags: [],
@@ -159,7 +159,7 @@ const blogsData = [
     createdAt: "July 21, 2020",
     role: "Admin",
     discription:
-      "In today’s fast-paced world, keeping up with cleaning can be a challenge. Between work, family, and social commitments, finding time to keep your home or office spotless can feel impossible. That’s where professional cleaning services like we come in. With expertise and dedication, we make spaces shine so you can focus on what really matters.",
+      "In today's fast-paced world, keeping up with cleaning can be a challenge. Between work, family, and social commitments, finding time to keep your home or office spotless can feel impossible. That's where professional cleaning services like we come in. With expertise and dedication, we make spaces shine so you can focus on what really matters.",
     image: mediumPeople.src,
     numberOfComments: 0,
     noteHeading: "Book Your First Cleaning Today!",
@@ -169,37 +169,37 @@ const blogsData = [
       {
         heading: "1. Save Time and Reduce Stress",
         description:
-          "When you hire a professional cleaning service, you’re buying back precious time. Cleaning takes hours each week, and doing it right requires attention to detail. By letting us take care of it, you free up time for family, work, and relaxation, knowing that your space will be spotless. It’s an easy way to reduce the stress that comes with a cluttered or dirty environment.",
+          "When you hire a professional cleaning service, you're buying back precious time. Cleaning takes hours each week, and doing it right requires attention to detail. By letting us take care of it, you free up time for family, work, and relaxation, knowing that your space will be spotless. It's an easy way to reduce the stress that comes with a cluttered or dirty environment.",
       },
       {
         heading: "2. Customized Cleaning Plans",
         description:
-          "At Safa The Cleaning Services, we understand that every space is unique, and so are your cleaning needs. Whether it’s a deep cleaning session for your home or regular upkeep for your office, we create a customized plan that suits your schedule, budget, and requirements. No more worrying about forgotten corners or inconsistent results—we have you covered.",
+          "At Safa The Cleaning Services, we understand that every space is unique, and so are your cleaning needs. Whether it's a deep cleaning session for your home or regular upkeep for your office, we create a customized plan that suits your schedule, budget, and requirements. No more worrying about forgotten corners or inconsistent results—we have you covered.",
       },
       {
         heading: "3. Eco-Friendly, Safe Products",
         description:
-          "Health and safety are top priorities in any cleaning task. Our team uses only natural, eco-friendly products, ensuring your space is not only clean but also free from harmful chemicals. Whether it’s residential cleaning or commercial kitchen cleaning, we aim to protect both your environment and our planet.",
+          "Health and safety are top priorities in any cleaning task. Our team uses only natural, eco-friendly products, ensuring your space is not only clean but also free from harmful chemicals. Whether it's residential cleaning or commercial kitchen cleaning, we aim to protect both your environment and our planet.",
       },
       {
         heading: "4. Professional Expertise and Detail-Oriented Service",
         description:
-          "Cleaning is more than just wiping down surfaces; it’s about understanding the best methods and tools for each task. From stubborn stains to hard-to-reach spots, our trained professionals know exactly what it takes to achieve a sparkling finish. Our goal is 100% customer satisfaction—so we never leave until every detail is perfect.",
+          "Cleaning is more than just wiping down surfaces; it's about understanding the best methods and tools for each task. From stubborn stains to hard-to-reach spots, our trained professionals know exactly what it takes to achieve a sparkling finish. Our goal is 100% customer satisfaction—so we never leave until every detail is perfect.",
       },
       {
         heading: "5. Affordable and Flexible",
         description:
-          "Worried about cost? We offer flexible, budget-friendly plans to fit your financial situation. Whether it’s a one-time deep clean or regular cleaning sessions, we provide affordable solutions without compromising on quality. And with discounts for new customers or recurring services, keeping your space clean has never been easier.",
+          "Worried about cost? We offer flexible, budget-friendly plans to fit your financial situation. Whether it's a one-time deep clean or regular cleaning sessions, we provide affordable solutions without compromising on quality. And with discounts for new customers or recurring services, keeping your space clean has never been easier.",
       },
       {
         heading: "6. A Cleaner, Healthier Space",
         description:
-          "A clean environment isn’t just visually appealing—it’s healthier, too. Regular cleaning helps reduce dust, allergens, and germs that can accumulate over time, making your home or office a healthier place to be. Whether it’s keeping your gym free from bacteria or ensuring your commercial kitchen passes health inspections, our team will help maintain a space that feels fresh and promotes well-being.",
+          "A clean environment isn't just visually appealing—it's healthier, too. Regular cleaning helps reduce dust, allergens, and germs that can accumulate over time, making your home or office a healthier place to be. Whether it's keeping your gym free from bacteria or ensuring your commercial kitchen passes health inspections, our team will help maintain a space that feels fresh and promotes well-being.",
       },
       {
         heading: "Conclusion: Enjoy a Clean, Comfortable Space",
         description:
-          "Your home or office should be a place of comfort and productivity, not stress and clutter. With Safa The Cleaning Services, you can relax, knowing your space is in the hands of professionals who care about delivering quality and satisfaction every time. From residential to commercial cleaning, pest control, and beyond, we’re here to ensure your space is spotless—every time.",
+          "Your home or office should be a place of comfort and productivity, not stress and clutter. With Safa The Cleaning Services, you can relax, knowing your space is in the hands of professionals who care about delivering quality and satisfaction every time. From residential to commercial cleaning, pest control, and beyond, we're here to ensure your space is spotless—every time.",
       },
     ],
     tags: ["BUSSINESS", "CONSULT", "KEYBOARD", "KIT", "MOUSE", "TECH"],
@@ -222,12 +222,12 @@ const blogsData = [
       {
         heading: "1. Improved Health and Hygiene",
         description:
-          "One of the main reasons regular cleaning is important is for health. Dust, allergens, bacteria, and germs can quickly build up in your environment, leading to allergies, respiratory issues, or the spread of illnesses. Whether you’re dealing with a high-traffic office or a busy home, keeping the space sanitized is crucial. At Safa The Cleaning Services, we use eco-friendly products to ensure a healthy, toxin-free environment for you and your loved ones or colleagues.",
+          "One of the main reasons regular cleaning is important is for health. Dust, allergens, bacteria, and germs can quickly build up in your environment, leading to allergies, respiratory issues, or the spread of illnesses. Whether you're dealing with a high-traffic office or a busy home, keeping the space sanitized is crucial. At Safa The Cleaning Services, we use eco-friendly products to ensure a healthy, toxin-free environment for you and your loved ones or colleagues.",
       },
       {
         heading: "2. Enhanced Productivity",
         description:
-          "A clean environment isn’t just about looks—it directly impacts your mood and productivity. Studies show that cluttered, dirty spaces can cause stress and distract you from tasks. In offices, a well-maintained environment promotes efficiency and keeps employees motivated. When your workspace or living space is fresh and organized, you’ll be amazed at how much more productive and focused you feel. Let our team at Safa The Cleaning Services take care of the cleaning, so you can focus on what matters most.",
+          "A clean environment isn't just about looks—it directly impacts your mood and productivity. Studies show that cluttered, dirty spaces can cause stress and distract you from tasks. In offices, a well-maintained environment promotes efficiency and keeps employees motivated. When your workspace or living space is fresh and organized, you'll be amazed at how much more productive and focused you feel. Let our team at Safa The Cleaning Services take care of the cleaning, so you can focus on what matters most.",
       },
       {
         heading: "3. Longer-Lasting Furniture and Surfaces",
@@ -237,7 +237,7 @@ const blogsData = [
       {
         heading: "4. A Stress-Free, Comfortable Environment",
         description:
-          "Walking into a clean, fresh space instantly makes you feel better. The stress of clutter or mess can be overwhelming, but with regular cleaning, you can enjoy peace of mind knowing that your environment is always under control. Whether you’re coming home after a long day or welcoming clients to your office, a clean space creates a positive atmosphere that everyone can appreciate.",
+          "Walking into a clean, fresh space instantly makes you feel better. The stress of clutter or mess can be overwhelming, but with regular cleaning, you can enjoy peace of mind knowing that your environment is always under control. Whether you're coming home after a long day or welcoming clients to your office, a clean space creates a positive atmosphere that everyone can appreciate.",
       },
       {
         heading: "5. Cost-Effective in the Long Run",
@@ -252,7 +252,7 @@ const blogsData = [
       {
         heading: "Conclusion: Stay Consistent with Your Cleaning Routine",
         description:
-          "Consistency is key when it comes to maintaining a clean and healthy space. With regular professional cleaning, you can enjoy a home or office that’s always fresh, inviting, and hygienic. At Safa The Cleaning Services, we’re committed to providing affordable, high-quality cleaning that meets your unique needs. Let us take the hassle out of cleaning, so you can enjoy a space that’s always at its best.",
+          "Consistency is key when it comes to maintaining a clean and healthy space. With regular professional cleaning, you can enjoy a home or office that's always fresh, inviting, and hygienic. At Safa The Cleaning Services, we're committed to providing affordable, high-quality cleaning that meets your unique needs. Let us take the hassle out of cleaning, so you can enjoy a space that's always at its best.",
       },
     ],
     tags: ["CLEAN", "ROOM", "UX"],

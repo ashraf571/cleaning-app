@@ -1,7 +1,6 @@
 "use client";
 import React from "react";
 import { motion } from "framer-motion";
-import { FaCheckCircle } from "react-icons/fa";
 import { FaCircleCheck } from "react-icons/fa6";
 
 const OurMission = () => {
@@ -15,7 +14,13 @@ const OurMission = () => {
     },
   };
 
-  const cardsJson = [
+  interface cardsJsonIF {
+    heading: string,
+    paragraph: string,
+    list: string[]
+  }
+
+  const cardsJson : cardsJsonIF[] = [
     {
       heading: "Our Vision",
       paragraph:
@@ -53,9 +58,9 @@ const OurMission = () => {
           initial="hidden"
           animate="visible"
         >
-          {cardsJson.map((card: any, index: number) => (
+          {cardsJson.map((card: cardsJsonIF, index: number) => (
             <motion.div
-              key={card}
+              key={index}
               className={` flex items-center p-6 ${
                 index === 0
                   ? "bg-primaryYellow text-cyanblue"
@@ -73,7 +78,7 @@ const OurMission = () => {
 
                 <div className="mt-35">
                   <ul className="">
-                    {card.list.map((item: any, index: number) => {
+                    {card.list.map((item: string, index: number) => {
                       return (
                         <li key={index} className="flex mb-2 max-lg:justify-center max-lg:items-center">
                           <FaCircleCheck color="#ffffff" size={30} />

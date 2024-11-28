@@ -2,24 +2,29 @@ import React from "react";
 import { motion } from "framer-motion";
 
 import Heading6040 from "@/components/atoms/Heading60-40-32/Heading60-40-32";
-import domesticCleaning from "@/assets/images/serviceSectionImage/domistic-cleaning.jpg";
 
 interface ServiceContentSectionIF {
   heading?: string;
   paragraphs?: string[];
   paragraphs1?: string[];
-  list: string[];
+  list?: string[];
   listDash?: string[];
   list1?: string[];
   isBold?: boolean;
   image: string;
 }
 
-const ServicesDetailesSection = ({ params }: { params: any }) => {
-  const selectedService: any = ServiceData.find(
-    (service: any) => service.slug === params.slug
-  );
+interface ServiceDataIF {
+  sections: ServiceContentSectionIF[];
+  text: string;
+  slug: string;
+}
 
+const ServicesDetailesSection = ({ params }: { params: any }) => {
+  const selectedService: ServiceDataIF | undefined = ServiceData.find(
+    (service: ServiceDataIF) => service.slug === params.slug
+  );
+  if(!selectedService) return
   const cardVariants = {
     hidden: { opacity: 0, y: 50 },
     visible: { opacity: 1, y: 0, transition: { duration: 0.5 } },
@@ -90,17 +95,17 @@ import leaseGerage from "@/assets/images/serviceSectionImage/lease-gerage.jpeg";
 import TextThenImageSection from "@/components/organisms/TextThenImageSection/TextThenImageSection";
 import ImageThenTextSection from "@/components/organisms/ImageThenTextSection/ImageThenTextSection";
 
-const ServiceData = [
+const ServiceData : ServiceDataIF[] = [
   {
     text: "Commercial Cleaning",
     slug: "commercial-cleaning",
     sections: [
       {
         image: commercialCleaningImage.src,
-        pararaphs: [
+        paragraphs: [
           "Domestic and Commercial Cleaning Services is proud to serve businesses and residential properties across South Australia, Sydney, Melbourne, Brisbane, and Adelaide with exceptional cleaning solutions. Our goal is to maintain a pristine environment for your space. We employ skilled and dedicated staff who utilize state-of-the-art commercial cleaning equipment and eco-friendly, plant-based cleaning products to deliver top-notch services. With us handling the cleaning, you can enjoy peace of mind.",
           "We prioritize professionalism and reliability, assessing your space to identify the specific cleaning services you need, ensuring we only provide what’s necessary. Remember, we offer a diverse range of commercial cleaning services, and we’ll leave you smiling when we finish.",
-          "When you sign up, you’ll receive a complimentary initial deep cleaning and a 10% discount on all future appointments. We also offer additional savings for regular cleaning services.",
+          `When you sign up, you'll receive a complimentary initial deep cleaning and a 10% discount on all future appointments. We also offer additional savings for regular cleaning services.`,
         ],
       },
     ],
@@ -108,7 +113,6 @@ const ServiceData = [
   {
     text: "Domestic Cleaning",
     slug: "domestic-cleaning",
-    listDecore: "dote",
     sections: [
       {
         paragraphs: [
@@ -129,8 +133,8 @@ const ServiceData = [
           "Move-In Cleaning",
           "Blind Cleaning",
         ],
-        list2Heading:
-          "When performing a standard house cleaning, we cover the following tasks:",
+        // list2Heading:
+        //   "When performing a standard house cleaning, we cover the following tasks:",
         list1: [
           "Begin with dusting",
           "Wipe down surfaces",

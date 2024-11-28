@@ -6,13 +6,22 @@ interface ServiceContentSectionIF {
   heading?: string;
   paragraphs?: string[];
   paragraphs1?: string[];
-  list: string[];
+  list?: string[];
   listDash?: string[];
   list1?: string[];
   isBold?: boolean;
   image: string;
 }
 
+interface ServiceContentIF {
+  heading?: string;
+  paragraphs?: string[];
+  paragraphs1?: string[];
+  list?: string[];
+  listDash?: string[];
+  list1?: string[];
+  isBold?: boolean;
+}
 const ImageThenTextSection = ({
   seviceCardData,
 }: {
@@ -22,7 +31,7 @@ const ImageThenTextSection = ({
   return (
     <>
       <ImageSection imageUrl={image} />
-      <ServiceContentSection sectionData={rest as any} />
+      <ServiceContentSection sectionData={rest as ServiceContentIF} />
     </>
   );
 };
