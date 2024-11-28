@@ -2,7 +2,6 @@ import React from "react";
 import { motion } from "framer-motion";
 
 import Heading6040 from "@/components/atoms/Heading60-40-32/Heading60-40-32";
-import domesticCleaning from "@/assets/images/serviceSectionImage/domistic-cleaning.jpg";
 
 interface ServiceContentSectionIF {
   heading?: string;

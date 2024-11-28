@@ -19,8 +19,6 @@ const Topbar = () => {
     setServicesOpen(!servicesOpen);
   };
 
-  console.log("value is", servicesOpen);
-
   return (
     <div className="mx-auto w-full max-w-[1200px]">
       <div
