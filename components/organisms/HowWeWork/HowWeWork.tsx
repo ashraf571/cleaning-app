@@ -43,7 +43,7 @@ const HowWeWork = () => {
   };
   return (
     <div className=" text-darkGreen relative w-full">
-      <div className="p-6 flex flex-col justify-center items-center">
+      <div className="px-12 flex flex-col justify-center items-center">
         <div className="my-8 pb-8">
           <Heading60 heading="How We Work !" />
         </div>

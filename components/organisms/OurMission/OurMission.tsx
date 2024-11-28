@@ -46,7 +46,7 @@ const OurMission = () => {
   };
   return (
     <div className="relative w-full">
-      <div className="p-6 flex justify-center items-center">
+      <div className="p-12 flex justify-center items-center">
         <motion.div
           className=" grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8 w-full max-w-[1200px]"
           variants={containerVariants}

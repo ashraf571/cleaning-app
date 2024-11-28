@@ -26,8 +26,8 @@ import Image from "next/image";
 const Gallery = () => {
   return (
     <div>
-      <div className="p-6 flex flex-col justify-center items-center">
-        <div className=" p-10 grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-4 gap-x-1.5 w-full max-w-[1200px]">
+      <div className=" flex flex-col justify-center items-center">
+        <div className=" p-12 grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-4 gap-x-1.5 w-full max-w-[1200px]">
           {ImagesArray.map((image: any, index: number) => {
             return (
               <Image

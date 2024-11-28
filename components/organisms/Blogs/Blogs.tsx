@@ -26,8 +26,8 @@ const Blogs = () => {
 
   return (
     <div className="w-full flex justify-center items-center">
-      <div className=" max-w-[1200px] py-16 w-full flex justify-center items-center ">
-        <div className="flex text-cyanblue w-full max-md:w-full max-xl:w-[90%] max-lg:flex-col gap-x-4 mx-5 md:mx-8 ">
+      <div className="p-12 max-w-[1200px] w-full flex justify-center items-center ">
+        <div className="flex text-cyanblue w-full max-md:w-full max-xl:w-[90%] max-lg:flex-col gap-x-4 ">
           {blogId > 0 && Object.keys(blog).length > 0 ?  (
             <BlogDetailSection
               blog={blog}

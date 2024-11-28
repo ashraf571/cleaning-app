@@ -4,7 +4,7 @@ import React from "react";
 const IntouchSection = () => {
   return (
     <div className="w-full flex justify-center items-center">
-      <div className=" max-w-[1200px] p-8 flex flex-col justify-center items-center">
+      <div className=" max-w-[1200px] p-12 flex flex-col justify-center items-center">
         <br />
 
         <Heading604840 heading="Get In Touch With Us" />
