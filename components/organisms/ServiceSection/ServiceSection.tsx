@@ -57,7 +57,7 @@ const ServiceSection = () => {
   };
 
   return (
-    <div className="mt-10 pb-20 md:mx-auto w-full max-w-[1200px] ml-0 px-4 ">
+    <div className="mt-10 pb-20 md:mx-auto w-full max-w-[1200px] ml-0 px-4">
       <motion.div
         className="flex justify-center"
         variants={ServiceVariants}

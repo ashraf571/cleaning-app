@@ -5,7 +5,7 @@ import Link from "next/link";
 const ContactUs = () => {
   return (
     <div className="">
-      <div className="flex flex-col gap-5">
+      <div className="flex flex-col gap-7">
         <div className="flex gap-5">
           <div className="w-1 bg-cyanblue"></div>
           <h2 className="font-bold text-2xl">Contact Us</h2>
@@ -44,9 +44,16 @@ const ContactUs = () => {
           </div>
           <div className="flex group">
             <span className="text-cyanblue font-semibold">E:</span>
-            <span className="font-semibold group-hover:text-skyblue">
+
+            <Link
+              href="https://mail.google.com/mail/u/0/#compose"
+              target="blank"
+              rel="noopener noreferrer"
+              className="font-semibold group-hover:text-skyblue"
+            >
+              {" "}
               info@cleaningservices.com.au
-            </span>
+            </Link>
           </div>
         </div>
 

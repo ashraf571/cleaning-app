@@ -1,24 +1,40 @@
 "use client";
+
 import Image from "next/image";
 import React from "react";
+import footerImage from "@/assets/images/FooterImages/footer-1-bg-1.jpeg";
 import { ChevronRight } from "lucide-react";
 import Link from "next/link";
 import ContactUs from "./ContactUs";
 
 const Footer = () => {
-
   return (
-    <div className="mt-20 bg-darkcyan">
-      <div className="relative text-white  bg-opacity-90 px-5 md:px-10 pt-10 flex flex-col gap-9 mx-auto w-full max-w-[1200px]">
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-5 md:gap-0">
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-5 md:gap-0">
-            <div className="flex flex-col gap-5">
-              <div className="flex gap-5">
-                <div className="w-1 bg-cyanblue"></div>
+    <div className="relative bg-darkcyan bg-opacity-90 mt-20">
+      {/* Background Image */}
+      <div className="absolute inset-0 -z-10">
+        <Image
+          src={footerImage}
+          alt="Footer Background"
+          layout="fill" // Ensures it fills the parent container
+          objectFit="cover" // Ensures it covers the container
+          quality={100}
+          priority // Optimize image for above-the-fold content
+        />
+      </div>
+
+      {/* Content Container */}
+      <div className="relative z-10 mx-auto max-w-[1200px] px-4 md:px-2 py-12 text-white ">
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-10">
+          {/* Services and Quick Links */}
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
+            {/* Services */}
+            <div className="flex flex-col gap-6">
+              <div className="flex items-center gap-3">
+                <div className="w-1 bg-cyanblue h-full"></div>
                 <h2 className="font-bold text-2xl">Services</h2>
               </div>
 
-              <div className="mt-4 flex flex-col gap-5">
+              <div className="mt-4 flex flex-col gap-7">
                 {footerServices.map((Item : { link: string, name: string }, index: number) => {
                   return (
                     <Link href={Item.link} key={index} className="">
@@ -34,15 +50,14 @@ const Footer = () => {
               </div>
             </div>
 
-            {/* quick links */}
-
-            <div className="flex flex-col gap-5">
-              <div className="flex gap-5">
-                <div className="w-1 bg-cyanblue"></div>
+            {/* Quick Links */}
+            <div className="flex flex-col gap-6">
+              <div className="flex items-center gap-3">
+                <div className="w-1 bg-cyanblue h-full"></div>
                 <h2 className="font-bold text-2xl">Quick Links</h2>
               </div>
 
-              <div className="mt-4 flex flex-col gap-5">
+              <div className="mt-4 flex flex-col gap-7">
                 {QuickLinks.map((Item: {link: string, name: string}, index: number) => {
                   return (
                     <Link href={Item.link} key={index} className="">
@@ -59,19 +74,18 @@ const Footer = () => {
             </div>
           </div>
 
+          {/* Contact Us */}
           <div>
             <ContactUs />
           </div>
         </div>
 
-        <hr className="h-2 w-full" />
-
-        <div className="flex justify-center items-center ">
+        {/* Footer Bottom */}
+        <div className="mt-12 border-t border-white/30 pt-6 text-center">
           <span className="text-white font-semibold">
             Copyright © 2024 PCDC Services | Designed by Nexsewa
           </span>
         </div>
-        <div className="bg-red400 h-[2px]"></div>
       </div>
     </div>
   );

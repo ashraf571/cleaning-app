@@ -11,11 +11,11 @@ const AboutSection = () => {
   return (
     <div
       ref={ref}
-      className={`grid sm:grid-cols-1 md:grid-cols-2 gap-5 md:gap-14 mx-4 ml-0 py-5 w-full md:mx-auto max-w-[1200px] transform transition-all duration-700 ${
+      className={`grid md:grid-cols-1 lg:grid-cols-2 gap-5 md:gap-10 mx-4 ml-0 py-5 w-full md:mx-auto max-w-[1200px] transform transition-all duration-700 ${
         inView ? "animate-zoomOut" : "scale-50 opacity-0"
       }`}
     >
-      <div className="px-4">
+      <div className="flex justify-center max-w-[full] ">
         <AboutImagesContainer />
       </div>
       <AboutContentContainer />
