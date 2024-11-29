@@ -51,7 +51,7 @@ const Blogs = () => {
   useEffect(() => {
 
     if(blogId) {
-      let selectedBlog : BlogsData | undefined = blogsData.find((blog: BlogsData) => blog.blogId === blogId)
+      const selectedBlog : BlogsData | undefined = blogsData.find((blog: BlogsData) => blog.blogId === blogId)
       if(selectedBlog) {setBlog(selectedBlog)}
     }
   },[blogId])

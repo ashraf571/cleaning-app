@@ -20,7 +20,11 @@ interface ServiceDataIF {
   slug: string;
 }
 
-const ServicesDetailesSection = ({ params }: { params: any }) => {
+interface ParamsIF {
+  slug: string
+}
+
+const ServicesDetailesSection = ({ params }: { params: ParamsIF }) => {
   const selectedService: ServiceDataIF | undefined = ServiceData.find(
     (service: ServiceDataIF) => service.slug === params.slug
   );

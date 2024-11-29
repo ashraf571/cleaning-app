@@ -12,8 +12,8 @@ const ContactForm = () => {
     message: "",
   });
 
-  const submitForm = (e: any) => {
-    e.preventDefault();
+  const submitForm = () => {
+    // e.preventDefault();
     const { name, email, subject, message } = signUpForm;
     if (!name || !email || !subject || !message) {
       console.log("Please fill all the required field", signUpForm);

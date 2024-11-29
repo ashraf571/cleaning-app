@@ -7,6 +7,13 @@ import cardCleanerLivingRoom from "@/assets/images/blogs/card-cleanerLivingRoom.
 import cardCareCleaning from "@/assets/images/blogs/card-careCleaning.jpg";
 import cardMediumPeople from "@/assets/images/blogs/card-mediumPeople.jpg";
 
+interface BlogsData {
+  blogId: number,
+  cardHeading: string,
+  createdAt: string,
+  cardImage: string,
+}
+
 const BlogsNavigationSection = ({ onSelectblog }: { onSelectblog: (id: number)=> void }) => {
   return (
     <div className="w-full lg:w-[35%]">
@@ -15,7 +22,7 @@ const BlogsNavigationSection = ({ onSelectblog }: { onSelectblog: (id: number)=>
           Recent Post
         </span>
         <div className="flex w-full pt-5 flex-col gap-x-4">
-          {blogsData.map((blog: any, index: number) => {
+          {blogsData.map((blog: BlogsData, index: number) => {
             return (
               <div className="flex pb-4 cursor-pointer" key={index} onClick={() => onSelectblog(blog.blogId) }>
                 <BlogNavigationCard
@@ -32,7 +39,7 @@ const BlogsNavigationSection = ({ onSelectblog }: { onSelectblog: (id: number)=>
   );
 };
 
-const blogsData = [
+const blogsData : BlogsData[] = [
   {
     blogId: 4,
     cardHeading: "The Benefits of Regular Cleaning: Why",

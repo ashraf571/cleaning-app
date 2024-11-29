@@ -18,7 +18,7 @@ interface BlogsData {
 const BlogsMapSection = ({ blogs , onSelectblog}: { blogs: BlogsData[], onSelectblog: (id: number) => void  }) => {
   return (
     <div className=" flex flex-col w-full lg:w-[65%] gap-12 ">
-      {blogs.map((blog: any, index: number) => {
+      {blogs.map((blog: BlogsData, index: number) => {
         return (
           <div key={index} className=" flex flex-col w-full border-2 border-lightGray20">
             <Image
