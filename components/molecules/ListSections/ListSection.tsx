@@ -5,10 +5,10 @@ const ListSection = ({list, isBold, isDecore}:ListSectionIF) => {
     <ul className={`${isBold ? " font-bold ":"font-normal"}`} >
         {list.map((item: string, index: number) => {
           let listData = item
-          let checkIndex = listData.indexOf(":")
+          const checkIndex = listData.indexOf(":")
           let spanList = ""
           if(checkIndex > -1) {
-            let [ partOne, partTwo ] = listData.split(':')
+            const [ partOne, partTwo ] = listData.split(':')
             listData = partTwo
             spanList= partOne
           }

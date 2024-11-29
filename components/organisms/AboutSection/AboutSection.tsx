@@ -1,6 +1,6 @@
 "use client";
 
-import React, { useState } from "react";
+import React from "react";
 import { useInView } from "react-intersection-observer";
 import AboutImagesContainer from "@/components/molecules/AboutImagesContainer/AboutImagesContainer";
 import AboutContentContainer from "@/components/molecules/AboutContentContainer/AboutContentContainer";

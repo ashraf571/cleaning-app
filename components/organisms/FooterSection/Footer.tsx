@@ -1,24 +1,11 @@
 "use client";
 import Image from "next/image";
 import React from "react";
-import footerImage from "@/assets/images/FooterImages/footer-1-bg-1.jpeg";
-import { ChevronRight, ChevronUp } from "lucide-react";
+import { ChevronRight } from "lucide-react";
 import Link from "next/link";
 import ContactUs from "./ContactUs";
-import { useInView } from "react-intersection-observer";
-import { motion } from "framer-motion";
 
 const Footer = () => {
-  const { ref, inView } = useInView({ threshold: 0.1, triggerOnce: false });
-
-  const itemVariants = {
-    hidden: { y: "-100vh", opacity: 0 },
-    visible: {
-      y: 0,
-      opacity: 1,
-      transition: { duration: 1, ease: "easeInOut" },
-    },
-  };
 
   return (
     <div className="mt-20 bg-darkcyan">
@@ -32,7 +19,7 @@ const Footer = () => {
               </div>
 
               <div className="mt-4 flex flex-col gap-5">
-                {footerServices.map((Item, index) => {
+                {footerServices.map((Item : { link: string, name: string }, index: number) => {
                   return (
                     <Link href={Item.link} key={index} className="">
                       <div className="flex items-center gap-2">
@@ -56,7 +43,7 @@ const Footer = () => {
               </div>
 
               <div className="mt-4 flex flex-col gap-5">
-                {QuickLinks.map((Item, index) => {
+                {QuickLinks.map((Item: {link: string, name: string}, index: number) => {
                   return (
                     <Link href={Item.link} key={index} className="">
                       <div className="flex items-center gap-2">

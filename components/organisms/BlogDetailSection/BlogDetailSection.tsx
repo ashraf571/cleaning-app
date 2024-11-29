@@ -2,7 +2,28 @@ import BlogsBasicInfo from "@/components/molecules/BlogsBasicInfo/BlogsBasicInfo
 import Image from "next/image";
 import React from "react";
 
-const BlogDetailSection = ({ blog }: { blog: any }) => {
+interface BlogsData {
+  blogId: number,
+  heading: string,
+  auther: string,
+  createdAt: string,
+  role: string,
+  discription: string,
+  image: string,
+  numberOfComments: number,
+  noteHeading: string,
+  noteDiscription: string,
+  descriptionList: DescriptionListIF[],
+  tags: string[]
+}
+
+interface DescriptionListIF {
+  heading: string,
+  description: string 
+}
+
+
+const BlogDetailSection = ({ blog }: { blog: BlogsData }) => {
   return (
     <div className=" flex flex-col w-full lg:w-[65%] gap-12 ">
       <div className=" flex flex-col w-full">
@@ -17,7 +38,7 @@ const BlogDetailSection = ({ blog }: { blog: any }) => {
           <BlogsBasicInfo date={blog.createdAt} role={blog.role} />
           <h2 className="lg:text-4xl text-3xl font-bold "> {blog.heading} </h2>
           <p> {blog.discription} </p>
-          {blog.descriptionList.map((details: any, index: number) => {
+          {blog.descriptionList.map((details: DescriptionListIF, index: number) => {
             return (
               <div className="pt-1" key={index}>
                 <h2 className="font-bold text-3xl "> {details.heading} </h2>

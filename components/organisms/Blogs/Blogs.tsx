@@ -11,15 +11,48 @@ import BlogsNavigationSection from "../BlogsNavigationSection/BlogsNavigationSec
 import BlogsMapSection from "../BlogsMapSection/BlogsMapSection";
 import BlogDetailSection from "../BlogDetailSection/BlogDetailSection";
 
+interface BlogsData {
+  blogId: number,
+  heading: string,
+  auther: string,
+  createdAt: string,
+  role: string,
+  discription: string,
+  image: string,
+  numberOfComments: number,
+  noteHeading: string,
+  noteDiscription: string,
+  descriptionList: DescriptionListIF[],
+  tags: string[]
+}
+
+interface DescriptionListIF {
+  heading: string,
+  description: string 
+}
+
 const Blogs = () => {
   const [blogId, setBlogId] = useState(0);
-  const [blog, setBlog] = useState<any>({})
+  const [blog, setBlog] = useState<BlogsData>({
+    blogId: 0,
+  heading: "",
+  auther: "",
+  createdAt: "",
+  role: "",
+  discription: "",
+  image: "",
+  numberOfComments: 0,
+  noteHeading: "",
+  noteDiscription: "",
+  descriptionList: [],
+  tags:[]
+  })
 
   useEffect(() => {
 
     if(blogId) {
-      let selectedBlog = blogsData.find((blog: any) => blog.blogId === blogId)
-      setBlog(selectedBlog)
+      let selectedBlog : BlogsData | undefined = blogsData.find((blog: BlogsData) => blog.blogId === blogId)
+      if(selectedBlog) {setBlog(selectedBlog)}
     }
   },[blogId])
 
@@ -45,7 +78,7 @@ const Blogs = () => {
   );
 };
 
-const blogsData = [
+const blogsData : BlogsData[] = [
   {
     blogId: 1,
     heading:

@@ -3,7 +3,19 @@ import BlogsBasicInfo from "@/components/molecules/BlogsBasicInfo/BlogsBasicInfo
 import Image from "next/image";
 import React from "react";
 
-const BlogsMapSection = ({ blogs , onSelectblog}: { blogs: any, onSelectblog: (id: number) => void  }) => {
+interface BlogsData {
+  blogId: number,
+  heading: string,
+  auther: string,
+  createdAt: string,
+  role: string,
+  discription: string,
+  image: string,
+  numberOfComments: number,
+}
+
+
+const BlogsMapSection = ({ blogs , onSelectblog}: { blogs: BlogsData[], onSelectblog: (id: number) => void  }) => {
   return (
     <div className=" flex flex-col w-full lg:w-[65%] gap-12 ">
       {blogs.map((blog: any, index: number) => {
