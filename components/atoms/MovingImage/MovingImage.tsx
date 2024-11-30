@@ -1,21 +1,22 @@
-'use client'
+"use client";
 
 import React from "react";
 import { motion } from "framer-motion";
 // import Tilt from "react-parallax-tilt";
-import {Tilt}  from "react-tilt";
+import { Tilt } from "react-tilt";
 
 const MovingImage = ({ image }: { image: string }) => {
   return (
-    <div className="h-[350px] w-[320px]">
-      <Tilt options={{ max: 25, scale: 1, speed: 400 }}
+    <div className=" max-w-[320px]">
+      <Tilt
+        options={{ max: 25, scale: 1, speed: 400 }}
         // tiltMaxAngleX={5}
         // tiltMaxAngleY={5}
         // scale={1}
         // transitionSpeed={100}
         style={{
           width: "570px",
-          height: "855px",
+          // height: "855px",
           // borderRadius: "20px",
           // boxShadow: "0px 4px 10px rgba(0, 0, 0, 0.1)",
           overflow: "hidden",
@@ -33,9 +34,9 @@ const MovingImage = ({ image }: { image: string }) => {
             boxShadow: "0px 4px 10px rgba(0, 0, 0, 0.1)",
             mixBlendMode: "luminosity",
             // filter:
-              //   isTapped
-              //     ? "grayscale(0%) saturate(150%)"
-              // "grayscale(100%)",
+            //   isTapped
+            //     ? "grayscale(0%) saturate(150%)"
+            // "grayscale(100%)",
           }}
           initial={{ opacity: 0, scale: 0.9, y: 50 }}
           animate={{ opacity: 1, scale: 1, y: 0 }}

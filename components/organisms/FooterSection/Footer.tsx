@@ -28,25 +28,27 @@ const Footer = () => {
           {/* Services and Quick Links */}
           <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
             {/* Services */}
-            <div className="flex flex-col gap-6">
+            <div className="flex flex-col gap-6 ">
               <div className="flex items-center gap-3">
                 <div className="w-1 bg-cyanblue h-full"></div>
                 <h2 className="font-bold text-2xl">Services</h2>
               </div>
 
               <div className="mt-4 flex flex-col gap-7">
-                {footerServices.map((Item : { link: string, name: string }, index: number) => {
-                  return (
-                    <Link href={Item.link} key={index} className="">
-                      <div className="flex items-center gap-2">
-                        <ChevronRight size={16} className="text-lightblue" />
-                        <span className="font-semibold hover:text-lightblue">
-                          {Item.name}
-                        </span>
-                      </div>
-                    </Link>
-                  );
-                })}
+                {footerServices.map(
+                  (Item: { link: string; name: string }, index: number) => {
+                    return (
+                      <Link href={Item.link} key={index} className="">
+                        <div className="flex items-center gap-2">
+                          <ChevronRight size={16} className="text-lightblue" />
+                          <span className="font-semibold hover:text-lightblue">
+                            {Item.name}
+                          </span>
+                        </div>
+                      </Link>
+                    );
+                  }
+                )}
               </div>
             </div>
 
@@ -57,19 +59,21 @@ const Footer = () => {
                 <h2 className="font-bold text-2xl">Quick Links</h2>
               </div>
 
-              <div className="mt-4 flex flex-col gap-7">
-                {QuickLinks.map((Item: {link: string, name: string}, index: number) => {
-                  return (
-                    <Link href={Item.link} key={index} className="">
-                      <div className="flex items-center gap-2">
-                        <ChevronRight size={16} className="text-lightblue" />
-                        <span className="font-semibold hover:text-lightblue">
-                          {Item.name}
-                        </span>
-                      </div>
-                    </Link>
-                  );
-                })}
+              <div className="mt-4 flex flex-col gap-7 ">
+                {QuickLinks.map(
+                  (Item: { link: string; name: string }, index: number) => {
+                    return (
+                      <Link href={Item.link} key={index} className="">
+                        <div className="flex items-center gap-2">
+                          <ChevronRight size={16} className="text-lightblue" />
+                          <span className="font-semibold hover:text-lightblue">
+                            {Item.name}
+                          </span>
+                        </div>
+                      </Link>
+                    );
+                  }
+                )}
               </div>
             </div>
           </div>
