@@ -1,17 +1,38 @@
+"use client";
 import React from "react";
-
+import { useInView } from "react-intersection-observer";
 import CleaningOffice from "@/assets/images/full-shot-people-cleaning-office.jpg";
-import MovingImage from "@/components/atoms/MovingImage/MovingImage";
 import Heading48 from "@/components/atoms/Heading48/Heading48";
 import Image from "next/image";
+import { Tilt } from "react-tilt";
 
 const WhoAreWe = () => {
+  const { ref, inView } = useInView({ triggerOnce: true });
+
   return (
-    <div className=" py-10  mx-auto max-w-[1200px] px-4 lg:px-6 xl:px-10 ">
+    <div
+      ref={ref}
+      className={`py-10 mx-auto max-w-[1200px] px-4 lg:px-6 xl:px-10 ${
+        inView ? "animate-zoomOut" : "scale-50 opacity-0"
+      }`}
+    >
       <div className="grid grid-cols-1 lg:grid-cols-2 gap-5 lg:gap-10 ">
-        <div className="w-full lg:w-[500px]  xl:w-[570px] ">
-          <Image src={CleaningOffice} alt="" className="w-full" />
+        <div className="w-full lg:w-[500px] xl:w-[570px]">
+          {/* <Image src={CleaningOffice} alt="" className="w-full" /> */}
+          <Tilt options={{ max: 10, scale: 1, speed: 400 }}>
+            <Image
+              src={CleaningOffice}
+              alt="Animated"
+              draggable={false}
+              className="w-full"
+              style={{
+                transition: "all 0.6s ease-out",
+                transformOrigin: "center",
+              }}
+            />
+          </Tilt>
         </div>
+
         <div className=" flex flex-col gap-8 text-cyanblue lg:mt-0 xl:mt-32 px-0 md:px-10 ">
           <Heading48 heading="Who We Are?" />
           <p className="text-base mt-3">
@@ -24,7 +45,6 @@ const WhoAreWe = () => {
             specialized cleaning solutions, we serve homes, businesses, offices,
             and commercial spaces with an environmentally conscious approach.
           </p>
-          {/* <br /> */}
           <p className="text-base">
             For your convenience, our services are available around the clock,
             including weekends, bank, and public holidays at no extra cost. This
@@ -34,7 +54,6 @@ const WhoAreWe = () => {
             high-quality work, a professional approach, and responsive customer
             service, we guarantee complete customer satisfaction.
           </p>
-          {/* <br /> */}
 
           <div className="grid grid-cols-1 xl:grid-cols-2 gap-3 md:gap-5">
             {AttributesData.map((Item, index) => {
@@ -54,6 +73,7 @@ const WhoAreWe = () => {
 
 export default WhoAreWe;
 
+// svg components here
 export const CosteffectiveIcon = () => {
   return (
     <svg
