@@ -3,6 +3,7 @@ import localFont from "next/font/local";
 import { Roboto } from "next/font/google";
 import "./globals.css";
 // import { cn } from "@/lib/utils";
+import ArrowUp from "@/components/atoms/ArrowUp/ArrowUp";
 import Topbar from "@/components/organisms/Topbar/Topbar";
 import Footer from "@/components/organisms/FooterSection/Footer";
 
@@ -44,6 +45,7 @@ export default function RootLayout({
           <Topbar />
         </div>
         {children}
+        <ArrowUp />
         <Footer />
       </body>
     </html>
