@@ -1,9 +1,13 @@
 "use client";
 import React from "react";
+import { useInView } from "react-intersection-observer";
 import { motion } from "framer-motion";
-import { FaCircleCheck } from "react-icons/fa6";
+import { Check } from "lucide-react";
 
 const OurMission = () => {
+  const { ref, inView } = useInView({ triggerOnce: true });
+
+  // Variants for the container
   const containerVariants = {
     hidden: { opacity: 0 },
     visible: {
@@ -14,87 +18,97 @@ const OurMission = () => {
     },
   };
 
-  interface cardsJsonIF {
-    heading: string,
-    paragraph: string,
-    list: string[]
-  }
+  // Variants for cards with dynamic animation based on index
+  const cardVariants = (index: number) => ({
+    hidden: {
+      opacity: 0,
+      x: index === 0 ? -100 : index === 2 ? 100 : 0, // Left or right depending on index
+      scale: index === 1 ? 0.8 : 1, // Start smaller for index 1
+    },
+    visible: {
+      opacity: 1,
+      x: 0,
+      scale: 1, // Zoom to original size for index 1
+      transition: { duration: 0.7, ease: "easeInOut" },
+    },
+  });
 
-  const cardsJson : cardsJsonIF[] = [
-    {
-      heading: "Our Vision",
-      paragraph:
-        "Our vision is to become the most trusted cleaning service, setting the standard for excellence, innovation, and sustainability in the industry.",
-      list: ["Trusted provider", "Clean spaces", "Sustainable solutions"],
-    },
-    {
-      heading: "Our Misson",
-      paragraph:
-        "We provide top-quality, customized cleaning services while promoting a healthier environment with eco-friendly practices.",
-      list: [
-        "Customized cleaning",
-        "Eco-friendly products",
-        "Reliable service",
-      ],
-    },
-    {
-      heading: "Our Goal",
-      paragraph:
-        "Our goals focus on expanding our reach, improving our service processes, and reinforcing our commitment to eco-friendly practices.",
-      list: ["Grow clients", "Boost efficienc", "Go greener"],
-    },
-  ];
-
-  const cardVariants = {
-    hidden: { opacity: 0, y: 50 },
-    visible: { opacity: 1, y: 0, transition: { duration: 0.5 } },
-  };
   return (
-    <div className="relative w-full">
-      <div className="p-12 flex justify-center items-center">
-        <motion.div
-          className=" grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8 w-full max-w-[1200px]"
-          variants={containerVariants}
-          initial="hidden"
-          animate="visible"
-        >
-          {cardsJson.map((card: cardsJsonIF, index: number) => (
-            <motion.div
-              key={index}
-              className={` flex items-center p-6 ${
-                index === 0
-                  ? "bg-primaryYellow text-cyanblue"
-                  : index === 2
-                  ? "bg-darkGreen text-white"
-                  : "bg-iceblue text-cyanblue"
-              } `}
-              variants={cardVariants}
-            >
-              <div className="text-base text-center p-8">
-                <h2 className="text-3xl">{card.heading}</h2>
-                <br />
-                <p>{card.paragraph}</p>
-                <br />
+    <div className="mx-auto max-w-[1200px]">
+      <motion.div
+        className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8 w-full max-w-[1200px] px-12"
+        variants={containerVariants}
+        initial="hidden"
+        animate={inView ? "visible" : "hidden"}
+        ref={ref}
+      >
+        {cardsJson.map((card: cardsJsonIF, index: number) => (
+          <motion.div
+            key={index}
+            className={`flex items-center py-10 px-6 ${
+              index === 0
+                ? "bg-primaryYellow text-cyanblue"
+                : index === 2
+                ? "bg-darkGreen text-white"
+                : "bg-iceblue text-cyanblue"
+            }`}
+            variants={cardVariants(index)} // Assign dynamic animation based on index
+          >
+            <div className="flex flex-col gap-5 text-base text-center p-8">
+              <h2 className="text-3xl font-semibold">{card.heading}</h2>
+              <p>{card.paragraph}</p>
 
-                <div className="mt-35">
-                  <ul className="">
-                    {card.list.map((item: string, index: number) => {
-                      return (
-                        <li key={index} className="flex mb-2 max-lg:justify-center max-lg:items-center">
-                          <FaCircleCheck color="#ffffff" size={30} />
-                          <span className=" mt-1 ml-6"> {item} </span>
-                        </li>
-                      );
-                    })}
-                  </ul>
-                </div>
+              <div className="flex flex-col gap-2.5">
+                {card.list.map((item: string, itemIndex: number) => (
+                  <div
+                    key={itemIndex}
+                    className="flex gap-7 items-center group"
+                  >
+                    <div className="flex justify-center items-center h-10 w-10 bg-white rounded-full group-hover:bg-lightblue">
+                      <Check
+                        size={22}
+                        className="text-cyanblue group-hover:text-white"
+                      />
+                    </div>
+                    <span>{item}</span>
+                  </div>
+                ))}
               </div>
-            </motion.div>
-          ))}
-        </motion.div>
-      </div>
+            </div>
+          </motion.div>
+        ))}
+      </motion.div>
     </div>
   );
 };
 
 export default OurMission;
+
+// Interface for cardsJson
+interface cardsJsonIF {
+  heading: string;
+  paragraph: string;
+  list: string[];
+}
+
+// Data for cards
+export const cardsJson: cardsJsonIF[] = [
+  {
+    heading: "Our Vision",
+    paragraph:
+      "Our vision is to become the most trusted cleaning service, setting the standard for excellence, innovation, and sustainability in the industry.",
+    list: ["Trusted provider", "Clean spaces", "Sustainable solutions"],
+  },
+  {
+    heading: "Our Mission",
+    paragraph:
+      "We provide top-quality, customized cleaning services while promoting a healthier environment with eco-friendly practices.",
+    list: ["Customized cleaning", "Eco-friendly products", "Reliable service"],
+  },
+  {
+    heading: "Our Goal",
+    paragraph:
+      "Our goals focus on expanding our reach, improving our service processes, and reinforcing our commitment to eco-friendly practices.",
+    list: ["Grow clients", "Boost efficiency", "Go greener"],
+  },
+];
