@@ -57,6 +57,7 @@ const config: Config = {
         mangoyellow: "#f0c877",
         navyblue: "#002542",
         lightyellow: "#ffd57f",
+        classicNavy: "#0056b3",
 
         card: {
           DEFAULT: "hsl(var(--card))",
