@@ -69,26 +69,26 @@ import commercialCleaningImage from "@/assets/images/serviceSectionImage/commerc
 import domesticCleaning1 from "@/assets/images/serviceSectionImage/domistic-cleaning.jpg";
 import domesticCleaning2 from "@/assets/images/serviceSectionImage/domestic-cleaning2.jpg";
 import officeCleaningSection1 from "@/assets/images/serviceSectionImage/office-section1.jpg";
-import officeS2 from "@/assets/images/serviceSectionImage/officeS2.jpg";
-import officeKeyboard from "@/assets/images/serviceSectionImage/office-keyboard.jpg";
+// import officeS2 from "@/assets/images/serviceSectionImage/officeS2.jpg";
+// import officeKeyboard from "@/assets/images/serviceSectionImage/office-keyboard.jpg";
 import officeFloar from "@/assets/images/serviceSectionImage/office-floor.jpg";
 import officeToilet from "@/assets/images/serviceSectionImage/office-toilet.jpg";
 import officeKitchen from "@/assets/images/serviceSectionImage/office-kitchen.jpeg";
 import officeHall from "@/assets/images/serviceSectionImage/office-hall.jpeg";
 import officeOutdoor from "@/assets/images/serviceSectionImage/office-outdoor.jpeg";
-import schoolStudyRoom from "@/assets/images/serviceSectionImage/school-study-rome.jpg";
-import schoolMeetingRoom from "@/assets/images/serviceSectionImage/school-meeting-room.jpeg";
-import strataFloor from "@/assets/images/serviceSectionImage/strata-floor.jpg";
+// import schoolStudyRoom from "@/assets/images/serviceSectionImage/school-study-rome.jpg";
+// import schoolMeetingRoom from "@/assets/images/serviceSectionImage/school-meeting-room.jpeg";
+// import strataFloor from "@/assets/images/serviceSectionImage/strata-floor.jpg";
 import windowCleaning from "@/assets/images/serviceSectionImage/WindowImage.jpg";
 import windowCleanShower from "@/assets/images/serviceSectionImage/window-cleaning.jpg";
-import industrial from "@/assets/images/serviceSectionImage/IndustrialImage.jpg";
-import highPressureWindow from "@/assets/images/serviceSectionImage/high-pressure-window.jpg";
-import highPressure from "@/assets/images/serviceSectionImage/HighPressureImage.jpg";
-import highPressureWood from "@/assets/images/serviceSectionImage/high-pressure-wood.jpg";
-import highPressureCar from "@/assets/images/serviceSectionImage/high-pressure-car.jpg";
-import tilesWall from "@/assets/images/serviceSectionImage/tiles-wall.jpg";
-import tilesSpunch from "@/assets/images/serviceSectionImage/tiles-spunch.jpg";
-import tilesFloor from "@/assets/images/serviceSectionImage/tile-floor.jpg";
+// import industrial from "@/assets/images/serviceSectionImage/IndustrialImage.jpg";
+// import highPressureWindow from "@/assets/images/serviceSectionImage/high-pressure-window.jpg";
+// import highPressure from "@/assets/images/serviceSectionImage/HighPressureImage.jpg";
+// import highPressureWood from "@/assets/images/serviceSectionImage/high-pressure-wood.jpg";
+// import highPressureCar from "@/assets/images/serviceSectionImage/high-pressure-car.jpg";
+// import tilesWall from "@/assets/images/serviceSectionImage/tiles-wall.jpg";
+// import tilesSpunch from "@/assets/images/serviceSectionImage/tiles-spunch.jpg";
+// import tilesFloor from "@/assets/images/serviceSectionImage/tile-floor.jpg";
 import carpetImage from "@/assets/images/serviceSectionImage/CarpetImage.jpg";
 import carpetWhite from "@/assets/images/serviceSectionImage/carpit-white.jpg";
 import leaseOven from "@/assets/images/serviceSectionImage/OvenImage.jpg";
@@ -163,22 +163,22 @@ const ServiceData : ServiceDataIF[] = [
           "When you sign up, you'll receive a complimentary initial deep cleaning and a 10% discount on all future appointments. We also offer additional savings for regular cleaning services.",
         ],
       },
-      {
-        heading: "Why Choose Us?",
-        image: officeS2.src,
-        paragraphs: [
-          "Based on your needs and schedule, Domestic & Commercial Cleaning Services offers comprehensive office cleaning solutions. A healthy workplace environment is crucial for the hygiene and well-being of both your employees and clients. We provide outstanding commercial cleaning services in South Australia, Sydney, and Brisbane for both businesses and residential properties. No matter the size of your company—from small businesses to large organizations—we can ensure your commercial space is cleaned to the highest standards. With our extensive experience, commercial-grade equipment, and eco-friendly products, your property will shine.",
-          "When you sign up, you'll receive a complimentary initial deep cleaning and a 20% discount on all appointments. We also offer additional savings for regular cleaning services.",
-        ],
-      },
-      {
-        image: officeKeyboard.src,
-        heading: "What we do?",
-        paragraphs: [
-          "In response to our clients' needs, we offer cleaning services on a daily, weekly, monthly, or one-time basis. Rather than just delivering our standard service, we are happy to customize our offerings or create specific tasks tailored to your location. A key highlight of our services is our commitment to communication, which fosters consistency. You can share your feedback at any time to help us maintain exceptional service. Additionally, we conduct regular inspections.",
-          "Please take a moment to review the office cleaning checklist provided below. Terms and conditions apply.",
-        ],
-      },
+      // {
+      //   heading: "Why Choose Us?",
+      //   image: officeS2.src,
+      //   paragraphs: [
+      //     "Based on your needs and schedule, Domestic & Commercial Cleaning Services offers comprehensive office cleaning solutions. A healthy workplace environment is crucial for the hygiene and well-being of both your employees and clients. We provide outstanding commercial cleaning services in South Australia, Sydney, and Brisbane for both businesses and residential properties. No matter the size of your company—from small businesses to large organizations—we can ensure your commercial space is cleaned to the highest standards. With our extensive experience, commercial-grade equipment, and eco-friendly products, your property will shine.",
+      //     "When you sign up, you'll receive a complimentary initial deep cleaning and a 20% discount on all appointments. We also offer additional savings for regular cleaning services.",
+      //   ],
+      // },
+      // {
+      //   image: officeKeyboard.src,
+      //   heading: "What we do?",
+      //   paragraphs: [
+      //     "In response to our clients' needs, we offer cleaning services on a daily, weekly, monthly, or one-time basis. Rather than just delivering our standard service, we are happy to customize our offerings or create specific tasks tailored to your location. A key highlight of our services is our commitment to communication, which fosters consistency. You can share your feedback at any time to help us maintain exceptional service. Additionally, we conduct regular inspections.",
+      //     "Please take a moment to review the office cleaning checklist provided below. Terms and conditions apply.",
+      //   ],
+      // },
       {
         image: officeFloar.src,
         heading: "Work Areas, Common Areas, Cubicles, and Private Workspaces",
