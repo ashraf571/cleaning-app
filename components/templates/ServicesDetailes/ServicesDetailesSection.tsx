@@ -152,7 +152,6 @@ const ServiceData : ServiceDataIF[] = [
     ],
   },
   {
-    //   image: OfficeImage,
     text: "Office Cleaning",
     slug: "office-cleaning",
     sections: [
@@ -251,78 +250,75 @@ const ServiceData : ServiceDataIF[] = [
       },
     ],
   },
+  // {
+  //   text: "School Cleaning",
+  //   slug: "school-cleaning",
+  //   sections: [
+  //     {
+  //       image: schoolStudyRoom.src,
+  //       paragraphs: [
+  //         "Public and private schools, colleges, universities, childcare centers, training facilities, preschools, and daycare centers can all benefit from the managed services offered by Domestic & Commercial Cleaning Services Adelaide. With the high density of students in schools and universities, these environments can quickly become hotspots for infections. That's where we come in to provide effective cleaning solutions.",
+  //         "At Commercial Cleaning Services Adelaide, we specialize in cleaning educational institutions. To ensure the highest standards of cleanliness, schools and colleges require regular upkeep. We conduct routine cleaning and maintenance year-round, including during breaks when facilities are less occupied. Our comprehensive cleaning services for schools and universities include:",
+  //       ],
+  //       list: [
+  //         "Window Cleaning",
+  //         "Regular Cleaning and Maintenance",
+  //         "Car Park Sweeping",
+  //         "Exterior Pressure Cleaning",
+  //         "Classroom Sanitization",
+  //         "Routine Toilet and Washroom Cleaning",
+  //       ],
+  //       paragraphs1: [
+  //         "We are experienced in cleaning various spaces, including playgrounds, gardens, gyms, labs, libraries, classrooms, restrooms, cafeterias, lunchrooms, and more. Additionally, we clean both internal and external windows.",
+  //       ],
+  //     },
+  //     {
+  //       image: schoolMeetingRoom.src,
+  //       paragraphs: [
+  //         "Let us conduct a FREE INSPECTION of your facility and offer a NO-COST TRIAL to showcase the quality of our cleaning services for schools and universities. Submit an inquiry here or contact us at (08) 8166 1189.",
+  //       ],
+  //       list: [
+  //         "$99 Sign-Up Discount (*minimum hours apply)",
+  //         "Fully Insured with Public Liability",
+  //         "Complimentary Initial Detailed Cleaning",
+  //         "Free Urinal Screens",
+  //         "Toilet Bowl Sanitizer",
+  //         "Free Sense & Spray Air Freshener",
+  //         "Regular Site Inspections",
+  //         "Police Checks and Clearances for Working with Children",
+  //         "Additional Hourly Rate Discounts for Daily Cleaning Services",
+  //       ],
+  //       paragraphs1: [
+  //         "Domestic & Commercial Cleaning Services Adelaide is renowned for offering cost-effective cleaning services for educational institutions. We bring the expertise, knowledge, and experience required to ensure these learning environments remain clean, safe, and well-maintained.",
+  //       ],
+  //     },
+  //   ],
+  // },
+  // {
+  //   text: "Strata Cleaning",
+  //   slug: "strata-cleaning",
+  //   sections: [
+  //     {
+  //       image: strataFloor.src,
+  //       paragraphs: [
+  //         "A building's cleanliness significantly shapes first impressions. CCSA specializes in building management, maintenance, and strata cleaning.",
+  //         "Consistent maintenance is vital for keeping a property immaculate and up to the highest standards. We partner with our clients to fulfill all their cleaning needs and are committed to ongoing quality enhancement, which includes but is not limited to:",
+  //       ],
+  //       list: [
+  //         "Routine Building Cleaning",
+  //         "Parking Lot Cleaning",
+  //         "Window Washing",
+  //         "Pressure Washing",
+  //         "Carpet Shampooing",
+  //         "Exterior Building Cleaning",
+  //       ],
+  //       paragraphs1: [
+  //         "Our experienced strata cleaning team is equipped to handle properties of any size and offers a wide range of strata cleaning services.",
+  //       ],
+  //     },
+  //   ],
+  // },
   {
-    //   image: SchoolImage,
-    text: "School Cleaning",
-    slug: "school-cleaning",
-    sections: [
-      {
-        image: schoolStudyRoom.src,
-        paragraphs: [
-          "Public and private schools, colleges, universities, childcare centers, training facilities, preschools, and daycare centers can all benefit from the managed services offered by Domestic & Commercial Cleaning Services Adelaide. With the high density of students in schools and universities, these environments can quickly become hotspots for infections. That's where we come in to provide effective cleaning solutions.",
-          "At Commercial Cleaning Services Adelaide, we specialize in cleaning educational institutions. To ensure the highest standards of cleanliness, schools and colleges require regular upkeep. We conduct routine cleaning and maintenance year-round, including during breaks when facilities are less occupied. Our comprehensive cleaning services for schools and universities include:",
-        ],
-        list: [
-          "Window Cleaning",
-          "Regular Cleaning and Maintenance",
-          "Car Park Sweeping",
-          "Exterior Pressure Cleaning",
-          "Classroom Sanitization",
-          "Routine Toilet and Washroom Cleaning",
-        ],
-        paragraphs1: [
-          "We are experienced in cleaning various spaces, including playgrounds, gardens, gyms, labs, libraries, classrooms, restrooms, cafeterias, lunchrooms, and more. Additionally, we clean both internal and external windows.",
-        ],
-      },
-      {
-        image: schoolMeetingRoom.src,
-        paragraphs: [
-          "Let us conduct a FREE INSPECTION of your facility and offer a NO-COST TRIAL to showcase the quality of our cleaning services for schools and universities. Submit an inquiry here or contact us at (08) 8166 1189.",
-        ],
-        list: [
-          "$99 Sign-Up Discount (*minimum hours apply)",
-          "Fully Insured with Public Liability",
-          "Complimentary Initial Detailed Cleaning",
-          "Free Urinal Screens",
-          "Toilet Bowl Sanitizer",
-          "Free Sense & Spray Air Freshener",
-          "Regular Site Inspections",
-          "Police Checks and Clearances for Working with Children",
-          "Additional Hourly Rate Discounts for Daily Cleaning Services",
-        ],
-        paragraphs1: [
-          "Domestic & Commercial Cleaning Services Adelaide is renowned for offering cost-effective cleaning services for educational institutions. We bring the expertise, knowledge, and experience required to ensure these learning environments remain clean, safe, and well-maintained.",
-        ],
-      },
-    ],
-  },
-  {
-    //   image: StrataImage,
-    text: "Strata Cleaning",
-    slug: "strata-cleaning",
-    sections: [
-      {
-        image: strataFloor.src,
-        paragraphs: [
-          "A building's cleanliness significantly shapes first impressions. CCSA specializes in building management, maintenance, and strata cleaning.",
-          "Consistent maintenance is vital for keeping a property immaculate and up to the highest standards. We partner with our clients to fulfill all their cleaning needs and are committed to ongoing quality enhancement, which includes but is not limited to:",
-        ],
-        list: [
-          "Routine Building Cleaning",
-          "Parking Lot Cleaning",
-          "Window Washing",
-          "Pressure Washing",
-          "Carpet Shampooing",
-          "Exterior Building Cleaning",
-        ],
-        paragraphs1: [
-          "Our experienced strata cleaning team is equipped to handle properties of any size and offers a wide range of strata cleaning services.",
-        ],
-      },
-    ],
-  },
-  {
-    //   image: WindowImage,
     text: "Window Cleaning",
     slug: "window-cleaning",
     sections: [
@@ -350,126 +346,123 @@ const ServiceData : ServiceDataIF[] = [
       },
     ],
   },
-  {
-    //   image: IndustrialImage,
-    text: "Industrial Cleaning",
-    slug: "industrial-cleaning",
-    sections: [
-      {
-        image: industrial.src,
-        paragraphs: [
-          "Maintaining clean and hygienic facilities is essential for factory and industrial sites to meet Occupational Health, Safety, and Welfare (OHS&W) standards. A clean workplace is vital for employee satisfaction and productivity, as unclean conditions can lead to dissatisfaction and reduced efficiency.",
-          "We collaborate closely with our clients to meet all of their cleaning requirements, following a philosophy of continuous quality improvement. Our services include, but are not limited to:",
-        ],
-        listDash: [
-          "- Routine Building Cleaning",
-          "- Hard Floor Maintenance",
-          "- Car Park Cleaning",
-          "- Window Washing",
-          "- Pressure Washing",
-          "- Carpet Shampooing",
-          "- Exterior Building Cleaning",
-        ],
-      },
-    ],
-  },
-  {
-    //   image: HighPressureImage,
-    text: "High Pressure Cleaning",
-    slug: "high-pressure-cleaning",
-    sections: [
-      {
-        image: highPressureWindow.src,
-        paragraphs: [
-          "Are you preparing to sell your property or aiming to increase its value?",
-          "Or perhaps you've just moved into a new home and want to begin with a clean slate?",
-          "We've got it covered! Whether you're selling and want to boost your asking price or simply want to refresh your space, we're here to help. You'll be pleasantly surprised by the results!",
-        ],
-      },
-      {
-        heading: "Our Features",
-        image: highPressure.src,
-        paragraphs: [
-          "Looking to give your home or commercial space a fresh start?",
-          "Or perhaps you've just moved into a new home and want to begin with a clean slate?Are you preparing to sell your property or aiming to increase its value?",
-          "Or perhaps you’ve just moved into a new home and want to begin with a clean slate?",
-          "We’ve got it covered! Whether you’re selling and want to boost your asking price or simply want to refresh your space, we’re here to help. You’ll be pleasantly surprised by the results!",
-        ],
-      },
-      {
-        heading: "Why Pressure Wash?",
-        image: highPressureWood.src,
-        list: [
-          "Enhances the building’s curb appeal",
-          "Increases property value",
-          "Extends the lifespan and durability of surfaces",
-          "Reduces the effort required for future cleaning",
-          "Prevents the need for costly repairs",
-          "Cleans surrounding areas",
-          "Removes graffiti effectively",
-          "Promotes health and safety",
-        ],
-        paragraphs1: [
-          "We also offer industrial cleaning services, with machines operating at pressures from 2700 PSI to 6000 PSI. Additionally, we can address any gaps left after each clean.",
-        ],
-      },
-      {
-        image: highPressureCar.src,
-        paragraphs: [
-          "Our high-pressure cleaning services include, but are not limited to:",
-        ],
-        listDash: [
-          "- Brickwash",
-          "- Driveway Cleaning",
-          "- Patios",
-          "- Paved Surfaces",
-          "- Decks",
-          "- Garage Cleaning",
-          "- Exterior Pressure Washing",
-          "- Builder’s Clean",
-          "- Warehouse Cleaning",
-          "- Car Parks",
-          "- Tennis/Basketball Courts",
-        ],
-      },
-    ],
-  },
-  {
-    //   image: TilesImage,
-    text: "Tiles and Grout Cleaning",
-    slug: "tiles-and-grout-cleaning",
-    sections: [
-      {
-        image: tilesWall.src,
-        paragraphs: [
-          "We offer a comprehensive tile and grout cleaning program that leaves no corner untouched. Using natural products and the latest high-pressure technology, we bring your tiles back to life.",
-          "Our cleaning method is gentle yet effective. We allow the tiles and grout to soak in a detergent or cleaner for a while, making the cleaning process smoother. Then, we scrub the surface multiple times to ensure a deep clean while preserving the integrity of your tiles.",
-        ],
-      },
-      {
-        heading: "Our Features",
-        image: tilesSpunch.src,
-        listDash: [
-          "- Owner-Operated",
-          "- Use of Natural Products",
-          "- Cost-Effective Solutions",
-          "- Efficient Management",
-          "- 100% Customer Satisfaction",
-          "- Flexible Scheduling",
-          "- Attractive Discounts",
-        ],
-      },
-      {
-        heading: "Why is it essential?",
-        image: tilesFloor.src,
-        listDash: [
-          "- Eliminates germs, bacteria, stains, and pollutants",
-          "- Extends the lifespan of your floors",
-          "- Promotes a healthier living environment",
-        ],
-      },
-    ],
-  },
+  // {
+  //   text: "Industrial Cleaning",
+  //   slug: "industrial-cleaning",
+  //   sections: [
+  //     {
+  //       image: industrial.src,
+  //       paragraphs: [
+  //         "Maintaining clean and hygienic facilities is essential for factory and industrial sites to meet Occupational Health, Safety, and Welfare (OHS&W) standards. A clean workplace is vital for employee satisfaction and productivity, as unclean conditions can lead to dissatisfaction and reduced efficiency.",
+  //         "We collaborate closely with our clients to meet all of their cleaning requirements, following a philosophy of continuous quality improvement. Our services include, but are not limited to:",
+  //       ],
+  //       listDash: [
+  //         "- Routine Building Cleaning",
+  //         "- Hard Floor Maintenance",
+  //         "- Car Park Cleaning",
+  //         "- Window Washing",
+  //         "- Pressure Washing",
+  //         "- Carpet Shampooing",
+  //         "- Exterior Building Cleaning",
+  //       ],
+  //     },
+  //   ],
+  // },
+  // {
+  //   text: "High Pressure Cleaning",
+  //   slug: "high-pressure-cleaning",
+  //   sections: [
+  //     {
+  //       image: highPressureWindow.src,
+  //       paragraphs: [
+  //         "Are you preparing to sell your property or aiming to increase its value?",
+  //         "Or perhaps you've just moved into a new home and want to begin with a clean slate?",
+  //         "We've got it covered! Whether you're selling and want to boost your asking price or simply want to refresh your space, we're here to help. You'll be pleasantly surprised by the results!",
+  //       ],
+  //     },
+  //     {
+  //       heading: "Our Features",
+  //       image: highPressure.src,
+  //       paragraphs: [
+  //         "Looking to give your home or commercial space a fresh start?",
+  //         "Or perhaps you've just moved into a new home and want to begin with a clean slate?Are you preparing to sell your property or aiming to increase its value?",
+  //         "Or perhaps you’ve just moved into a new home and want to begin with a clean slate?",
+  //         "We’ve got it covered! Whether you’re selling and want to boost your asking price or simply want to refresh your space, we’re here to help. You’ll be pleasantly surprised by the results!",
+  //       ],
+  //     },
+  //     {
+  //       heading: "Why Pressure Wash?",
+  //       image: highPressureWood.src,
+  //       list: [
+  //         "Enhances the building’s curb appeal",
+  //         "Increases property value",
+  //         "Extends the lifespan and durability of surfaces",
+  //         "Reduces the effort required for future cleaning",
+  //         "Prevents the need for costly repairs",
+  //         "Cleans surrounding areas",
+  //         "Removes graffiti effectively",
+  //         "Promotes health and safety",
+  //       ],
+  //       paragraphs1: [
+  //         "We also offer industrial cleaning services, with machines operating at pressures from 2700 PSI to 6000 PSI. Additionally, we can address any gaps left after each clean.",
+  //       ],
+  //     },
+  //     {
+  //       image: highPressureCar.src,
+  //       paragraphs: [
+  //         "Our high-pressure cleaning services include, but are not limited to:",
+  //       ],
+  //       listDash: [
+  //         "- Brickwash",
+  //         "- Driveway Cleaning",
+  //         "- Patios",
+  //         "- Paved Surfaces",
+  //         "- Decks",
+  //         "- Garage Cleaning",
+  //         "- Exterior Pressure Washing",
+  //         "- Builder’s Clean",
+  //         "- Warehouse Cleaning",
+  //         "- Car Parks",
+  //         "- Tennis/Basketball Courts",
+  //       ],
+  //     },
+  //   ],
+  // },
+  // {
+  //   text: "Tiles and Grout Cleaning",
+  //   slug: "tiles-and-grout-cleaning",
+  //   sections: [
+  //     {
+  //       image: tilesWall.src,
+  //       paragraphs: [
+  //         "We offer a comprehensive tile and grout cleaning program that leaves no corner untouched. Using natural products and the latest high-pressure technology, we bring your tiles back to life.",
+  //         "Our cleaning method is gentle yet effective. We allow the tiles and grout to soak in a detergent or cleaner for a while, making the cleaning process smoother. Then, we scrub the surface multiple times to ensure a deep clean while preserving the integrity of your tiles.",
+  //       ],
+  //     },
+  //     {
+  //       heading: "Our Features",
+  //       image: tilesSpunch.src,
+  //       listDash: [
+  //         "- Owner-Operated",
+  //         "- Use of Natural Products",
+  //         "- Cost-Effective Solutions",
+  //         "- Efficient Management",
+  //         "- 100% Customer Satisfaction",
+  //         "- Flexible Scheduling",
+  //         "- Attractive Discounts",
+  //       ],
+  //     },
+  //     {
+  //       heading: "Why is it essential?",
+  //       image: tilesFloor.src,
+  //       listDash: [
+  //         "- Eliminates germs, bacteria, stains, and pollutants",
+  //         "- Extends the lifespan of your floors",
+  //         "- Promotes a healthier living environment",
+  //       ],
+  //     },
+  //   ],
+  // },
   {
     //   image: CarpetImage,
     text: "Carpet Cleaning",
