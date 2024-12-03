@@ -29,7 +29,7 @@ export const retriveHeroAreaBackgroundImage = (pathName: string) : string => {
             return "/Images/tiles-and-grout-cleaning.jpg";
         // case 'Tiles-and-grout-cleaning':
         //     return "/Images/tiles-and-grout-cleaning.jpg";
-        case 'carpet-upholstry-cleaning':
+        case 'carpet-cleaning':
             return "/Images/carpet-cleaning.jpg";
         case 'end-of-lease-cleaning':
         case 'End-of-lease-cleaning':
@@ -48,8 +48,8 @@ export const retriveHeroAreaTitle = (slug: string): string => {
     switch (slug) {
         case "Carpit-cleaning":
             return "Carpit Cleaning"
-        case "Carpet-upholstry-cleaning":
-            return "Carpet/Upholstry Cleaning"
+        case "Carpet-cleaning":
+            return "Carpet Cleaning"
         case "Strata-cleaning":
             return "Strata Cleaning"
         case "Window-cleaning":

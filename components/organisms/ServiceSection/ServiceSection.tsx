@@ -126,18 +126,18 @@ export const ServiceData = [
     slug: "office-cleaning",
     icon: OfficeIcon,
   },
-  {
-    image: SchoolImage,
-    text: "School Cleaning",
-    slug: "school-cleaning",
-    icon: SchoolIcon,
-  },
-  {
-    image: StrataImage,
-    text: "Strata Cleaning",
-    slug: "strata-cleaning",
-    icon: StrataIcon,
-  },
+  // {
+  //   image: SchoolImage,
+  //   text: "School Cleaning",
+  //   slug: "school-cleaning",
+  //   icon: SchoolIcon,
+  // },
+  // {
+  //   image: StrataImage,
+  //   text: "Strata Cleaning",
+  //   slug: "strata-cleaning",
+  //   icon: StrataIcon,
+  // },
 
   {
     image: WindowImage,
@@ -145,28 +145,28 @@ export const ServiceData = [
     slug: "window-cleaning",
     icon: WindowIcon,
   },
-  {
-    image: IndustrialImage,
-    text: "Industrial Cleaning",
-    slug: "industrial-cleaning",
-    icon: IndustrialIcon,
-  },
-  {
-    image: HighPressureImage,
-    text: "High Pressure Cleaning",
-    slug: "high-pressure-cleaning",
-    icon: HighPressureIcon,
-  },
-  {
-    image: TilesImage,
-    text: "Tiles and Grout Cleaning",
-    slug: "tiles-and-grout-cleaning",
-    icon: TilesIcon,
-  },
+  // {
+  //   image: IndustrialImage,
+  //   text: "Industrial Cleaning",
+  //   slug: "industrial-cleaning",
+  //   icon: IndustrialIcon,
+  // },
+  // {
+  //   image: HighPressureImage,
+  //   text: "High Pressure Cleaning",
+  //   slug: "high-pressure-cleaning",
+  //   icon: HighPressureIcon,
+  // },
+  // {
+  //   image: TilesImage,
+  //   text: "Tiles and Grout Cleaning",
+  //   slug: "tiles-and-grout-cleaning",
+  //   icon: TilesIcon,
+  // },
   {
     image: CarpetImage,
-    text: "Carpet/Upholstry Cleaning",
-    slug: "carpet-upholstry-cleaning",
+    text: "Carpet Cleaning",
+    slug: "carpet-cleaning",
     icon: CarpetIcon,
   },
   {

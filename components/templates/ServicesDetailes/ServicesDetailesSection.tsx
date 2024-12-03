@@ -472,8 +472,8 @@ const ServiceData : ServiceDataIF[] = [
   },
   {
     //   image: CarpetImage,
-    text: "Carpet/Upholstry Cleaning",
-    slug: "carpet-upholstry-cleaning",
+    text: "Carpet Cleaning",
+    slug: "carpet-cleaning",
     sections: [
       {
         image: carpetImage.src,

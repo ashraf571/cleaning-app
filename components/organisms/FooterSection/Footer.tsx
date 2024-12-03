@@ -110,13 +110,13 @@ export const footerServices = [
     name: "Domestic Cleaning",
     link: "domestic-cleaning",
   },
-  {
-    name: "School Cleaning",
-    link: "school-cleaning",
-  },
+  // {
+  //   name: "School Cleaning",
+  //   link: "school-cleaning",
+  // },
   {
     name: "Carpet Cleaning",
-    link: "carpet-upholstry-cleaning",
+    link: "carpet-cleaning",
   },
 ];
 
