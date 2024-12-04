@@ -69,18 +69,18 @@ const ServiceSection = () => {
       </motion.div>
 
       <motion.div
-        className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-x-8 gap-y-32 mt-10"
+        className="grid grid-cols-1 sm:grid-cols-2 xl:grid-cols-3 gap-x-5 md:gap-x-6 lg:gap-x-8 gap-y-32 mt-10"
         variants={animationVariants}
         ref={ref}
         initial="hidden"
         animate={inView ? "visible" : "hidden"}
       >
         {ServiceData.map((Item, index) => (
-          <div key={index} className="relative ">
+          <div key={index} className=" relative">
             <Image src={Item.image} alt={Item.text} className=" " />
-            <div className="absolute  -bottom-24 left-1/2 -translate-x-1/2 ">
+            <div className="absolute -bottom-24 left-1/2 -translate-x-1/2">
               <div
-                className="py-7 md:py-12 px-4 md:px-7 w-80 bg-white relative bottom-14 "
+                className="py-7 md:py-12 px-4 md:px-7 w-[300px] sm:w-[260px] xl:w-80 bg-white relative bottom-14 "
                 style={{ boxShadow: "10px 3px 30px rgba(0, 0, 0, 0.10)" }}
               >
                 <span
