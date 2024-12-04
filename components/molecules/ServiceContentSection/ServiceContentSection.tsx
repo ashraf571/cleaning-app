@@ -63,7 +63,7 @@ const ServiceContentSection = ({
             </p>
           );
         })}
-      {list && (
+      {list1 && (
         <p>
           When performing a standard house cleaning, we cover the following
           tasks:

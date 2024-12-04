@@ -13,7 +13,7 @@ const ListSection = ({list, isBold, isDecore}:ListSectionIF) => {
             spanList= partOne
           }
             return (
-                <li className= {` ml-6 ${isDecore ? "list-disc": ""}`} key={index} > {checkIndex > -1 && <span className='font-bold' >{spanList}:</span> } {listData}</li>
+                <li className= {` ml-4 `} key={index} > {checkIndex > -1 && <span className='font-bold' >{spanList}:</span> } {listData}</li>
             )
         })}
     </ul>
