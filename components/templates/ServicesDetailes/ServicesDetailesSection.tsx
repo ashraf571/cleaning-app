@@ -107,9 +107,9 @@ const ServiceData : ServiceDataIF[] = [
       {
         image: commercialCleaningImage.src,
         paragraphs: [
-          "Domestic and Commercial Cleaning Services is proud to serve businesses and residential properties across South Australia, Sydney, Melbourne, Brisbane, and Adelaide with exceptional cleaning solutions. Our goal is to maintain a pristine environment for your space. We employ skilled and dedicated staff who utilize state-of-the-art commercial cleaning equipment and eco-friendly, plant-based cleaning products to deliver top-notch services. With us handling the cleaning, you can enjoy peace of mind.",
-          "We prioritize professionalism and reliability, assessing your space to identify the specific cleaning services you need, ensuring we only provide what’s necessary. Remember, we offer a diverse range of commercial cleaning services, and we’ll leave you smiling when we finish.",
-          `When you sign up, you'll receive a complimentary initial deep cleaning and a 10% discount on all future appointments. We also offer additional savings for regular cleaning services.`,
+          "“Perth Bright Cleaning Services is proud to provide exceptional cleaning solutions to both businesses and homes across Perth. Our aim is to keep your space spotless and welcoming. We have a team of skilled and dedicated professionals who use the latest cleaning equipment and eco-friendly, plant-based products to deliver high-quality results. With us taking care of the cleaning, you can relax and enjoy peace of mind.",
+          "We focus on professionalism and reliability, taking the time to assess your space and provide the right cleaning services for your needs. You can trust that we’ll only offer what’s necessary. We offer a wide range of commercial cleaning services and guarantee you’ll be happy with the results.",
+          // `When you sign up, you'll receive a complimentary initial deep cleaning and a 10% discount on all future appointments. We also offer additional savings for regular cleaning services.`,
         ],
       },
     ],
@@ -120,8 +120,8 @@ const ServiceData : ServiceDataIF[] = [
     sections: [
       {
         paragraphs: [
-          "In order to stay healthy, it's crucial to keep your living space clean. Cleaning alone is not important; what you use to clean with and whether you disinfect and sanitise are more crucial. Your health and safety will be effectively maintained by our eco-friendly and plant-based product. You are entrusting us with the responsibility for cleaning your house as well as your health. This matters to us much. We are proud of the work we do.",
-          "If your home is fresh and clean when you walk in, you'll feel great. It alters how you feel. That is our area of expertise! We'll leave your home spotless when we're done. Additionally, as every property has different needs and a unique layout, you can ask us to complete additional jobs. We are delighted to complete tasks like cleaning the oven, cleaning the barbeque, washing the windows, cleaning the balcony, cleaning the pool fences, cleaning with high pressure, cleaning the tiles and grout, gardening, and removing mould. Additionally, we enjoy doing odd things to facilitate your life.",
+          "To stay healthy, it's important to keep your living space clean. But cleaning isn’t just about tidying up—it’s about what products you use and whether you disinfect and sanitise properly. We use eco-friendly, plant-based products that help keep you safe and healthy. When you choose us to clean your home, you’re trusting us with both the cleanliness of your space and your well-being, and we take that seriously. We’re proud of the work we do.",
+          "Walking into a fresh, clean home always feels great—it lifts your spirits. That’s what we specialise in! When we’re finished, your home will be spotless. We understand that every home is different, so if you have extra tasks you need done, just let us know. We’re happy to help with things like oven cleaning, barbeque cleaning, window washing, balcony cleaning, and mould removal.",
         ],
         image: domesticCleaning1.src,
       },
@@ -158,9 +158,9 @@ const ServiceData : ServiceDataIF[] = [
       {
         image: officeCleaningSection1.src,
         paragraphs: [
-          "Domestic and Commercial Cleaning Services is proud to serve businesses and residential properties across South Australia, Sydney, Melbourne, Brisbane, and Adelaide with exceptional cleaning solutions. Our goal is to maintain a pristine environment for your space. We employ skilled and dedicated staff who utilize state-of-the-art commercial cleaning equipment and eco-friendly, plant-based cleaning products to deliver top-notch services. With us handling the cleaning, you can enjoy peace of mind.",
+          "Perth Bright Cleaning Services is proud to serve businesses and residential properties across WA. Our goal is to maintain a pristine environment for your space. We employ skilled and dedicated staff who utilize state-of-the-art commercial cleaning equipment and eco-friendly, plant-based cleaning products to deliver top-notch services. With us handling the cleaning, you can enjoy peace of mind.",
           "We prioritize professionalism and reliability, assessing your space to identify the specific cleaning services you need, ensuring we only provide what's necessary. Remember, we offer a diverse range of commercial cleaning services, and we'll leave you smiling when we finish.",
-          "When you sign up, you'll receive a complimentary initial deep cleaning and a 10% discount on all future appointments. We also offer additional savings for regular cleaning services.",
+          // "When you sign up, you'll receive a complimentary initial deep cleaning and a 10% discount on all future appointments. We also offer additional savings for regular cleaning services.",
         ],
       },
       // {
@@ -326,9 +326,9 @@ const ServiceData : ServiceDataIF[] = [
         image: windowCleaning.src,
         paragraphs: [
           "Need your windows cleaned? Relax, we've got you covered!",
-          "For years, we've been offering expert window cleaning services throughout South Australia. Whether it's a commercial or residential space, we have the perfect solution for you. We guarantee quality, efficiency, and exceptional service for all our clients while prioritizing safety for everyone involved. Our team consists of trained professionals who are dedicated and hardworking.",
-          "We're capable of cleaning all types of windows. As a complimentary service, we also clean the frames and sills while washing down your fly screens and putting them back in place. Additionally, we offer blind cleaning services.",
+          "We offer expert window cleaning services throughout Western Australia. Whether it's a commercial or residential space, we have the perfect solution for you. We guarantee quality, efficiency, and exceptional service for all our clients while prioritizing safety for everyone involved. Our team consists of trained professionals who are dedicated and hardworking.",
           "When we finish, your windows will shine! We are committed to delivering outstanding service at an affordable price.",
+          // "When we finish, your windows will shine! We are committed to delivering outstanding service at an affordable price.",
         ],
       },
       {
@@ -471,7 +471,7 @@ const ServiceData : ServiceDataIF[] = [
       {
         image: carpetImage.src,
         paragraphs: [
-          "Looking for professional carpet, rug, couch, and upholstery cleaning at an affordable price? Look no further! Our mission is to deliver top-quality services while ensuring complete customer satisfaction. With our extensive hands-on experience, we stand out in the industry. We take a meticulous approach, ensuring every job is done with precision and care.",
+          "Looking for professional carpet & rug cleaning at an affordable price? Look no further! Our mission is to deliver top-quality services while ensuring complete customer satisfaction. With our extensive hands-on experience, we stand out in the industry. We take a meticulous approach, ensuring every job is done with precision and care.",
           "Our hot water extraction carpet cleaning features high-suction equipment that effectively removes deeply embedded dirt, stains, and pollutants, all while using eco-friendly cleaning agents. While pricing is important, our priority is ensuring your satisfaction. We pride ourselves on being reliable and readily available whenever our clients need us. Pricing varies based on the services, but rest assured, we offer competitive and fair rates.",
           "We cater to both residential and commercial properties. For a quick quote, give us a call or send us an email!",
         ],
