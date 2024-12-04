@@ -16,12 +16,14 @@ const AboutContentContainer = () => {
           className="border-l-[6px] border-lightblue p-10 text-cyanblue bg-white"
           style={{ boxShadow: "10px 3px 30px rgba(0, 0, 0, 0.10)" }}
         >
-          PCDC Cleaning: eco-friendly, professional cleaning for homes and
+          PBCS Cleaning: eco-friendly, professional cleaning for homes and
           businesses.
         </div>
 
         <Paragraph
-          paragraph="We are recognized as a full-service company, known for the expertise, professionalism, and dedication of our skilled team. With a focus on efficiency and quality, we uphold the high standards we’ve set for our services. Offering a comprehensive range of specialized solutions for homes, businesses, offices, and commercial spaces, we are committed to an eco-friendly approach in all that we do."
+          paragraph="AT Perth Bright Cleaning Services (PBCS), we are proud to be known for providing high-quality cleaning, thanks to the hard work and dedication of our expert team. We focus on delivering efficient, reliable, and thorough cleaning, always maintaining the high standards we have set for ourselves.
+           We offer a wide range of cleaning services tailored to homes, offices, businesses, and commercial spaces, all while keeping things environmentally friendly. Our services are available 24/7—including weekends, bank holidays, and public holidays—at no extra cost.
+           We know everyone’s needs are different, so we customise our cleaning solutions to suit you, making the whole process hassle-free. With strong management, attention to detail, and friendly, responsive customer service, we guarantee complete customer satisfaction."
           font="20px"
         />
 

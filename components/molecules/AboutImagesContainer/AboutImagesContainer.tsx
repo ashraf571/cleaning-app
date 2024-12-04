@@ -37,7 +37,7 @@ const AboutImagesContainer = () => {
           </Tilt>
 
           {/* Bottom-right corner div */}
-          <div className="flex flex-col bg-skyblue items-center justify-center py-5 px-3 w-32 md:w-44 absolute bottom-0 right-0 ">
+          {/* <div className="flex flex-col bg-skyblue items-center justify-center py-5 px-3 w-32 md:w-44 absolute bottom-0 right-0 ">
             <div className="flex gap-2 text-cyanblue items-center">
               <span className="font-bold text-2xl md:text-4xl">0</span>
               <span className="font-bold text-lg mt-1">+</span>
@@ -45,7 +45,7 @@ const AboutImagesContainer = () => {
             <span className="text-cyanblue text-base w-full text-center">
               Years Of Experience
             </span>
-          </div>
+          </div> */}
         </div>
       </div>
     </div>

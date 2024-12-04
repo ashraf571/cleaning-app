@@ -133,19 +133,19 @@ export const testimonialData = [
   {
     image: testimonial1,
     description:
-      "PCDC Cleaning Service exceeded my expectations! The team was punctual and extremely thorough. My house has never looked better!",
-    name: "Gita Shrestha",
+      "PBCS Cleaning Service exceeded my expectations! The team was punctual and extremely thorough. My house has never looked better!",
+    name: "Billie",
   },
   {
     image: testimonial1,
     description:
-      "I've used several cleaning services, but PCDC stands out. They always arrive on time, and their attention to detail is impressive. I highly recommend them!",
-    name: "Ram Kaji",
+      "I've used several cleaning services, but PBCS stands out. They always arrive on time, and their attention to detail is impressive. I highly recommend them!",
+    name: "Dalman",
   },
   {
     image: testimonial1,
     description:
-      "The end of lease cleaning from PCDC was fantastic! They made the process so easy and stress-free. I got my full bond back thanks to their great work!",
-    name: "Hari",
+      "The end of lease cleaning from PBCS was fantastic! They made the process so easy and stress-free. I got my full bond back thanks to their great work!",
+    name: "Camira",
   },
 ];

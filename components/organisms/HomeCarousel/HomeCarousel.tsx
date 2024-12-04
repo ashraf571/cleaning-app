@@ -17,8 +17,10 @@ import GreenCircle from "@/assets/images/HomeSliderImages/greenshape.png";
 
 import Image from "next/image";
 import { Button } from "@/components/ui/button";
+import { useRouter } from "next/navigation";
 
 const HomeCarousel = () => {
+  const router = useRouter();
   return (
     <div className="w-full mb-5 ">
       <Carousel
@@ -54,20 +56,30 @@ const HomeCarousel = () => {
                     {Item.haeding}{" "}
                   </span>
 
-                  <Button className="font-semibold text-base text-white bg-lightblue rounded-full w-28 md:w-48 py-4 md:py-8 px-4 md:px-8 shadow-2xl hover:bg-orange ">
+                  <Button
+                    onClick={() => router.push("/service")}
+                    className="font-semibold text-base text-white bg-lightblue rounded-full w-28 md:w-48 py-4 md:py-8 px-4 md:px-8 shadow-2xl hover:bg-orange "
+                  >
                     Our Services
+                  </Button>
+
+                  <Button
+                    onClick={() => router.push("/appointment")}
+                    className="font-semibold text-base text-white bg-lightblue rounded-full w-48 md:w-56 py-4 md:py-8 px-4 md:px-8 shadow-2xl hover:bg-orange "
+                  >
+                    Book An Appointment
                   </Button>
                 </div>
               </CarouselItem>
             );
           })}
         </CarouselContent>
-        <div className="absolute top-1/2 left-12 md:left-20 -translate-y-1/2 bg-red-500">
+        {/* <div className="absolute top-1/2 left-12 md:left-20 -translate-y-1/2 bg-red-500">
           <CarouselPrevious />
         </div>
         <div className="absolute top-1/2 right-12 md:right-20 -translate-y-1/2">
           <CarouselNext />
-        </div>
+        </div> */}
       </Carousel>
     </div>
   );
@@ -80,8 +92,8 @@ export const HomeCarouselData = [
     haeding: "Clean Spaces, Happy Faces.",
     sliderImage: Banner1,
   },
-  {
-    haeding: "Spotless Spaces, Happy Faces!",
-    sliderImage: Banner2,
-  },
+  // {
+  //   haeding: "Spotless Spaces, Happy Faces!",
+  //   sliderImage: Banner2,
+  // },
 ];

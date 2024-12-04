@@ -40,7 +40,7 @@ const HowWeWork = () => {
           <Heading60 heading="How We Work !" />
         </div>
         <motion.div
-          className=" grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8 w-full max-w-[1200px]"
+          className=" flex justify-center  w-full max-w-[1200px]"
           variants={containerVariants}
           initial="hidden"
           animate="visible"
@@ -97,14 +97,14 @@ const cardsJson: cardsJsonIF[] = [
     image: personOfficeCleaning.src,
     number: "01",
   },
-  {
-    heading: "Choose Your Professional",
-    image: professionalCleaning.src,
-    number: "02",
-  },
-  {
-    heading: "Experience Our Services",
-    image: mediumCleaning.src,
-    number: "03",
-  },
+  // {
+  //   heading: "Choose Your Professional",
+  //   image: professionalCleaning.src,
+  //   number: "02",
+  // },
+  // {
+  //   heading: "Experience Our Services",
+  //   image: mediumCleaning.src,
+  //   number: "03",
+  // },
 ];

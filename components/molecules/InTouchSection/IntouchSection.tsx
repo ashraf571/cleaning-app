@@ -1,10 +1,11 @@
 import Heading604840 from "@/components/atoms/Heading60-48-40/Heading60-48-40";
 import React from "react";
+import { Mail, PhoneCall } from "lucide-react";
 
 const IntouchSection = () => {
   return (
     <div className="w-full flex justify-center items-center">
-      <div className=" max-w-[1200px] p-12 flex flex-col justify-center items-center">
+      <div className=" max-w-[1200px] p-12 flex flex-col  items-center">
         <br />
 
         <Heading604840 heading="Get In Touch With Us" />
@@ -20,27 +21,29 @@ const IntouchSection = () => {
         </p>
         <br />
 
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-4 w-full">
-          <div className="bg-primaryGray p-12">
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-4 w-full">
+          {/* <div className="bg-primaryGray p-12">
             <h2 className="text-xl text-cyanblue font-semibold">Address</h2>{" "}
             <p className="text-secondryGray mt-2">
               10/120 Ladywell Street, Beckenham, Western Australia.
             </p>{" "}
-          </div>
-          <div className="bg-primaryGray p-12">
+          </div> */}
+          <div className="bg-primaryGray p-12 flex flex-col  items-center">
             <h2 className="text-xl text-cyanblue font-semibold">
-              Phone Number
+              {/* Phone Number */}
+              <PhoneCall size={45} />
             </h2>{" "}
-            <p className="text-secondryGray mt-2">
+            <p className="text-secondryGray mt-2 text-lg">
               {" "}
               Call Us: <a className="text-primaryBlue">04347545562</a>
             </p>{" "}
           </div>
-          <div className="bg-primaryGray p-12">
+          <div className="bg-primaryGray p-12 flex flex-col items-center">
             <h2 className="text-xl text-cyanblue font-semibold">
-              Email Address
+              {/* Email Address */}
+              <Mail size={45} />
             </h2>{" "}
-            <p className="text-primaryBlue mt-2 hover:text-classicNavy">
+            <p className="text-primaryBlue mt-2 hover:text-classicNavy text-lg">
               {" "}
               info@company.com{" "}
             </p>{" "}
