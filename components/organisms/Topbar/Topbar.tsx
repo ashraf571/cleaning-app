@@ -2,7 +2,7 @@
 import Image from "next/image";
 import Link from "next/link";
 import React, { useState } from "react";
-import Logo from "@/assets/images/NavbarLogo.jpeg";
+import Logo from "@/assets/images/PerthCleaningLogo.png";
 import { Spin as Hamburger } from "hamburger-react";
 import { Plus } from "lucide-react";
 

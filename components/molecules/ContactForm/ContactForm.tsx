@@ -2,6 +2,7 @@
 
 import Heading48 from "@/components/atoms/Heading48/Heading48";
 import InputField from "@/components/atoms/InputField/InputField";
+import { BookPlus, Mail, NotebookPen, UserRound } from "lucide-react";
 import React, { useState } from "react";
 
 const ContactForm = () => {
@@ -34,44 +35,61 @@ const ContactForm = () => {
 
           <form onSubmit={submitForm} className="flex w-full flex-col gap-2">
             {/* <div className="relative flex"> */}
-            <InputField
-              name={"name"}
-              value={signUpForm.name}
-              type={"text"}
-              onChangeTest={(e: string) =>
-                setSignUpForm({ ...signUpForm, name: e })
-              }
-              placeholderText={"Enter your name"}
-            />
-            <InputField
-              name={"email"}
-              value={signUpForm.email}
-              type={"email"}
-              onChangeTest={(e: string) =>
-                setSignUpForm({ ...signUpForm, email: e })
-              }
-              placeholderText={"Enter your email"}
-            />
-            <InputField
-              name={"subject"}
-              value={signUpForm.subject}
-              type={"text"}
-              onChangeTest={(e: string) =>
-                setSignUpForm({ ...signUpForm, subject: e })
-              }
-              placeholderText={"Enter your subject"}
-            />
+            <div className="relative">
+              <InputField
+                name={"name"}
+                value={signUpForm.name}
+                type={"text"}
+                onChangeTest={(e: string) =>
+                  setSignUpForm({ ...signUpForm, name: e })
+                }
+                placeholderText={"Enter your name"}
+              />
 
-            <textarea
-              className="text-lg w-full bg-lightGrey pl-10 py-6 font-medium placeholder-cyanblue focus:outline-none"
-              rows={10}
-              onChange={(e: { target: {value: string} }) =>
-                setSignUpForm({ ...signUpForm, message: e.target.value })
-              }
-              placeholder="Enter your message "
-              cols={40}
-              name="message"
-            ></textarea>
+              <UserRound size={20} className="absolute right-2 top-6" />
+            </div>
+
+            <div className="relative">
+              <InputField
+                name={"email"}
+                value={signUpForm.email}
+                type={"email"}
+                onChangeTest={(e: string) =>
+                  setSignUpForm({ ...signUpForm, email: e })
+                }
+                placeholderText={"Enter your email"}
+              />
+              <Mail size={20} className="absolute right-2 top-6" />
+            </div>
+
+            <div className="relative">
+              <InputField
+                name={"subject"}
+                value={signUpForm.subject}
+                type={"text"}
+                onChangeTest={(e: string) =>
+                  setSignUpForm({ ...signUpForm, subject: e })
+                }
+                placeholderText={"Enter your subject"}
+              />
+
+              <BookPlus size={20} className="absolute right-2 top-6" />
+            </div>
+
+            <div className="relative">
+              <textarea
+                className="text-lg w-full bg-lightGrey pl-10 py-6 font-medium placeholder-cyanblue focus:outline-none"
+                rows={10}
+                onChange={(e: { target: { value: string } }) =>
+                  setSignUpForm({ ...signUpForm, message: e.target.value })
+                }
+                placeholder="Enter your message "
+                cols={40}
+                name="message"
+              ></textarea>
+
+              <NotebookPen size={20} className="absolute right-2 top-6" />
+            </div>
             <div className=" my-3">
               <p>
                 <input
