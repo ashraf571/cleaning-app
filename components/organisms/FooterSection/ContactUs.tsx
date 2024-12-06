@@ -52,7 +52,7 @@ const ContactUs = () => {
               className="font-semibold group-hover:text-skyblue"
             >
               {" "}
-              info@cleaningservices.com.au
+              info@perthbrightcleaningservices.com.au
             </Link>
           </div>
         </div>
@@ -62,11 +62,11 @@ const ContactUs = () => {
             return (
               <div
                 key={index}
-                className="flex justify-center items-center h-10 w-10 bg-cyanblue rounded-full hover:bg-lightblue"
+                className="flex justify-center cursor-pointer items-center h-10 w-10 bg-cyanblue rounded-full hover:bg-lightblue"
               >
-                <Link href={Item.link} className="">
+                {/* <Link href="#" className=""> */}
                   {Item.icon}
-                </Link>
+                {/* </Link> */}
               </div>
             );
           })}
@@ -157,19 +157,19 @@ export const YoutubeComp = () => {
 export const SocialLinks = [
   {
     icon: <FacebookComp />,
-    link: "",
+    link: "#",
   },
 
   {
     icon: <TwitterComp />,
-    link: "",
+    link: "#",
   },
   {
     icon: <LinkedinComp />,
-    link: "",
+    link: "#",
   },
   {
     icon: <YoutubeComp />,
-    link: "",
+    link: "#",
   },
 ];
