@@ -1,9 +1,11 @@
 "use client";
-
 import Heading48 from "@/components/atoms/Heading48/Heading48";
 import InputField from "@/components/atoms/InputField/InputField";
 import { BookPlus, Mail, NotebookPen, UserRound } from "lucide-react";
+import { sendContactEmail } from "@/lib/emailService";
 import React, { useState } from "react";
+// import { SMTPClient } from 'emailjs'
+import emailjs from "@emailjs/browser";
 
 const ContactForm = () => {
   const [signUpForm, setSignUpForm] = useState({
@@ -13,16 +15,16 @@ const ContactForm = () => {
     message: "",
   });
 
-  const submitForm = () => {
-    // e.preventDefault();
-    const { name, email, subject, message } = signUpForm;
-    if (!name || !email || !subject || !message) {
+  const submitForm = (e: { preventDefault: () => void }) => {
+    e.preventDefault();
+    const { name, email, subject, message: description } = signUpForm;
+    if (!name || !email || !subject || !description) {
       console.log("Please fill all the required field", signUpForm);
 
       return;
     }
 
-    console.log(signUpForm);
+    sendContactEmail(signUpForm);
   };
   return (
     <div className=" max-lg:w-full w-[60%] h-[900px] ">
