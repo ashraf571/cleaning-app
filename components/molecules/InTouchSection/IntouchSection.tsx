@@ -4,8 +4,8 @@ import { Mail, PhoneCall } from "lucide-react";
 
 const IntouchSection = () => {
   return (
-    <div className="w-full flex justify-center items-center">
-      <div className=" max-w-[1200px] p-12 flex flex-col  items-center">
+    <div className="w-full flex justify-center  max-w-[1200px] px-12 bg-yellow-400 mt-12">
+      <div className="  flex flex-col  items-center bg-green-500 ">
         <br />
 
         <Heading604840 heading="Get In Touch With Us" />
@@ -21,7 +21,7 @@ const IntouchSection = () => {
         </p>
         <br />
 
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-4 w-full">
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-4 w-full bg-red-500">
           {/* <div className="bg-primaryGray p-12">
             <h2 className="text-xl text-cyanblue font-semibold">Address</h2>{" "}
             <p className="text-secondryGray mt-2">
