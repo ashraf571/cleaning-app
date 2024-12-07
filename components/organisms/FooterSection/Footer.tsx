@@ -87,7 +87,7 @@ const Footer = () => {
         {/* Footer Bottom */}
         <div className="mt-12 border-t border-white/30 pt-6 text-center">
           <span className="text-white font-semibold">
-            Copyright © 2024 PCDC Services | Designed by Nexsewa
+            Copyright © 2024 PBCS Services | Designed by Nexsewa
           </span>
         </div>
       </div>
@@ -110,13 +110,13 @@ export const footerServices = [
     name: "Domestic Cleaning",
     link: "domestic-cleaning",
   },
-  {
-    name: "School Cleaning",
-    link: "school-cleaning",
-  },
+  // {
+  //   name: "School Cleaning",
+  //   link: "school-cleaning",
+  // },
   {
     name: "Carpet Cleaning",
-    link: "carpet-upholstry-cleaning",
+    link: "carpet-cleaning",
   },
 ];
 
@@ -133,8 +133,8 @@ export const QuickLinks = [
     name: "Gallery",
     link: "gallery",
   },
-  {
-    name: "Blog",
-    link: "blog",
-  },
+  // {
+  //   name: "Blog",
+  //   link: "blog",
+  // },
 ];

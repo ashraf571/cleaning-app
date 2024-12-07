@@ -2,9 +2,9 @@
 
 import React from "react";
 import { motion } from "framer-motion";
-import mediumCleaning from "@/assets/images/mediumCleaning.jpg";
+// import mediumCleaning from "@/assets/images/mediumCleaning.jpg";
 import personOfficeCleaning from "@/assets/images/person-taking-care-office-cleaning-300x300.jpg";
-import professionalCleaning from "@/assets/images/professionalCleaning.jpg";
+// import professionalCleaning from "@/assets/images/professionalCleaning.jpg";
 import Image from "next/image";
 import Heading60 from "@/components/atoms/Heading60-42-40/Heading60";
 
@@ -19,35 +19,20 @@ const HowWeWork = () => {
     },
   };
 
-  interface cardsJsonIF {
-    heading: string,
-    image: string,
-    number: string
-  }
-
-
-  const cardsJson : cardsJsonIF[] = [
-    {
-      heading: "Book an Appointment",
-      image: personOfficeCleaning.src,
-      number: "01",
+  // Variants for cards with dynamic animation based on index
+  const cardVariants = (index: number) => ({
+    hidden: {
+      opacity: 0,
+      x: index === 0 ? -100 : index === 2 ? 100 : 0, // Left or right depending on index
+      scale: index === 1 ? 0.8 : 1, // Start smaller for index 1
     },
-    {
-      heading: "Choose Your Professional",
-      image: professionalCleaning.src,
-      number: "02",
+    visible: {
+      opacity: 1,
+      x: 0,
+      scale: 1, // Zoom to original size for index 1
+      transition: { duration: 0.7, ease: "easeInOut" },
     },
-    {
-      heading: "Experience Our Services",
-      image: mediumCleaning.src,
-      number: "03",
-    },
-  ];
-
-  const cardVariants = {
-    hidden: { opacity: 0, y: 50 },
-    visible: { opacity: 1, y: 0, transition: { duration: 0.5 } },
-  };
+  });
   return (
     <div className=" text-darkGreen relative w-full">
       <div className="px-12 flex flex-col justify-center items-center">
@@ -55,7 +40,7 @@ const HowWeWork = () => {
           <Heading60 heading="How We Work !" />
         </div>
         <motion.div
-          className=" grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8 w-full max-w-[1200px]"
+          className=" flex justify-center  w-full max-w-[1200px]"
           variants={containerVariants}
           initial="hidden"
           animate="visible"
@@ -65,7 +50,7 @@ const HowWeWork = () => {
               <motion.div
                 key={index}
                 className="flex relative justify-center items-center"
-                variants={cardVariants}
+                variants={cardVariants(index)} // Assign dynamic animation based on index
               >
                 <div className=" relative font-bold flex justify-center flex-col text-base p-8">
                   <div className=" relative flex justify-center items-center">
@@ -84,7 +69,7 @@ const HowWeWork = () => {
                       alt="cleaning team"
                     />
                   </div>
-                  <h2 className="mt-6 text-center text-2xl">
+                  <h2 className="mt-6 text-center text-2xl font-medium">
                     {" "}
                     {card.heading}{" "}
                   </h2>
@@ -99,3 +84,27 @@ const HowWeWork = () => {
 };
 
 export default HowWeWork;
+
+interface cardsJsonIF {
+  heading: string;
+  image: string;
+  number: string;
+}
+
+const cardsJson: cardsJsonIF[] = [
+  {
+    heading: "Book an Appointment",
+    image: personOfficeCleaning.src,
+    number: "01",
+  },
+  // {
+  //   heading: "Choose Your Professional",
+  //   image: professionalCleaning.src,
+  //   number: "02",
+  // },
+  // {
+  //   heading: "Experience Our Services",
+  //   image: mediumCleaning.src,
+  //   number: "03",
+  // },
+];

@@ -47,10 +47,10 @@ const OurMission = () => {
             key={index}
             className={`flex items-center py-10 px-6 ${
               index === 0
-                ? "bg-primaryYellow text-cyanblue"
-                : index === 2
                 ? "bg-darkGreen text-white"
-                : "bg-iceblue text-cyanblue"
+                : index === 2
+                ? "bg-iceblue text-cyanblue"
+                : "bg-primaryYellow text-cyanblue"
             }`}
             variants={cardVariants(index)} // Assign dynamic animation based on index
           >
@@ -96,13 +96,13 @@ export const cardsJson: cardsJsonIF[] = [
   {
     heading: "Our Vision",
     paragraph:
-      "Our vision is to become the most trusted cleaning service, setting the standard for excellence, innovation, and sustainability in the industry.",
+      "Our vision is to be the most trusted name in cleaning, setting new benchmarks for excellence, innovation, and sustainability in the industry.",
     list: ["Trusted provider", "Clean spaces", "Sustainable solutions"],
   },
   {
     heading: "Our Mission",
     paragraph:
-      "We provide top-quality, customized cleaning services while promoting a healthier environment with eco-friendly practices.",
+      "We offer high-quality cleaning services tailored to your needs, while promoting a healthier environment with eco-friendly practices.",
     list: ["Customized cleaning", "Eco-friendly products", "Reliable service"],
   },
   {

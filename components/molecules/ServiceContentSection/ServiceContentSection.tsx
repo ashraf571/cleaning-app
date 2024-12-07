@@ -44,10 +44,10 @@ const ServiceContentSection = ({
         })}
 
       {list && list.length > 0 && (
-        <ListSection isDecore={true} isBold={isBold} list={list} />
+        <ListSection isBold={isBold} list={list} />
       )}
       {listDash && listDash.length > 0 && (
-        <ListSection isDecore={false} list={listDash} />
+        <ListSection list={listDash} />
       )}
 
       {paragraphs1 &&
@@ -63,14 +63,14 @@ const ServiceContentSection = ({
             </p>
           );
         })}
-      {list && (
+      {list1 && (
         <p>
           When performing a standard house cleaning, we cover the following
           tasks:
         </p>
       )}
       {list1 && list1.length > 0 && (
-        <ListSection isDecore={true} list={list1} />
+        <ListSection list={list1} />
       )}
     </div>
   );

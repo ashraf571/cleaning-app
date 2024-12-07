@@ -1,7 +1,8 @@
 "use client";
-
 import Heading48 from "@/components/atoms/Heading48/Heading48";
 import InputField from "@/components/atoms/InputField/InputField";
+import { BookPlus, Mail, NotebookPen, UserRound } from "lucide-react";
+import { sendContactEmail } from "@/lib/emailService";
 import React, { useState } from "react";
 
 const ContactForm = () => {
@@ -12,16 +13,21 @@ const ContactForm = () => {
     message: "",
   });
 
-  const submitForm = () => {
-    // e.preventDefault();
-    const { name, email, subject, message } = signUpForm;
-    if (!name || !email || !subject || !message) {
-      console.log("Please fill all the required field", signUpForm);
+  const [loading, seLoading] = useState(false)
 
+  const submitForm = async (e: { preventDefault: () => void }) => {
+    e.preventDefault();
+    const { name, email, subject, message: description } = signUpForm;
+    if (!name || !email || !subject || !description) {
+      alert("Please fill all the required field");
       return;
     }
+    seLoading(true)
 
-    console.log(signUpForm);
+    await sendContactEmail(signUpForm);
+
+    seLoading(false)
+
   };
   return (
     <div className=" max-lg:w-full w-[60%] h-[900px] ">
@@ -33,57 +39,70 @@ const ContactForm = () => {
           <br />
 
           <form onSubmit={submitForm} className="flex w-full flex-col gap-2">
-            {/* <div className="relative flex"> */}
-            <InputField
-              name={"name"}
-              value={signUpForm.name}
-              type={"text"}
-              onChangeTest={(e: string) =>
-                setSignUpForm({ ...signUpForm, name: e })
-              }
-              placeholderText={"Enter your name"}
-            />
-            <InputField
-              name={"email"}
-              value={signUpForm.email}
-              type={"email"}
-              onChangeTest={(e: string) =>
-                setSignUpForm({ ...signUpForm, email: e })
-              }
-              placeholderText={"Enter your email"}
-            />
-            <InputField
-              name={"subject"}
-              value={signUpForm.subject}
-              type={"text"}
-              onChangeTest={(e: string) =>
-                setSignUpForm({ ...signUpForm, subject: e })
-              }
-              placeholderText={"Enter your subject"}
-            />
+            <div className="relative">
+              <InputField
+                name={"name"}
+                value={signUpForm.name}
+                type={"text"}
+                onChangeTest={(e: string) =>
+                  setSignUpForm({ ...signUpForm, name: e })
+                }
+                placeholderText={"Enter your name"}
+              />
 
-            <textarea
-              className="text-lg w-full bg-lightGrey pl-10 py-6 font-medium placeholder-cyanblue focus:outline-none"
-              rows={10}
-              onChange={(e: { target: {value: string} }) =>
-                setSignUpForm({ ...signUpForm, message: e.target.value })
-              }
-              placeholder="Enter your message "
-              cols={40}
-              name="message"
-            ></textarea>
+              <UserRound size={20} className="absolute right-5 top-7" />
+            </div>
+
+            <div className="relative">
+              <InputField
+                name={"email"}
+                value={signUpForm.email}
+                type={"email"}
+                onChangeTest={(e: string) =>
+                  setSignUpForm({ ...signUpForm, email: e })
+                }
+                placeholderText={"Enter your email"}
+              />
+              <Mail size={20} className="absolute right-5 top-7" />
+            </div>
+
+            <div className="relative">
+              <InputField
+                name={"subject"}
+                value={signUpForm.subject}
+                type={"text"}
+                onChangeTest={(e: string) =>
+                  setSignUpForm({ ...signUpForm, subject: e })
+                }
+                placeholderText={"Enter your subject"}
+              />
+
+              <BookPlus size={20} className="absolute right-5 top-7" />
+            </div>
+
+            <div className="relative">
+              <textarea
+                className="text-lg w-full bg-lightGrey pl-10 py-6 font-medium placeholder-cyanblue focus:outline-none"
+                rows={10}
+                onChange={(e: { target: { value: string } }) =>
+                  setSignUpForm({ ...signUpForm, message: e.target.value })
+                }
+                placeholder="Enter your message "
+                cols={40}
+                name="message"
+              ></textarea>
+
+              <NotebookPen size={20} className="absolute right-5 top-7" />
+            </div>
             <div className=" my-3">
               <p>
-                <input
+                <button
+                  disabled={ loading }
                   className="bg-skyblue text-cyanblue py-[23px] px-[30px] text-center w-full "
                   type="submit"
-                  value="Submit Request"
-                />
+                >Submit Request</button>
               </p>
             </div>
-            {/* {!show && <span onClick={() => setShow((prev) => !prev)} className='absolute h-[20px] right-6 top-[3.1vw] md:top-[1.7vw] lg:top-[1.2vw] 3xl:top-[1vw]'> <FiEye color='#B59D90' size="25px" /></span>}
-                {show && <span onClick={() => setShow((prev) => !prev)} className='absolute h-[20px] right-6 top-[3.7vw] md:top-[1.7vw] lg:top-[1.2vw] 3xl:top-[1vw]'> <FiEyeOff color='#B59D90' size="25px" /></span>} */}
-            {/* </div> */}
           </form>
         </div>
       </div>
