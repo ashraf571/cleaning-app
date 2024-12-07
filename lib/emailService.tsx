@@ -3,13 +3,16 @@ import emailjs from "@emailjs/browser";
 
 export const sendEmail = async (payload: any) => {
 
-  const secrets : any = await fetch("/api/email-secrets")
-
-  console.log(secrets, "secrets");
+  const secrets : any = await fetch("/api/email-secrets", {
+    headers: {
+      'Content-Type': 'application/json',
+    },
+  })
+  const data = await secrets.json()
   
   emailjs
-    .send(secrets.serviceId, payload.templateId, payload.templateParams, {
-      publicKey: secrets.publicKey,
+    .send(data.serviceId as string, payload.templateId, payload.templateParams, {
+      publicKey: data.publicKey,
     })
     .then(
       (response) => {
