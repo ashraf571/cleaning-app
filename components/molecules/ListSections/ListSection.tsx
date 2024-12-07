@@ -1,6 +1,6 @@
 import React from 'react'
 interface ListSectionIF {list: string[], isBold?: boolean, isDecore?: boolean}
-const ListSection = ({list, isBold, isDecore}:ListSectionIF) => {
+const ListSection = ({list, isBold}:ListSectionIF) => {
   return (
     <ul className={`${isBold ? " font-bold ":"font-normal"}`} >
         {list.map((item: string, index: number) => {

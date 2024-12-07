@@ -2,9 +2,9 @@
 
 import React from "react";
 import { motion } from "framer-motion";
-import mediumCleaning from "@/assets/images/mediumCleaning.jpg";
+// import mediumCleaning from "@/assets/images/mediumCleaning.jpg";
 import personOfficeCleaning from "@/assets/images/person-taking-care-office-cleaning-300x300.jpg";
-import professionalCleaning from "@/assets/images/professionalCleaning.jpg";
+// import professionalCleaning from "@/assets/images/professionalCleaning.jpg";
 import Image from "next/image";
 import Heading60 from "@/components/atoms/Heading60-42-40/Heading60";
 

@@ -5,12 +5,12 @@ import {
   Carousel,
   CarouselContent,
   CarouselItem,
-  CarouselNext,
-  CarouselPrevious,
+  // CarouselNext,
+  // CarouselPrevious,
 } from "@/components/ui/carousel";
 
 import Banner1 from "@/assets/images/HomeSliderImages/banner1.png";
-import Banner2 from "@/assets/images/HomeSliderImages/banner2.png";
+// import Banner2 from "@/assets/images/HomeSliderImages/banner2.png";
 
 import WhiteCircle from "@/assets/images/HomeSliderImages/whiteshape.png";
 import GreenCircle from "@/assets/images/HomeSliderImages/greenshape.png";

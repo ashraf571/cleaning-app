@@ -14,7 +14,7 @@ interface Secrets {
 
 interface SendEmail {
   secrets: Secrets;
-  userDetail: any;
+  userDetail: Record<string, unknown>;
   templateId: string;
 }
 
@@ -35,6 +35,8 @@ export const sendEmail = async ({
         });
       },
       (err) => {
+        console.log(err);
+        
         return Promise.reject({ status: "FAILED" });
       }
     );
@@ -43,34 +45,30 @@ export const sendEmail = async ({
 export const sendContactEmail = async (params: ContactUs) => {
   const { email, subject, name, message } = params;
   try {
-    const secrets: any = await fetch("/api/email-secrets", {
+    const secrets = await fetch("/api/email-secrets", {
       headers: {
         "Content-Type": "application/json",
       },
     });
     const data = await secrets.json();
-    let templateParams: ContactUs = {
-      name,
-      email,
-    };
     await sendEmail({
       secrets: data,
-      userDetail: templateParams,
+      userDetail: {name,email},
       templateId: "template_vofmz75",
     });
 
     // contact us
-    templateParams.subject = subject;
-    templateParams.message = message;
 
     await sendEmail({
       secrets: data,
-      userDetail: templateParams,
+      userDetail: {email, subject, name, message },
       templateId: "template_e4v62jy",
     });
 
     return true;
   } catch (error) {
+    console.log("error", error);
+    
     return false;
   }
 };

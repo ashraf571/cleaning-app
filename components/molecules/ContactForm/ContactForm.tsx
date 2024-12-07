@@ -4,8 +4,6 @@ import InputField from "@/components/atoms/InputField/InputField";
 import { BookPlus, Mail, NotebookPen, UserRound } from "lucide-react";
 import { sendContactEmail } from "@/lib/emailService";
 import React, { useState } from "react";
-// import { SMTPClient } from 'emailjs'
-import emailjs from "@emailjs/browser";
 
 const ContactForm = () => {
   const [signUpForm, setSignUpForm] = useState({
