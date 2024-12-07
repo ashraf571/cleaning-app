@@ -1,55 +1,76 @@
 "use client";
 import emailjs from "@emailjs/browser";
+interface ContactUs {
+  message?: string;
+  subject?: string;
+  name: string;
+  email: string;
+}
 
-export const sendEmail = async (payload: any) => {
+interface Secrets {
+  publicKey: string;
+  serviceId: string;
+}
 
-  const secrets : any = await fetch("/api/email-secrets", {
-    headers: {
-      'Content-Type': 'application/json',
-    },
-  })
-  const data = await secrets.json()
-  
+interface SendEmail {
+  secrets: Secrets;
+  userDetail: any;
+  templateId: string;
+}
+
+export const sendEmail = async ({
+  secrets,
+  userDetail,
+  templateId,
+}: SendEmail) => {
   emailjs
-    .send(data.serviceId as string, payload.templateId, payload.templateParams, {
-      publicKey: data.publicKey,
+    .send(secrets.serviceId as string, templateId, userDetail, {
+      publicKey: secrets.publicKey,
     })
     .then(
       (response) => {
-        console.log("SUCCESS!", response.status, response.text);
-        // return { "SUCCESS!", response.status, response.text }
+        return Promise.resolve({
+          status: response.status,
+          text: response.text,
+        });
       },
       (err) => {
-        console.log("FAILED...", err);
+        return Promise.reject({ status: "FAILED" });
       }
     );
 };
 
-const welcomeEmail = ({name, email}: { name: string, email: string }) => {
-  const templateId = "template_vofmz75";
-  const templateParams = {
-    name,
-    email,
-  };
+export const sendContactEmail = async (params: ContactUs) => {
+  const { email, subject, name, message } = params;
+  try {
+    const secrets: any = await fetch("/api/email-secrets", {
+      headers: {
+        "Content-Type": "application/json",
+      },
+    });
+    const data = await secrets.json();
+    let templateParams: ContactUs = {
+      name,
+      email,
+    };
+    await sendEmail({
+      secrets: data,
+      userDetail: templateParams,
+      templateId: "template_vofmz75",
+    });
 
-  sendEmail({ templateId, templateParams });
-};
+    // contact us
+    templateParams.subject = subject;
+    templateParams.message = message;
 
-const contactUsEmail = ({ name, email, subject, message }: any) => {
-  const templateId = "template_e4v62jy";
-  const templateParams = {
-    subject,
-    name,
-    email,
-    message,
-  };
+    await sendEmail({
+      secrets: data,
+      userDetail: templateParams,
+      templateId: "template_e4v62jy",
+    });
 
-  sendEmail({ templateId, templateParams });
-};
-
-export const sendContactEmail = (params: any) => {
-  const { email, subject, name, message } = params
-
-  welcomeEmail( {name, email });
-  contactUsEmail({ email, subject, name, message });
+    return true;
+  } catch (error) {
+    return false;
+  }
 };
