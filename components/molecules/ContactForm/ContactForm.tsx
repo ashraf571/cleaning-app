@@ -13,7 +13,7 @@ const ContactForm = () => {
     message: "",
   });
 
-  const [loading, seLoading] = useState(false)
+  const [loading, seLoading] = useState(false);
 
   const submitForm = async (e: { preventDefault: () => void }) => {
     e.preventDefault();
@@ -22,21 +22,17 @@ const ContactForm = () => {
       alert("Please fill all the required field");
       return;
     }
-    seLoading(true)
+    seLoading(true);
 
     await sendContactEmail(signUpForm);
 
-    seLoading(false)
-
+    seLoading(false);
   };
   return (
-    <div className=" max-lg:w-full w-[60%] h-[900px] ">
-      <div className=" flex w-full max-lg:pl-0 pl-8 h-full items-end">
-        <div className=" w-full lg:w-[95%] text-cyanblue">
+    <div className=" max-lg:w-full w-[60%] mt-28 ">
+      <div className=" flex justify-center w-full max-lg:pl-0 pl-8 h-full ">
+        <div className="flex flex-col gap-20 w-full lg:w-[82%] text-cyanblue">
           <Heading48 heading="Contact Us" />
-          <br />
-          <br />
-          <br />
 
           <form onSubmit={submitForm} className="flex w-full flex-col gap-2">
             <div className="relative">
@@ -94,14 +90,14 @@ const ContactForm = () => {
 
               <NotebookPen size={20} className="absolute right-5 top-7" />
             </div>
-            <div className=" my-3">
-              <p>
-                <button
-                  disabled={ loading }
-                  className="bg-skyblue text-cyanblue py-[23px] px-[30px] text-center w-full "
-                  type="submit"
-                >Submit Request</button>
-              </p>
+            <div className="">
+              <button
+                disabled={loading}
+                className="bg-skyblue text-cyanblue py-[23px] px-[30px] text-center w-full "
+                type="submit"
+              >
+                Submit Request
+              </button>
             </div>
           </form>
         </div>

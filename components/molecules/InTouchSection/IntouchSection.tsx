@@ -4,8 +4,8 @@ import { Mail, PhoneCall } from "lucide-react";
 
 const IntouchSection = () => {
   return (
-    <div className="w-full flex justify-center  max-w-[1200px] px-12 mt-12">
-      <div className="  flex flex-col  items-center ">
+    <div className="w-full flex justify-center mt-12">
+      <div className="  flex flex-col  items-center max-w-[1200px] px-10 lg:px-4">
         <br />
 
         <Heading604840 heading="Get In Touch With Us" />
