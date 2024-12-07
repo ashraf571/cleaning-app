@@ -48,7 +48,7 @@ const ContactForm = () => {
                 placeholderText={"Enter your name"}
               />
 
-              <UserRound size={20} className="absolute right-2 top-6" />
+              <UserRound size={20} className="absolute right-5 top-7" />
             </div>
 
             <div className="relative">
@@ -61,7 +61,7 @@ const ContactForm = () => {
                 }
                 placeholderText={"Enter your email"}
               />
-              <Mail size={20} className="absolute right-2 top-6" />
+              <Mail size={20} className="absolute right-5 top-7" />
             </div>
 
             <div className="relative">
@@ -75,7 +75,7 @@ const ContactForm = () => {
                 placeholderText={"Enter your subject"}
               />
 
-              <BookPlus size={20} className="absolute right-2 top-6" />
+              <BookPlus size={20} className="absolute right-5 top-7" />
             </div>
 
             <div className="relative">
@@ -90,7 +90,7 @@ const ContactForm = () => {
                 name="message"
               ></textarea>
 
-              <NotebookPen size={20} className="absolute right-2 top-6" />
+              <NotebookPen size={20} className="absolute right-5 top-7" />
             </div>
             <div className=" my-3">
               <p>
