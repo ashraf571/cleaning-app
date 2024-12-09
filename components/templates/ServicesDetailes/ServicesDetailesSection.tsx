@@ -21,14 +21,14 @@ interface ServiceDataIF {
 }
 
 interface ParamsIF {
-  slug: string
+  slug: string;
 }
 
 const ServicesDetailesSection = ({ params }: { params: ParamsIF }) => {
   const selectedService: ServiceDataIF | undefined = ServiceData.find(
     (service: ServiceDataIF) => service.slug === params.slug
   );
-  if(!selectedService) return
+  if (!selectedService) return;
   const cardVariants = {
     hidden: { opacity: 0, y: 50 },
     visible: { opacity: 1, y: 0, transition: { duration: 0.5 } },
@@ -99,7 +99,7 @@ import leaseGerage from "@/assets/images/serviceSectionImage/lease-gerage.jpeg";
 import TextThenImageSection from "@/components/organisms/TextThenImageSection/TextThenImageSection";
 import ImageThenTextSection from "@/components/organisms/ImageThenTextSection/ImageThenTextSection";
 
-const ServiceData : ServiceDataIF[] = [
+export const ServiceData: ServiceDataIF[] = [
   {
     text: "Commercial Cleaning",
     slug: "commercial-cleaning",

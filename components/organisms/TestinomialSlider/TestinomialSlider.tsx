@@ -2,7 +2,10 @@
 import React from "react";
 import { useInView } from "react-intersection-observer";
 import { motion } from "framer-motion";
-import testimonial1 from "@/assets/images/testimonialImages/testimonialImage1.png";
+import testimonial1 from "@/assets/images/testimonialImages/BillieTestimonial.jpeg";
+import testimonial2 from "@/assets/images/testimonialImages/DalmanTestimonial.jpeg";
+import testimonial3 from "@/assets/images/testimonialImages/CamiraTestimonial.jpeg";
+
 import Image from "next/image";
 import { Check } from "lucide-react";
 import Autoplay from "embla-carousel-autoplay";
@@ -90,7 +93,7 @@ const TestinomialSlider = () => {
                         <Image
                           src={Item.image}
                           alt=""
-                          className="h-44 w-44 rounded-full border-[18px] border-white "
+                          className="h-44 w-44 rounded-full border-[18px] border-white object-cover "
                           style={{
                             boxShadow: "10px 3px 30px rgba(0, 0, 0, 0.10)",
                           }}
@@ -137,13 +140,13 @@ export const testimonialData = [
     name: "Billie",
   },
   {
-    image: testimonial1,
+    image: testimonial2,
     description:
       "I've used several cleaning services, but PBCS stands out. They always arrive on time, and their attention to detail is impressive. I highly recommend them!",
     name: "Dalman",
   },
   {
-    image: testimonial1,
+    image: testimonial3,
     description:
       "The end of lease cleaning from PBCS was fantastic! They made the process so easy and stress-free. I got my full bond back thanks to their great work!",
     name: "Camira",

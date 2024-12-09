@@ -4,14 +4,17 @@ import { usePathname } from "next/navigation";
 import BackgroundSection from "../../atoms/BackgroundHeroSection/BackgroundHeroSection";
 import HeroAreaHeading from "@/components/atoms/HeroAreaHeading/HeroAreaHeading";
 import HeroAreaSubHeading from "@/components/atoms/HeroAreaSubHeading/HeroAreaSubHeading";
-import { retriveHeroAreaBackgroundImage, retriveHeroAreaTitle } from "@/utils/Utils";
+import {
+  retriveHeroAreaBackgroundImage,
+  retriveHeroAreaTitle,
+} from "@/utils/Utils";
 const HeroArea = () => {
   const pathName = usePathname();
   const removeSlash = pathName.slice(1);
   let capitlizeFirstLetter: string =
     removeSlash.charAt(0).toUpperCase() + removeSlash.slice(1);
   const imagePath = retriveHeroAreaBackgroundImage(capitlizeFirstLetter);
-  capitlizeFirstLetter = retriveHeroAreaTitle(capitlizeFirstLetter)
+  capitlizeFirstLetter = retriveHeroAreaTitle(capitlizeFirstLetter);
   return (
     <div className="relative">
       {capitlizeFirstLetter.length > 0 && capitlizeFirstLetter !== "Blog" ? (

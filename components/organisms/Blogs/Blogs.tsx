@@ -12,59 +12,59 @@ import BlogsMapSection from "../BlogsMapSection/BlogsMapSection";
 import BlogDetailSection from "../BlogDetailSection/BlogDetailSection";
 
 interface BlogsData {
-  blogId: number,
-  heading: string,
-  auther: string,
-  createdAt: string,
-  role: string,
-  discription: string,
-  image: string,
-  numberOfComments: number,
-  noteHeading: string,
-  noteDiscription: string,
-  descriptionList: DescriptionListIF[],
-  tags: string[]
+  blogId: number;
+  heading: string;
+  auther: string;
+  createdAt: string;
+  role: string;
+  discription: string;
+  image: string;
+  numberOfComments: number;
+  noteHeading: string;
+  noteDiscription: string;
+  descriptionList: DescriptionListIF[];
+  tags: string[];
 }
 
 interface DescriptionListIF {
-  heading: string,
-  description: string 
+  heading: string;
+  description: string;
 }
 
 const Blogs = () => {
   const [blogId, setBlogId] = useState(0);
   const [blog, setBlog] = useState<BlogsData>({
     blogId: 0,
-  heading: "",
-  auther: "",
-  createdAt: "",
-  role: "",
-  discription: "",
-  image: "",
-  numberOfComments: 0,
-  noteHeading: "",
-  noteDiscription: "",
-  descriptionList: [],
-  tags:[]
-  })
+    heading: "",
+    auther: "",
+    createdAt: "",
+    role: "",
+    discription: "",
+    image: "",
+    numberOfComments: 0,
+    noteHeading: "",
+    noteDiscription: "",
+    descriptionList: [],
+    tags: [],
+  });
 
   useEffect(() => {
-
-    if(blogId) {
-      const selectedBlog : BlogsData | undefined = blogsData.find((blog: BlogsData) => blog.blogId === blogId)
-      if(selectedBlog) {setBlog(selectedBlog)}
+    if (blogId) {
+      const selectedBlog: BlogsData | undefined = blogsData.find(
+        (blog: BlogsData) => blog.blogId === blogId
+      );
+      if (selectedBlog) {
+        setBlog(selectedBlog);
+      }
     }
-  },[blogId])
-
+  }, [blogId]);
 
   return (
     <div className="w-full flex justify-center items-center">
-      <div className="p-12 max-w-[1200px] w-full flex justify-center items-center ">
+      <div className="px-6 md:px-4 pt-16 max-w-[1200px] w-full flex justify-center items-center ">
         <div className="flex text-cyanblue w-full max-md:w-full max-xl:w-[90%] max-lg:flex-col gap-x-4 ">
-          {blogId > 0 && Object.keys(blog).length > 0 ?  (
-            <BlogDetailSection
-              blog={blog}
-            />
+          {blogId > 0 && Object.keys(blog).length > 0 ? (
+            <BlogDetailSection blog={blog} />
           ) : (
             <BlogsMapSection
               onSelectblog={(id) => setBlogId(id)}
@@ -78,7 +78,7 @@ const Blogs = () => {
   );
 };
 
-const blogsData : BlogsData[] = [
+const blogsData: BlogsData[] = [
   {
     blogId: 1,
     heading:

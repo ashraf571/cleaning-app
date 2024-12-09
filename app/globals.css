@@ -147,3 +147,25 @@ body {
     @apply bg-background text-foreground;
   }
 }
+
+::-webkit-scrollbar {
+  width: 10px;
+}
+::-webkit-scrollbar-track {
+  background: #004976;
+}
+
+/* primary: "#008b74", //dark color
+secondary: "#00c2a8", //light color */
+::-webkit-scrollbar-thumb {
+  background: #21aaeb;
+
+  /* background: #0056b3; */
+
+  /* border-radius: 4px; */
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #0056b3;
+
+  /* background: #21aaeb; */
+}

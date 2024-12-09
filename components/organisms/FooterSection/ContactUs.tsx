@@ -38,9 +38,18 @@ const ContactUs = () => {
         <div className="flex flex-col">
           <div className="flex group">
             <span className="text-cyanblue font-semibold ">T:</span>
-            <span className="font-semibold group-hover:text-skyblue">
+            {/* <span className="font-semibold group-hover:text-skyblue">
               0434549209
-            </span>
+            </span> */}
+            <Link
+              className="font-semibold group-hover:text-skyblue cursor-pointer"
+              href={`tel:${"0434549209"}`}
+              // target="_blank"
+              // rel="noopener noreferrer"
+            >
+              {" "}
+              0434549209
+            </Link>
           </div>
           <div className="flex group">
             <span className="text-cyanblue font-semibold">E:</span>

@@ -1,11 +1,12 @@
 import Heading604840 from "@/components/atoms/Heading60-48-40/Heading60-48-40";
 import React from "react";
 import { Mail, PhoneCall } from "lucide-react";
+import Link from "next/link";
 
 const IntouchSection = () => {
   return (
     <div className="w-full flex justify-center mt-12">
-      <div className="  flex flex-col  items-center max-w-[1200px] px-10 lg:px-4">
+      <div className="  flex flex-col  items-center max-w-[1200px] px-6 md:px-10 lg:px-4">
         <br />
 
         <Heading604840 heading="Get In Touch With Us" />
@@ -35,7 +36,16 @@ const IntouchSection = () => {
             </h2>{" "}
             <p className="text-secondryGray mt-2 text-lg">
               {" "}
-              Call Us: <a className="text-primaryBlue">04347545562</a>
+              Call Us:{" "}
+              <Link
+                className="text-primaryBlue hover:text-classicNavy cursor-pointer"
+                href={`tel:${"04347545562"}`}
+                // target="_blank"
+                // rel="noopener noreferrer"
+              >
+                {" "}
+                04347545562
+              </Link>
             </p>{" "}
           </div>
           <div className="bg-primaryGray p-12 flex flex-col items-center">
@@ -43,10 +53,15 @@ const IntouchSection = () => {
               {/* Email Address */}
               <Mail size={45} />
             </h2>{" "}
-            <p className="text-primaryBlue mt-2 hover:text-classicNavy text-lg">
+            <Link
+              href="https://mail.google.com/mail/u/0/#compose"
+              target="blank"
+              rel="noopener noreferrer"
+              className="text-primaryBlue mt-2 hover:text-classicNavy text-lg"
+            >
               {" "}
               info@perthbrightcleaningservices.com.au{" "}
-            </p>{" "}
+            </Link>{" "}
           </div>
         </div>
       </div>

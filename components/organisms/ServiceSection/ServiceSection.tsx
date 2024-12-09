@@ -77,7 +77,7 @@ const ServiceSection = () => {
       >
         {ServiceData.map((Item, index) => (
           <div key={index} className=" relative">
-            <Image src={Item.image} alt={Item.text} className=" " />
+            <Image src={Item.image} alt={Item.text} className="" />
             <div className="absolute -bottom-24 left-1/2 -translate-x-1/2">
               <div
                 className="py-7 md:py-12 px-4 md:px-7 w-[300px] sm:w-[260px] xl:w-80 bg-white relative bottom-14 "

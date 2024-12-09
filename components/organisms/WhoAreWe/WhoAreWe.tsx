@@ -13,7 +13,7 @@ const WhoAreWe = () => {
   return (
     <div
       ref={ref}
-      className={`py-10 mx-auto max-w-[1200px] px-4 lg:px-6 xl:px-10 ${
+      className={`py-10 mx-auto max-w-[1200px] px-6 md:px-4  ${
         inView ? "animate-zoomOut" : "scale-50 opacity-0"
       }`}
     >

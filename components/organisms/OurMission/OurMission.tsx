@@ -34,9 +34,9 @@ const OurMission = () => {
   });
 
   return (
-    <div className="mx-auto max-w-[1200px]">
+    <div className="mx-auto max-w-[1200px] mt-5 md:mt-10">
       <motion.div
-        className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8 w-full max-w-[1200px] px-12"
+        className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8 w-full max-w-[1200px] px-6 md:px-10"
         variants={containerVariants}
         initial="hidden"
         animate={inView ? "visible" : "hidden"}
@@ -45,7 +45,7 @@ const OurMission = () => {
         {cardsJson.map((card: cardsJsonIF, index: number) => (
           <motion.div
             key={index}
-            className={`flex items-center py-10 px-6 ${
+            className={`flex items-center py-5 md:py-10 px-0 md:px-6 ${
               index === 0
                 ? "bg-darkGreen text-white"
                 : index === 2

@@ -8,8 +8,8 @@ const page = () => {
   return (
     <div>
       <HeroArea />
-      <div className="relative max-lg:px-12 z-10 flex justify-center ">
-        <ContactForm isAppointment = {true}  />
+      <div className="relative  max-lg:px-4 z-10 flex justify-center ">
+        <ContactForm isAppointment={true} />
       </div>
     </div>
   );
