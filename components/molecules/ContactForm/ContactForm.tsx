@@ -5,7 +5,7 @@ import { BookPlus, Mail, NotebookPen, UserRound } from "lucide-react";
 import { sendContactEmail } from "@/lib/emailService";
 import React, { useState } from "react";
 
-const ContactForm = () => {
+const ContactForm = ( { isAppointment }: {isAppointment?: boolean} ) => {
   const [signUpForm, setSignUpForm] = useState({
     name: "",
     subject: "",
@@ -32,7 +32,7 @@ const ContactForm = () => {
     <div className=" max-lg:w-full w-[60%] mt-28 ">
       <div className=" flex justify-center w-full max-lg:pl-0 pl-8 h-full ">
         <div className="flex flex-col gap-20 w-full lg:w-[82%] text-cyanblue">
-          <Heading48 heading="Contact Us" />
+          <Heading48 heading={isAppointment ? "Book Appointment" : "Contact Us"} />
 
           <form onSubmit={submitForm} className="flex w-full flex-col gap-2">
             <div className="relative">
