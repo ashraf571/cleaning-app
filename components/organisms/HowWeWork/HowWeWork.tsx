@@ -10,8 +10,7 @@ import Heading60 from "@/components/atoms/Heading60-42-40/Heading60";
 import { useRouter } from "next/navigation";
 
 const HowWeWork = () => {
-
-  const router = useRouter()
+  const router = useRouter();
   const containerVariants = {
     hidden: { opacity: 0 },
     visible: {
@@ -72,7 +71,10 @@ const HowWeWork = () => {
                       alt="cleaning team"
                     />
                   </div>
-                  <h2 className="mt-6 text-center text-2xl font-medium" onClick={() => router.push('/appointment')}>
+                  <h2
+                    className="mt-6 text-center text-2xl font-medium cursor-pointer"
+                    onClick={() => router.push("/appointment")}
+                  >
                     {" "}
                     {card.heading}{" "}
                   </h2>

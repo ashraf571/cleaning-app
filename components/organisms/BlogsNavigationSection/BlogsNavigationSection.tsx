@@ -22,7 +22,7 @@ const BlogsNavigationSection = ({
   return (
     <div className="w-full lg:w-[35%] ">
       <div
-        className="p-8 w-full border-2 border-lightGray20 "
+        className="p-8 w-full"
         style={{ boxShadow: "10px 3px 30px rgba(0, 0, 0, 0.10)" }}
       >
         <span className="border-l-2 border-cyanblue text-xl pl-8 font-bold">

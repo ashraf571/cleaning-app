@@ -60,9 +60,9 @@ const Blogs = () => {
   }, [blogId]);
 
   return (
-    <div className="w-full flex justify-center items-center">
+    <div className="w-full flex justify-center items-center ">
       <div className="px-6 md:px-4 pt-16 max-w-[1200px] w-full flex justify-center items-center ">
-        <div className="flex text-cyanblue w-full max-md:w-full max-xl:w-[90%] max-lg:flex-col gap-x-4 ">
+        <div className="flex text-cyanblue w-full max-md:w-full max-xl:w-[90%] max-lg:flex-col gap-x-10 ">
           {blogId > 0 && Object.keys(blog).length > 0 ? (
             <BlogDetailSection blog={blog} />
           ) : (

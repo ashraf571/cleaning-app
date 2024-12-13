@@ -1,7 +1,7 @@
 "use client";
 import React from "react";
 import { useInView } from "react-intersection-observer";
-import CleaningOffice from "@/assets/images/full-shot-people-cleaning-office.jpg";
+import CleaningOffice from "@/assets/images/whoAreWe.jpg";
 import Heading48 from "@/components/atoms/Heading48/Heading48";
 import Image from "next/image";
 import { Tilt } from "react-tilt";
@@ -13,7 +13,7 @@ const WhoAreWe = () => {
   return (
     <div
       ref={ref}
-      className={`py-10 mx-auto max-w-[1200px] px-6 md:px-4  ${
+      className={`py-10 mt-10 mx-auto max-w-[1200px] px-6 md:px-4  ${
         inView ? "animate-zoomOut" : "scale-50 opacity-0"
       }`}
     >
@@ -34,7 +34,9 @@ const WhoAreWe = () => {
           </Tilt>
         </div>
 
-        <div className=" flex flex-col gap-8 text-cyanblue lg:mt-0 xl:mt-32 px-0 md:px-10 ">
+        {/* for horizontal Image mt is removed lg:mt-0 xl:mt-32 */}
+
+        <div className=" flex flex-col gap-8 text-cyanblue px-0 md:px-10 ">
           <Heading48 heading="Who We Are?" />
           <p className="text-base mt-3">
             {" "}

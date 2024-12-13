@@ -1,7 +1,7 @@
 "use client";
 import React from "react";
-import MenCleanerImage from "@/assets/images/MenCleaner.jpg";
-import WomenCleanerImage from "@/assets/images/WomenCleaner.jpg";
+import MenCleanerImage from "@/assets/images/aboutmen2.jpeg";
+import WomenCleanerImage from "@/assets/images/aboutwomen3.jpeg";
 import Image from "next/image";
 import { Tilt } from "react-tilt";
 

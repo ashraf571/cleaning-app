@@ -5,18 +5,18 @@ import { motion } from "framer-motion";
 import { useInView } from "react-intersection-observer";
 
 // Images
-import CommercialImage from "@/assets/images/serviceSectionImage/CommercialImage.jpg";
-import DomesticImage from "@/assets/images/serviceSectionImage/DomesticImage.jpg";
-import OfficeImage from "@/assets/images/serviceSectionImage/OfficeImage.jpg";
+import CommercialImage from "@/assets/images/serviceSectionImage/commercialCleaning1.webp";
+import DomesticImage from "@/assets/images/serviceSectionImage/domesticCelaning1.webp";
+import OfficeImage from "@/assets/images/serviceSectionImage/officeCleaning3.webp";
 // import SchoolImage from "@/assets/images/serviceSectionImage/SchoolImage.jpg";
 // import StrataImage from "@/assets/images/serviceSectionImage/StrataImage.jpg";
-import WindowImage from "@/assets/images/serviceSectionImage/WindowImage.jpg";
+import WindowImage from "@/assets/images/serviceSectionImage/windowCleaning4.webp";
 // import IndustrialImage from "@/assets/images/serviceSectionImage/IndustrialImage.jpg";
 // import HighPressureImage from "@/assets/images/serviceSectionImage/HighPressureImage.jpg";
 // import TilesImage from "@/assets/images/serviceSectionImage/TilesImage.jpg";
-import CarpetImage from "@/assets/images/serviceSectionImage/CarpetImage.jpg";
-import VacateImage from "@/assets/images/serviceSectionImage/VacateImage.jpg";
-import OvenImage from "@/assets/images/serviceSectionImage/OvenImage.jpg";
+import CarpetImage from "@/assets/images/serviceSectionImage/carpetCleaning2.webp";
+import VacateImage from "@/assets/images/serviceSectionImage/vacateCleaning3.webp";
+import OvenImage from "@/assets/images/serviceSectionImage/kitchen1.jpg";
 
 // icons
 import CommercialIcon from "@/assets/images/serviceSectionImage/commercial-clean.png";

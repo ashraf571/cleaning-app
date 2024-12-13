@@ -3,25 +3,24 @@ import Image from "next/image";
 import React from "react";
 
 interface BlogsData {
-  blogId: number,
-  heading: string,
-  auther: string,
-  createdAt: string,
-  role: string,
-  discription: string,
-  image: string,
-  numberOfComments: number,
-  noteHeading: string,
-  noteDiscription: string,
-  descriptionList: DescriptionListIF[],
-  tags: string[]
+  blogId: number;
+  heading: string;
+  auther: string;
+  createdAt: string;
+  role: string;
+  discription: string;
+  image: string;
+  numberOfComments: number;
+  noteHeading: string;
+  noteDiscription: string;
+  descriptionList: DescriptionListIF[];
+  tags: string[];
 }
 
 interface DescriptionListIF {
-  heading: string,
-  description: string 
+  heading: string;
+  description: string;
 }
-
 
 const BlogDetailSection = ({ blog }: { blog: BlogsData }) => {
   return (
@@ -38,14 +37,16 @@ const BlogDetailSection = ({ blog }: { blog: BlogsData }) => {
           <BlogsBasicInfo date={blog.createdAt} role={blog.role} />
           <h2 className="lg:text-4xl text-3xl font-bold "> {blog.heading} </h2>
           <p> {blog.discription} </p>
-          {blog.descriptionList.map((details: DescriptionListIF, index: number) => {
-            return (
-              <div className="pt-1" key={index}>
-                <h2 className="font-bold text-3xl "> {details.heading} </h2>
-                <p> {details.description} </p>
-              </div>
-            );
-          })}
+          {blog.descriptionList.map(
+            (details: DescriptionListIF, index: number) => {
+              return (
+                <div className="pt-1" key={index}>
+                  <h2 className="font-bold text-3xl "> {details.heading} </h2>
+                  <p> {details.description} </p>
+                </div>
+              );
+            }
+          )}
 
           <p>
             {" "}
@@ -57,9 +58,17 @@ const BlogDetailSection = ({ blog }: { blog: BlogsData }) => {
           ) : (
             ""
           )}
-          <div className="flex">
+          <div className="flex ">
             {blog.tags.map((tag: string, index: number) => {
-              return <span className="font-medium text-xs border-2 py-2 px-6 mr-4 rounded-full border-lightGray30" key={index}> {tag} </span>;
+              return (
+                <span
+                  className="font-medium text-xs border-2 py-2 px-6 mr-4 rounded-full border-lightGray30 "
+                  key={index}
+                >
+                  {" "}
+                  {tag}{" "}
+                </span>
+              );
             })}
           </div>
         </div>
