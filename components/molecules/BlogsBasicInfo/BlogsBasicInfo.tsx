@@ -1,23 +1,31 @@
-import React from 'react'
+import React from "react";
 import { FaRegUser } from "react-icons/fa";
 import { FaRegComments } from "react-icons/fa6";
 import { FaRegCalendarCheck } from "react-icons/fa";
 
 interface BlogsBasicInfoIF {
-    date: string,
-    role: string
+  date: string;
+  role: string;
 }
 const BlogsBasicInfo = ({ date, role }: BlogsBasicInfoIF) => {
   return (
-    <div className='flex text-sm font-medium'>
-        <FaRegCalendarCheck color='#004976' size={14} />
-        <span className='pl-1 pr-6'>{date}</span>
-        <FaRegUser color='#004976' size={14} />
-        <span className='pl-1 pr-6'>{role}</span>
-        <FaRegComments color='#004976' size={14} />
-        <span className='pl-1'> No comments </span>
-    </div>
-  )
-}
+    <div className="flex gap-10 text-sm font-medium ">
+      <div className="flex gap-2 items-center">
+        <FaRegCalendarCheck color="#004976" size={16} />
+        <span className="">{date}</span>
+      </div>
 
-export default BlogsBasicInfo
+      <div className="flex gap-2 items-center">
+        <FaRegUser color="#004976" size={16} />
+        <span className="">{role}</span>
+      </div>
+
+      <div className="flex gap-2 items-center">
+        <FaRegComments color="#004976" size={16} />
+        <span className=""> No comments </span>
+      </div>
+    </div>
+  );
+};
+
+export default BlogsBasicInfo;

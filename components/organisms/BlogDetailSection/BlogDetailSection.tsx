@@ -33,7 +33,7 @@ const BlogDetailSection = ({ blog }: { blog: BlogsData }) => {
           width={100}
           alt=" office floor house cleaning clean"
         />
-        <div className="font-normal text-base py-12 flex flex-col gap-6">
+        <div className="font-normal text-base py-12 flex flex-col gap-6 ">
           <BlogsBasicInfo date={blog.createdAt} role={blog.role} />
           <h2 className="lg:text-4xl text-3xl font-bold "> {blog.heading} </h2>
           <p> {blog.discription} </p>

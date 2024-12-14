@@ -1,6 +1,8 @@
 import Heading24 from "@/components/atoms/Heading24/Heading24";
 import React from "react";
 import ListSection from "../ListSections/ListSection";
+import { motion } from "framer-motion";
+import { useInView } from "react-intersection-observer";
 
 interface ServiceContentSectionIF {
   heading?: string;
@@ -26,8 +28,30 @@ const ServiceContentSection = ({
     listDash,
     paragraphs1,
   } = sectionData;
+
+  const { ref, inView } = useInView({ triggerOnce: true });
+
+  const RightContent = () => ({
+    hidden: {
+      opacity: 0,
+      x: -50, // Left or right depending on index
+      // scale: index % 2 === 1 ? 0.8 : 1, // Start smaller for index 1
+    },
+    visible: {
+      opacity: 1,
+      x: 0,
+      scale: 1, // Zoom to original size for index 1
+      transition: { duration: 0.7, ease: "easeInOut" },
+    },
+  });
   return (
-    <div className=" w-fill md:w-1/2 ">
+    <motion.div
+      className=" w-fill md:w-1/2 "
+      variants={RightContent()}
+      initial="hidden"
+      animate={inView ? "visible" : "hidden"}
+      ref={ref}
+    >
       {heading && <Heading24 heading={heading} />}
       {paragraphs &&
         paragraphs.length > 0 &&
@@ -43,12 +67,8 @@ const ServiceContentSection = ({
           );
         })}
 
-      {list && list.length > 0 && (
-        <ListSection isBold={isBold} list={list} />
-      )}
-      {listDash && listDash.length > 0 && (
-        <ListSection list={listDash} />
-      )}
+      {list && list.length > 0 && <ListSection isBold={isBold} list={list} />}
+      {listDash && listDash.length > 0 && <ListSection list={listDash} />}
 
       {paragraphs1 &&
         paragraphs1.length > 0 &&
@@ -69,10 +89,8 @@ const ServiceContentSection = ({
           tasks:
         </p>
       )}
-      {list1 && list1.length > 0 && (
-        <ListSection list={list1} />
-      )}
-    </div>
+      {list1 && list1.length > 0 && <ListSection list={list1} />}
+    </motion.div>
   );
 };
 
