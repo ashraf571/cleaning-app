@@ -6,12 +6,20 @@ import Logo from "@/assets/images/PerthCleaningLogo.png";
 import { Spin as Hamburger } from "hamburger-react";
 import { Plus } from "lucide-react";
 
+interface Manus {
+  link: string;
+  name?: string;
+  text?: string;
+  subServices?: Array<{ link: string; text: string }>;
+}
 const Topbar = () => {
   const [isOpen, setIsOpen] = useState(false);
+  const [openServices, setOpenServices] = useState(false);
   const [servicesOpen, setServicesOpen] = useState(false);
 
   const CloseDrawer = () => {
-    setIsOpen(!isOpen);
+    setIsOpen(false);
+    setOpenServices(false);
     setServicesOpen(false);
   };
 
@@ -31,15 +39,35 @@ const Topbar = () => {
 
         <div className=" w-full">
           <div className=" gap-10 justify-end hidden md:flex">
-            {TopbarData.map((Item, index) => {
+            {TopbarData.map((manu, index) => {
               return (
-                <Link
-                  href={Item.link}
-                  key={index}
-                  className="text-base font-semibold text-cyanblue"
-                >
-                  {Item.name}
-                </Link>
+                <>
+                  <Link
+                    href={manu.link}
+                    key={index}
+                    className="text-base font-semibold text-cyanblue"
+                    onMouseEnter={() =>
+                      setOpenServices(manu.name === "Services" ? true : false)
+                    }
+                    // onMouseLeave={ () =>  setOpenServices(false)}
+                  >
+                    <span>{manu.name}</span>
+                    {openServices && manu.name === "Services" && (
+                      <div className=" fixed w-auto flex flex-col mt-6 p-2 bg-white text-cyanblue ">
+                        {manu.subServices.map((item, index: number) => (
+                          <Link
+                            href={item.link}
+                            key={index}
+                            onClick={() => CloseDrawer()}
+                            className="text-lg font-semibold py-1 px-3 "
+                          >
+                            {item.text}
+                          </Link>
+                        ))}
+                      </div>
+                    )}
+                  </Link>
+                </>
               );
             })}
           </div>
@@ -60,48 +88,42 @@ const Topbar = () => {
       >
         <div className="relative w-full ">
           <div className=" gap-3 flex flex-col bg-darkblue ">
-            {TopbarData.map((Item, index) => {
+            {TopbarData.map((manu, index: number) => {
               return (
-                <Link
-                  href={Item.link}
-                  key={index}
-                  className="text-lg font-semibold text-white py-1 px-7 border-b border-darkgray capitalize"
-                  onClick={() => CloseDrawer()}
-                >
-                  {Item.name}
-                </Link>
+                <>
+                  <Link
+                    href={manu.link}
+                    key={index}
+                    className="text-lg flex justify-between font-semibold text-white py-1 pl-7 border-b border-darkgray capitalize"
+                  >
+                    <span onClick={() => CloseDrawer()}>{manu.name}</span>
+                    {manu.subServices.length > 0 ? (
+                      <div className="h-full  w-auto flex justify-end items-center border-l-2 border-plusgray">
+                        <Plus
+                          onClick={() => ServicesToggle()}
+                          size={24}
+                          className=" font-semibold text-white"
+                        />
+                      </div>
+                    ) : (
+                      <></>
+                    )}
+                  </Link>
+
+                  {servicesOpen &&
+                    manu.subServices.map((item: Manus, index: number) => (
+                      <Link
+                        href={item.link}
+                        key={index}
+                        onClick={() => CloseDrawer()}
+                        className="  text-lg font-semibold text-white py-1 px-14 border-b border-darkgray "
+                      >
+                        {item.text}
+                      </Link>
+                    ))}
+                </>
               );
             })}
-          </div>
-
-          <div className="h-12 w-12 flex justify-center items-center  absolute top-[39%] bottom-32 right-0 -translate-y-1/2 bg-darkblack border-l-2 border-plusgray">
-            <Plus
-              onClick={() => ServicesToggle()}
-              size={24}
-              className=" font-semibold text-white"
-            />
-
-            {/* <Hamburger /> */}
-          </div>
-
-          <div
-            className={`fixed inset-x-0 top-32 bg-white shadow-lg z-20 transition-transform duration-300 
-            ${servicesOpen ? "translate-y-0" : "hidden"}`}
-          >
-            <div className="relative w-full">
-              <div className="flex flex-col bg-darkblue gap-3">
-                {ServiceData.map((item, index) => (
-                  <Link
-                    href={item.link}
-                    key={index}
-                    onClick={() => CloseDrawer()}
-                    className="text-lg font-semibold text-white py-1 px-14 border-b border-darkgray "
-                  >
-                    {item.text}
-                  </Link>
-                ))}
-              </div>
-            </div>
           </div>
         </div>
       </div>
@@ -110,33 +132,6 @@ const Topbar = () => {
 };
 
 export default Topbar;
-
-export const TopbarData = [
-  {
-    name: "Home",
-    link: "/",
-  },
-  {
-    name: "About",
-    link: "about",
-  },
-  {
-    name: "Services",
-    link: "service",
-  },
-  {
-    name: "Gallery",
-    link: "gallery",
-  },
-  {
-    name: "Blog",
-    link: "blog",
-  },
-  {
-    name: "Contact",
-    link: "contact",
-  },
-];
 
 export const ServiceData = [
   { text: "Commercial Cleaning", link: "commercial-cleaning" },
@@ -156,5 +151,37 @@ export const ServiceData = [
   {
     text: "Oven/BBQ/Splashback Cleaning",
     link: "oven-bbq-splashback-cleaning",
+  },
+];
+export const TopbarData = [
+  {
+    name: "Home",
+    link: "/",
+    subServices: [],
+  },
+  {
+    name: "About",
+    link: "about",
+    subServices: [],
+  },
+  {
+    name: "Services",
+    link: "service",
+    subServices: ServiceData,
+  },
+  {
+    name: "Gallery",
+    link: "gallery",
+    subServices: [],
+  },
+  {
+    name: "Blog",
+    link: "blog",
+    subServices: [],
+  },
+  {
+    name: "Contact",
+    link: "contact",
+    subServices: [],
   },
 ];

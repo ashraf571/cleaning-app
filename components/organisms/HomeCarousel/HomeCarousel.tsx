@@ -51,7 +51,7 @@ const HomeCarousel = () => {
                   <Image src={GreenCircle} alt="" className="w-12 md:w-20" />
                 </div>
 
-                <div className="flex flex-col gap-2 md:gap-5 w-1/2 md:max-w-[690px] absolute  top-1/3 md:top-1/2 left-16 bottom-24 -translate-y-1/2 ">
+                <div className="flex flex-col gap-1 md:gap-5 w-1/2 md:max-w-[690px] absolute  top-1/3 md:top-1/2 left-16 bottom-24 -translate-y-1/2 ">
                   <span className="text-2xl md:text-4xl lg:text-[5.5rem] lg:leading-none font-medium text-cyanblue ">
                     {Item.haeding}{" "}
                   </span>
