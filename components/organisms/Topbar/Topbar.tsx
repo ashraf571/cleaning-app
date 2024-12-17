@@ -32,6 +32,8 @@ const Topbar = () => {
       <div
         className="flex gap-4 items-center p-[10px] px-3 md:px-8 bg-white fixed top-0 left-0 right-0 z-20 "
         style={{ boxShadow: "10px 3px 30px rgba(0, 0, 0, 0.10)" }}
+        onMouseEnter={()=> setOpenServices(false)}
+        onMouseLeave={()=> setOpenServices(false)}
       >
         <Link href={"/"}>
           <Image src={Logo} alt="L0go" height={138} width={138}></Image>
@@ -53,7 +55,7 @@ const Topbar = () => {
                   >
                     <span>{manu.name}</span>
                     {openServices && manu.name === "Services" && (
-                      <div className=" fixed w-auto flex flex-col mt-6 p-2 bg-white text-cyanblue ">
+                      <div className=" fixed w-auto flex flex-col  p-2 bg-white text-cyanblue ">
                         {manu.subServices.map((item, index: number) => (
                           <Link
                             href={item.link}
