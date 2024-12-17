@@ -12,7 +12,6 @@ import {
 import TextThenImageSection from "@/components/organisms/TextThenImageSection/TextThenImageSection";
 import ImageThenTextSection from "@/components/organisms/ImageThenTextSection/ImageThenTextSection";
 import ServiceImageCrausel from "@/components/organisms/ServiceImageCrausel/ServiceImageCrausel";
-import service from "@/app/service/page";
 
 interface ParamsIF {
   slug: string;
