@@ -87,7 +87,7 @@ const Footer = () => {
         {/* Footer Bottom */}
         <div className="mt-12 border-t border-white/30 pt-6 text-center">
           <span className="text-white font-semibold">
-            Copyright © 2024 PBCS Services | Designed by Nexsewa
+            Copyright © { (new Date()).getFullYear() } PBCS Services
           </span>
         </div>
       </div>
