@@ -5,11 +5,18 @@ import React from "react";
 import HeroArea from "@/components/molecules/HeroArea/HeroArea";
 import ServicesDetailesSection from "@/components/templates/ServicesDetailes/ServicesDetailesSection";
 import { ServiceData } from "@/components/templates/ServicesDetailes/ServiceData";
+import { notFound } from "next/navigation";
 
 interface ParamsIF {
   slug: string;
 }
 
+export async function generateStaticParams() {
+  const slugs = ServiceData.map(({ slug }) => ({ slug }));
+  console.log("slugs", slugs);
+
+  return slugs;
+}
 // Dynamic metadata function
 export async function generateMetadata({ params }: { params: ParamsIF }) {
   const { slug } = params;
@@ -43,12 +50,15 @@ export async function generateMetadata({ params }: { params: ParamsIF }) {
 }
 
 const serviceDetail = ({ params }: { params: ParamsIF }) => {
-  console.log("params", params);
+  const found = ServiceData.find(({ slug }) => slug === params.slug);
+  if (!found) {
+    notFound()
+  }
 
   return (
     <div>
       <HeroArea />
-      <ServicesDetailesSection params={params as ParamsIF} />
+      <ServicesDetailesSection slug={params.slug} />
     </div>
   );
 };

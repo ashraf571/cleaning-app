@@ -13,13 +13,9 @@ import TextThenImageSection from "@/components/organisms/TextThenImageSection/Te
 import ImageThenTextSection from "@/components/organisms/ImageThenTextSection/ImageThenTextSection";
 import ServiceImageCrausel from "@/components/organisms/ServiceImageCrausel/ServiceImageCrausel";
 
-interface ParamsIF {
-  slug: string;
-}
-
-const ServicesDetailesSection = ({ params }: { params: ParamsIF }) => {
+const ServicesDetailesSection = ({ slug }: { slug: string }) => {
   const selectedService: ServiceDataIF | undefined = ServiceData.find(
-    (service: ServiceDataIF) => service.slug === params.slug
+    (service: ServiceDataIF) => service.slug === slug
   );
   if (!selectedService) return;
   const cardVariants = {
@@ -52,7 +48,7 @@ const ServicesDetailesSection = ({ params }: { params: ParamsIF }) => {
           }
         )}
 
-        {params.slug === "commercial-cleaning" && <ServiceImageCrausel />}
+        {slug === "commercial-cleaning" && <ServiceImageCrausel />}
       </div>
     </div>
   );

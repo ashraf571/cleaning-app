@@ -35,8 +35,8 @@ const Topbar = () => {
         onMouseEnter={()=> setOpenServices(false)}
         onMouseLeave={()=> setOpenServices(false)}
       >
-        <Link href={"/"}>
-          <Image src={Logo} alt="L0go" height={138} width={138}></Image>
+        <Link className="h-20 w-20" href={"/"}>
+          <Image src={Logo} alt="L0go" height={100} width={100}></Image>
         </Link>
 
         <div className=" w-full">
@@ -83,7 +83,7 @@ const Topbar = () => {
 
       {/* Drawer for mobile */}
 
-      <div
+      {isOpen && <div
         className={`fixed inset-x-0 top-24 md:top-28 bg-white shadow-lg z-10 transition-transform duration-300 mx-auto w-full max-w-[1200px] ${
           isOpen ? "translate-y-0 top-[108px] " : "-translate-y-full"
         }`}
@@ -128,7 +128,7 @@ const Topbar = () => {
             })}
           </div>
         </div>
-      </div>
+      </div> }
     </div>
   );
 };
