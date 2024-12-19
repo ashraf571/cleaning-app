@@ -34,7 +34,7 @@ const BlogsMapSection = ({
               width={100}
               alt=" office floor house cleaning clean"
             />
-            <div className="px-5 md:px-12 py-12 flex flex-col gap-6 bg-red500 border-2 border-lightGray20 hover:border-none hover:shadow-[10px_3px_30px_0px_rgba(0,_0,_0,_0.1)]">
+            <div className="px-5 md:px-12 py-12 flex flex-col gap-6 bg-red500 border-2 border-lightGray20 hover:border-white hover:shadow-[10px_3px_30px_0px_rgba(0,_0,_0,_0.1)]">
               <BlogsBasicInfo date={blog.createdAt} role={blog.role} />
               <h2
                 onClick={() => onSelectblog(blog.blogId)}
