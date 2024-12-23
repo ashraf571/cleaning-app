@@ -40,13 +40,13 @@ const WhoAreWe = () => {
           <Heading48 heading="Who We Are?" />
           <p className="text-base mt-3">
             {" "}
-            Professional Commercial and Domestic Cleaning(PCDC) Services is
-            widely recognized as a comprehensive cleaning provider, thanks to
-            the skill, professionalism, and dedication of our expert team. We
-            prioritize efficiency and quality, maintaining the high standards
-            we&apos;ve set for our cleaning services. Offering a variety of
-            specialized cleaning solutions, we serve homes, businesses, offices,
-            and commercial spaces with an environmentally conscious approach.
+            Perth Bright Cleaning Services (PBCS) Services is widely recognized
+            as a comprehensive cleaning provider, thanks to the skill,
+            professionalism, and dedication of our expert team. We prioritize
+            efficiency and quality, maintaining the high standards we&apos;ve
+            set for our cleaning services. Offering a variety of specialized
+            cleaning solutions, we serve homes, businesses, offices, and
+            commercial spaces with an environmentally conscious approach.
           </p>
           <p className="text-base">
             For your convenience, our services are available around the clock,

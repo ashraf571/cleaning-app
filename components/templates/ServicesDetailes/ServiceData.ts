@@ -55,7 +55,7 @@ export const ServiceData: ServiceDataIF[] = [
       {
         image: commercialCleaningImage.src,
         paragraphs: [
-          "“Perth Bright Cleaning Services is proud to provide exceptional cleaning solutions to both businesses and homes across Perth. Our aim is to keep your space spotless and welcoming. We have a team of skilled and dedicated professionals who use the latest cleaning equipment and eco-friendly, plant-based products to deliver high-quality results. With us taking care of the cleaning, you can relax and enjoy peace of mind.",
+          "Perth Bright Cleaning Services is proud to provide exceptional cleaning solutions to both businesses and homes across Perth. Our aim is to keep your space spotless and welcoming. We have a team of skilled and dedicated professionals who use the latest cleaning equipment and eco-friendly, plant-based products to deliver high-quality results. With us taking care of the cleaning, you can relax and enjoy peace of mind.",
           "We focus on professionalism and reliability, taking the time to assess your space and provide the right cleaning services for your needs. You can trust that we’ll only offer what’s necessary. We offer a wide range of commercial cleaning services and guarantee you’ll be happy with the results.",
           // `When you sign up, you'll receive a complimentary initial deep cleaning and a 10% discount on all future appointments. We also offer additional savings for regular cleaning services.`,
         ],

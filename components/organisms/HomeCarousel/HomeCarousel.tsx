@@ -39,6 +39,7 @@ const HomeCarousel = () => {
                     alt=""
                     className="h-full w-full  object-cover "
                     layout="" // Ensures the image covers the entire section
+                    placeholder="blur"
                   />
                 </div>
 
@@ -89,7 +90,7 @@ export default HomeCarousel;
 
 export const HomeCarouselData = [
   {
-    haeding: "Clean Spaces, Happy Faces.",
+    haeding: "Clean Spaces, Smiley Faces.",
     sliderImage: Banner1,
   },
   // {

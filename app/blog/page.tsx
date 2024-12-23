@@ -35,8 +35,8 @@ export const metadata = {
 const page = () => {
   return (
     <div>
-      <HeroArea />
-      <Blogs />
+      {/* <HeroArea />
+      <Blogs /> */}
     </div>
   );
 };

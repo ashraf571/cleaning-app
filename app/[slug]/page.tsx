@@ -52,11 +52,11 @@ export async function generateMetadata({ params }: { params: ParamsIF }) {
 const serviceDetail = ({ params }: { params: ParamsIF }) => {
   const found = ServiceData.find(({ slug }) => slug === params.slug);
   if (!found) {
-    notFound()
+    notFound();
   }
 
   return (
-    <div>
+    <div className="">
       <HeroArea />
       <ServicesDetailesSection slug={params.slug} />
     </div>

@@ -29,12 +29,14 @@ const ContactForm = ({ isAppointment }: { isAppointment?: boolean }) => {
     seLoading(false);
   };
   return (
-    <div className=" max-lg:w-full w-[60%] mt-10 md:mt-28 ">
-      <div className=" flex justify-center w-full max-lg:pl-0 pl-8 h-full ">
-        <div className="flex flex-col gap-20 w-full lg:w-[82%] text-cyanblue">
-          <Heading48
-            heading={isAppointment ? "Book Appointment" : "Contact Us"}
-          />
+    <div className=" max-lg:w-full w-[60%] mt-10 md:mt-28  ">
+      <div className=" flex justify-center w-full max-lg:pl-0 pl-8 h-full  ">
+        <div className="flex flex-col gap-20 w-full lg:w-[82%] text-cyanblue ">
+          <div className="flex justify-center">
+            <Heading48
+              heading={isAppointment ? "Book Appointment" : "Contact Us"}
+            />
+          </div>
 
           <form onSubmit={submitForm} className="flex w-full flex-col gap-2">
             <div className="relative">
@@ -80,7 +82,7 @@ const ContactForm = ({ isAppointment }: { isAppointment?: boolean }) => {
 
             <div className="relative">
               <textarea
-                className="text-lg w-full bg-lightGrey pl-10 py-6 font-medium placeholder-cyanblue focus:outline-none"
+                className="text-lg w-full bg-lightGrey pl-10 py-6 font-medium placeholder-cyanblue focus:outline-none rounded-md"
                 rows={10}
                 onChange={(e: { target: { value: string } }) =>
                   setSignUpForm({ ...signUpForm, message: e.target.value })
@@ -95,7 +97,7 @@ const ContactForm = ({ isAppointment }: { isAppointment?: boolean }) => {
             <div className="">
               <button
                 disabled={loading}
-                className="bg-skyblue text-cyanblue py-[23px] px-[30px] text-center w-full "
+                className="bg-skyblue text-cyanblue py-[23px] px-[30px] text-center w-full rounded-md"
                 type="submit"
               >
                 Submit Request

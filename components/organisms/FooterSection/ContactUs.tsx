@@ -12,11 +12,11 @@ const ContactUs = () => {
         </div>
 
         <div className="flex flex-col gap-3 md:flex-row justify-between">
-          <h2 className="font-semibold text-base">
+          {/* <h2 className="font-semibold text-base">
             10/120 Ladywell Street,
             <br />
             Beckenham, Western <br /> Australia.
-          </h2>
+          </h2> */}
 
           <div className="flex justify-between pl-5 pr-3 py-5 bg-skyblue  items-center w-56 md:w-72">
             <div className="flex flex-col gap-1">

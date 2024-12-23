@@ -32,8 +32,8 @@ const Topbar = () => {
       <div
         className="flex gap-4 items-center p-[10px] px-3 md:px-8 bg-white fixed top-0 left-0 right-0 z-20 "
         style={{ boxShadow: "10px 3px 30px rgba(0, 0, 0, 0.10)" }}
-        onMouseEnter={()=> setOpenServices(false)}
-        onMouseLeave={()=> setOpenServices(false)}
+        onMouseEnter={() => setOpenServices(false)}
+        onMouseLeave={() => setOpenServices(false)}
       >
         <Link className="h-20 w-20" href={"/"}>
           <Image src={Logo} alt="L0go" height={100} width={100}></Image>
@@ -83,52 +83,54 @@ const Topbar = () => {
 
       {/* Drawer for mobile */}
 
-      {isOpen && <div
-        className={`fixed inset-x-0 top-24 md:top-28 bg-white shadow-lg z-10 transition-transform duration-300 mx-auto w-full max-w-[1200px] ${
-          isOpen ? "translate-y-0 top-[108px] " : "-translate-y-full"
-        }`}
-      >
-        <div className="relative w-full ">
-          <div className=" gap-3 flex flex-col bg-darkblue ">
-            {TopbarData.map((manu, index: number) => {
-              return (
-                <>
-                  <Link
-                    href={manu.link}
-                    key={index}
-                    className="text-lg flex justify-between font-semibold text-white py-1 pl-7 border-b border-darkgray capitalize"
-                  >
-                    <span onClick={() => CloseDrawer()}>{manu.name}</span>
-                    {manu.subServices.length > 0 ? (
-                      <div className="h-full  w-auto flex justify-end items-center border-l-2 border-plusgray">
-                        <Plus
-                          onClick={() => ServicesToggle()}
-                          size={24}
-                          className=" font-semibold text-white"
-                        />
-                      </div>
-                    ) : (
-                      <></>
-                    )}
-                  </Link>
+      {isOpen && (
+        <div
+          className={`fixed inset-x-0 top-24 md:top-28 bg-white shadow-lg z-10 transition-transform duration-300 mx-auto w-full max-w-[1200px] ${
+            isOpen ? "translate-y-0 top-[108px] " : "-translate-y-full"
+          }`}
+        >
+          <div className="relative w-full ">
+            <div className=" gap-3 flex flex-col bg-darkblue ">
+              {TopbarData.map((manu, index: number) => {
+                return (
+                  <>
+                    <Link
+                      href={manu.link}
+                      key={index}
+                      className="text-lg flex justify-between font-semibold text-white py-1 pl-7 border-b border-darkgray capitalize"
+                    >
+                      <span onClick={() => CloseDrawer()}>{manu.name}</span>
+                      {manu.subServices.length > 0 ? (
+                        <div className="h-full  w-auto flex justify-end items-center border-l-2 border-plusgray">
+                          <Plus
+                            onClick={() => ServicesToggle()}
+                            size={24}
+                            className=" font-semibold text-white"
+                          />
+                        </div>
+                      ) : (
+                        <></>
+                      )}
+                    </Link>
 
-                  {servicesOpen &&
-                    manu.subServices.map((item: Manus, index: number) => (
-                      <Link
-                        href={item.link}
-                        key={index}
-                        onClick={() => CloseDrawer()}
-                        className="  text-lg font-semibold text-white py-1 px-14 border-b border-darkgray "
-                      >
-                        {item.text}
-                      </Link>
-                    ))}
-                </>
-              );
-            })}
+                    {servicesOpen &&
+                      manu.subServices.map((item: Manus, index: number) => (
+                        <Link
+                          href={item.link}
+                          key={index}
+                          onClick={() => CloseDrawer()}
+                          className="  text-lg font-semibold text-white py-1 px-14 border-b border-darkgray "
+                        >
+                          {item.text}
+                        </Link>
+                      ))}
+                  </>
+                );
+              })}
+            </div>
           </div>
         </div>
-      </div> }
+      )}
     </div>
   );
 };
@@ -176,11 +178,11 @@ export const TopbarData = [
     link: "gallery",
     subServices: [],
   },
-  {
-    name: "Blog",
-    link: "blog",
-    subServices: [],
-  },
+  // {
+  //   name: "Blog",
+  //   link: "blog",
+  //   subServices: [],
+  // },
   {
     name: "Contact",
     link: "contact",

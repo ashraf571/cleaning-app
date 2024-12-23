@@ -7,7 +7,7 @@ import { Tilt } from "react-tilt";
 
 const AboutImagesContainer = () => {
   return (
-    <div className="grid sm:grid-cols-1 md:grid-cols-2 gap-4 md:gap-8 mx-4">
+    <div className="grid sm:grid-cols-1 md:grid-cols-2 gap-4 md:gap-8 mx-4 items-center mt-8">
       <Tilt options={{ max: 10, scale: 1, speed: 400 }}>
         <Image
           src={MenCleanerImage}
