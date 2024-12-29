@@ -9,7 +9,7 @@ import {
   // CarouselPrevious,
 } from "@/components/ui/carousel";
 
-import Banner1 from "@/assets/images/HomeSliderImages/banner1.jpeg";
+import Banner1 from "@/assets/images/HomeSliderImages/HeroAreaAi-removebg.png";
 // import Banner2 from "@/assets/images/HomeSliderImages/banner2.png";
 
 import WhiteCircle from "@/assets/images/HomeSliderImages/whiteshape.png";
@@ -53,7 +53,7 @@ const HomeCarousel = () => {
                 </div>
 
                 <div className="flex flex-col gap-1 md:gap-5 w-1/2 md:max-w-[690px] absolute  top-1/3 md:top-1/2 left-16 bottom-24 -translate-y-1/2 ">
-                  <span className="text-2xl md:text-4xl lg:text-[5.5rem] lg:leading-none font-medium text-cyanblue ">
+                  <span className="text-2xl md:text-4xl lg:text-[5.5rem] lg:leading-none font-medium text-primarygreen ">
                     {Item.haeding}{" "}
                   </span>
 

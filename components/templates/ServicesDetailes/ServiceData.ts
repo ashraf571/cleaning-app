@@ -1,4 +1,4 @@
-import commercialCleaningImage from "@/assets/images/serviceSectionImage/commercialCleaning2.webp";
+import commercialCleaningImage from "@/assets/images/serviceSectionImage/commercialSection.jpg";
 import domesticCleaning1 from "@/assets/images/serviceSectionImage/domesticCelaning1.webp";
 import domesticCleaning2 from "@/assets/images/serviceSectionImage/domistic-cleaning.jpg";
 import officeCleaningSection1 from "@/assets/images/serviceSectionImage/officeCleaning1.webp";

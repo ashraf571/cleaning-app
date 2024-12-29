@@ -21,7 +21,7 @@ const AboutContentContainer = () => {
         </div>
 
         <Paragraph
-          paragraph="AT Perth Bright Cleaning Services (PBCS), we are proud to be known for providing high-quality cleaning, thanks to the hard work and dedication of our expert team. We focus on delivering efficient, reliable, and thorough cleaning, always maintaining the high standards we have set for ourselves.
+          paragraph="At Perth Bright Cleaning Services (PBCS), we are proud to be known for providing high-quality cleaning, thanks to the hard work and dedication of our expert team. We focus on delivering efficient, reliable, and thorough cleaning, always maintaining the high standards we have set for ourselves.
            We offer a wide range of cleaning services tailored to homes, offices, businesses, and commercial spaces, all while keeping things environmentally friendly. Our services are available 24/7—including weekends, bank holidays, and public holidays—at no extra cost.
            We know everyone’s needs are different, so we customise our cleaning solutions to suit you, making the whole process hassle-free. With strong management, attention to detail, and friendly, responsive customer service, we guarantee complete customer satisfaction."
           font="20px"

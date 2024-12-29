@@ -9,7 +9,7 @@ import ContactUs from "./ContactUs";
 
 const Footer = () => {
   return (
-    <div className="relative bg-darkcyan bg-opacity-90 mt-20">
+    <div className="relative bg-primarygreen bg-opacity-90 mt-20">
       {/* Background Image */}
       <div className="absolute inset-0 -z-10">
         <Image
@@ -87,7 +87,7 @@ const Footer = () => {
         {/* Footer Bottom */}
         <div className="mt-12 border-t border-white/30 pt-6 text-center">
           <span className="text-white font-semibold">
-            Copyright © { (new Date()).getFullYear() } PBCS Services
+            Copyright © {new Date().getFullYear()} PBCS Services
           </span>
         </div>
       </div>

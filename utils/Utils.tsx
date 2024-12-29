@@ -12,7 +12,7 @@ export const retriveHeroAreaBackgroundImage = (pathName: string): string => {
     case "Domestic-cleaning":
       return "/Images/domestic-cleaning.jpg";
     case "Commercial-cleaning":
-      return "/Images/commercial-cleaning.jpg";
+      return "/Images/CommercialCleaningAI.png";
     case "School-cleaning":
       return "/Images/school-cleaning.jpg";
     case "Strata-cleaning":
