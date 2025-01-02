@@ -18,17 +18,17 @@ const ContactUs = () => {
             Beckenham, Western <br /> Australia.
           </h2> */}
 
-          <div className="flex justify-between pl-5 pr-3 py-5 bg-skyblue  items-center w-56 md:w-72">
+          <div className="flex justify-between pl-5 pr-3 py-5 items-center w-56 md:w-72">
             <div className="flex flex-col gap-1">
-              <h5 className="font-semibold text-sm text-navyblue">
+              <h5 className="font-semibold text-sm text-white">
                 Get Free Estimate
               </h5>
-              <span className="text-lg md:text-3xl font-semibold text-navyblue">
+              <span className="text-lg md:text-3xl font-semibold text-white">
                 0434549209
               </span>
             </div>
 
-            <Phone size={44} className="text-mangoyellow -rotate-90" />
+            {/* <Phone size={44} className="text-mangoyellow -rotate-90" /> */}
           </div>
         </div>
       </div>

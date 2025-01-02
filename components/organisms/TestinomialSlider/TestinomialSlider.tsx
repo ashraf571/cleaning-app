@@ -44,7 +44,7 @@ const TestinomialSlider = () => {
   };
 
   return (
-    <div className="bg-darkocean w-full px-4 md:px-12 ">
+    <div className="bg-primarygreen w-full px-4 md:px-12 ">
       <div className=" w-full  mx-auto max-w-[1200px] ">
         <div className="flex flex-col gap-10 mt-10  pb-20 pt-16 ">
           <motion.div
@@ -85,9 +85,9 @@ const TestinomialSlider = () => {
                         {/* Bottom Borders */}
 
                         {/* Middle Bottom Border */}
-                        <div className="absolute -bottom-[21px] left-5  right-5 h-5 bg-testimonialb1 rounded-b-2xl"></div>
+                        <div className="absolute -bottom-[21px] left-5  right-5 h-5 bg-primarygreen10 rounded-b-2xl"></div>
                         {/* Inner Bottom Border */}
-                        <div className="absolute -bottom-[41px] left-10 right-10 h-5 bg-testimonialb2 rounded-b-2xl"></div>
+                        <div className="absolute -bottom-[41px] left-10 right-10 h-5 bg-primarygreen20 rounded-b-2xl"></div>
 
                         {/* <div className="  relative"> */}
                         <Image

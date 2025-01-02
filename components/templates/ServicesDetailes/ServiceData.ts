@@ -1,6 +1,6 @@
 import commercialCleaningImage from "@/assets/images/serviceSectionImage/commercialSection.jpg";
-import domesticCleaning1 from "@/assets/images/serviceSectionImage/domesticCelaning1.webp";
-import domesticCleaning2 from "@/assets/images/serviceSectionImage/domistic-cleaning.jpg";
+import domesticCleaning1 from "@/assets/images/serviceSectionImage/domesticCleaning1.jpeg";
+import domesticCleaning2 from "@/assets/images/serviceSectionImage/domesticCleaning2.jpeg";
 import officeCleaningSection1 from "@/assets/images/serviceSectionImage/officeCleaning1.webp";
 // import officeS2 from "@/assets/images/serviceSectionImage/officeS2.jpg";
 // import officeKeyboard from "@/assets/images/serviceSectionImage/office-keyboard.jpg";
