@@ -1,5 +1,5 @@
 import React from "react";
-import { Phone } from "lucide-react";
+// import { Phone } from "lucide-react";
 import Link from "next/link";
 
 const ContactUs = () => {

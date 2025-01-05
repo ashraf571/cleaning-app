@@ -1,5 +1,5 @@
-import HeroArea from "@/components/molecules/HeroArea/HeroArea";
-import Blogs from "@/components/organisms/Blogs/Blogs";
+// import HeroArea from "@/components/molecules/HeroArea/HeroArea";
+// import Blogs from "@/components/organisms/Blogs/Blogs";
 import React from "react";
 
 export const metadata = {

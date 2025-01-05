@@ -1,7 +1,7 @@
 "use client";
-import Heading48 from "@/components/atoms/Heading48/Heading48";
+// import Heading48 from "@/components/atoms/Heading48/Heading48";
 import InputField from "@/components/atoms/InputField/InputField";
-import { BookPlus, Mail, NotebookPen, UserRound } from "lucide-react";
+// import { BookPlus, Mail, NotebookPen, UserRound } from "lucide-react";
 import { sendContactEmail } from "@/lib/emailService";
 import React, { useState } from "react";
 
