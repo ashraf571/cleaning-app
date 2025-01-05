@@ -9,9 +9,9 @@ import ContactUs from "./ContactUs";
 
 const Footer = () => {
   return (
-    <div className="relative bg-primarygreen">
+    <div className="relative bg-primarygreen bg-opacity-90">
       {/* Background Image */}
-      {/* <div className="absolute inset-0 -z-10">
+      <div className="absolute inset-0 -z-10">
         <Image
           src={footerImage}
           alt="Footer Background"
@@ -20,7 +20,7 @@ const Footer = () => {
           quality={100}
           priority // Optimize image for above-the-fold content
         />
-      </div> */}
+      </div>
 
       {/* Content Container */}
       <div className="relative z-10 mx-auto max-w-[1200px] px-4 md:px-2 py-12 text-white ">

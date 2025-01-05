@@ -8,8 +8,13 @@ const page = () => {
   return (
     <div>
       <HeroArea />
-      <div className="relative  max-lg:px-4 z-10 flex justify-center ">
+      {/* <div className="relative  max-lg:px-4 z-10 flex justify-center "> */}
+      <div
+        className="relative flex justify-center p-4 mx-6 md:mx-12"
+        style={{ boxShadow: "10px 3px 30px rgba(0, 0, 0, 0.10)" }}
+      >
         <ContactForm isAppointment={true} />
+        {/* </div> */}
       </div>
     </div>
   );

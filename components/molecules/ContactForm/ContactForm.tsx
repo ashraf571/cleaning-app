@@ -9,102 +9,120 @@ const ContactForm = ({ isAppointment }: { isAppointment?: boolean }) => {
   const [signUpForm, setSignUpForm] = useState({
     name: "",
     subject: "",
+    phone: "",
     email: "",
     message: "",
   });
 
-  const [loading, seLoading] = useState(false);
-
-  const submitForm = async (e: { preventDefault: () => void }) => {
+  // const [loading, seLoading] = useState(false);
+  const [isLoading, setIsLoading] = useState(false)
+  const handleSubmit = async (e: { preventDefault: () => void }) => {
     e.preventDefault();
     const { name, email, subject, message: description } = signUpForm;
     if (!name || !email || !subject || !description) {
       alert("Please fill all the required field");
       return;
     }
-    seLoading(true);
+    setIsLoading(true);
 
     await sendContactEmail(signUpForm);
 
-    seLoading(false);
+    setIsLoading(false);
   };
   return (
-    <div className=" max-lg:w-full w-[60%] mt-10 md:mt-28  ">
-      <div className=" flex justify-center w-full max-lg:pl-0 pl-8 h-full  ">
-        <div className="flex flex-col gap-20 w-full lg:w-[82%] text-cyanblue ">
-          <div className="flex justify-center">
-            <Heading48
-              heading={isAppointment ? "Book Appointment" : "Contact Us"}
-            />
-          </div>
+    <div
+      className="w-full max-w-[1280px] rounded-lg sm:p-6 p-0 flex justify-end bg-cover bg-center bg-no-repeat " 
+      style={{ backgroundImage: `url(/Images/full-shot-people-cleaning-office-scaled.jpg)` }}
+    >
+      <div className="space-y-4 w-full sm:w-auto sm:p-6 p-0 bg-white rounded-lg">
+        <div>
+          <h2 className=" text-cyanblue text-2xl font-semibold tracking-tight mb-1">
+            {isAppointment ? "Book an appointment" : "Contact us"}
+          </h2>
+          {/* <div className="h-0.5 w-16 bg-primary/90" /> */}
+        </div>
 
-          <form onSubmit={submitForm} className="flex w-full flex-col gap-2">
-            <div className="relative">
+        <form onSubmit={handleSubmit} className="space-y-6">
+          <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
+            <div className="space-y-1">
               <InputField
-                name={"name"}
+                // id="name"
+                type="text"
+                name="name"
                 value={signUpForm.name}
-                type={"text"}
                 onChangeTest={(e: string) =>
                   setSignUpForm({ ...signUpForm, name: e })
                 }
-                placeholderText={"Enter your name"}
+                placeholderText="Your Name"
               />
-
-              <UserRound size={20} className="absolute right-5 top-7" />
             </div>
-
-            <div className="relative">
+            <div className="space-y-1">
               <InputField
-                name={"email"}
-                value={signUpForm.email}
-                type={"email"}
+                // id="phone"
+                name="phone"
+                type="tel"
+                value={signUpForm.phone}
                 onChangeTest={(e: string) =>
-                  setSignUpForm({ ...signUpForm, email: e })
+                  setSignUpForm({ ...signUpForm, phone: e })
                 }
-                placeholderText={"Enter your email"}
+                placeholderText="Phone Number"
               />
-              <Mail size={20} className="absolute right-5 top-7" />
             </div>
+            <div className="space-y-1">
+            <InputField
+              // id="email"
+              name="email"
+              type="email"
+              value={signUpForm.email}
+              onChangeTest={(e: string) =>
+                setSignUpForm({ ...signUpForm, email: e })
+              }
+              placeholderText="Email"
+            />
+          </div>
+          <div className="space-y-1">
+            <InputField
+              // id="email"
+              name="subject"
+              type="text"
+              value={signUpForm.subject}
+              onChangeTest={(e: string) =>
+                setSignUpForm({ ...signUpForm, subject: e })
+              }
+              placeholderText="Subject"
+            />
+          </div>
+          </div>
 
-            <div className="relative">
-              <InputField
-                name={"subject"}
-                value={signUpForm.subject}
-                type={"text"}
-                onChangeTest={(e: string) =>
-                  setSignUpForm({ ...signUpForm, subject: e })
-                }
-                placeholderText={"Enter your subject"}
-              />
+          <div className="space-y-1">
+            <textarea
+              id="message"
+              name="message"
+              value={signUpForm.message}
+              onChange={(e: { target: { value: string } }) =>
+                setSignUpForm({ ...signUpForm, message: e.target.value })
+              }
+              placeholder="Message"
+              className=" text-base text-cyanblue min-h-[80px] w-full border-b-2 placeholder-cyanblue border-gray-500 focus:outline-none" 
+              required
+            />
+          </div>
 
-              <BookPlus size={20} className="absolute right-5 top-7" />
-            </div>
-
-            <div className="relative">
-              <textarea
-                className="text-lg w-full bg-lightGrey pl-10 py-6 font-medium placeholder-cyanblue focus:outline-none rounded-md"
-                rows={10}
-                onChange={(e: { target: { value: string } }) =>
-                  setSignUpForm({ ...signUpForm, message: e.target.value })
-                }
-                placeholder="Enter your message "
-                cols={40}
-                name="message"
-              ></textarea>
-
-              <NotebookPen size={20} className="absolute right-5 top-7" />
-            </div>
-            <div className="">
-              <button
-                disabled={loading}
-                className="bg-skyblue text-cyanblue py-[23px] px-[30px] text-center w-full rounded-md"
-                type="submit"
-              >
-                Submit Request
-              </button>
-            </div>
-          </form>
-        </div>
+          <div className="">
+            <button
+              disabled={isLoading}
+              className="bg-primarygreen hover:bg-primarygreen10 font-medium text-white py-4 px-10 text-center  rounded-full"
+              type="submit"
+            >
+              {isLoading ? (
+                  
+                  "Sending..."
+                ) : (
+                  'Submit'
+                )}
+            </button>
+          </div>
+        </form>
       </div>
     </div>
   );

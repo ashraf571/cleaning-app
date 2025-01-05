@@ -58,9 +58,9 @@ const config: Config = {
         navyblue: "#002542",
         lightyellow: "#ffd57f",
         classicNavy: "#0056b3",
-        primarygreen: "#00C000",
-        primarygreen10: "#008040",
-        primarygreen20 : "#008000",
+        primarygreen: "#9ACA3C",
+        primarygreen10: "#a3e327",
+        primarygreen20 : "#9ed631",
 
         card: {
           DEFAULT: "hsl(var(--card))",

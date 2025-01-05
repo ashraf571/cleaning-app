@@ -30,7 +30,7 @@ const AboutContentContainer = () => {
         <div className="flex justify-start">
           <Button
             onClick={() => router.push("/about")}
-            className="rounded-full text-cyanblue text-base font-semibold bg-skyblue hover:bg-skyblue px-8 md:px-12 py-3 md:py-8 hover:text-white"
+            className="bg-primarygreen hover:bg-primarygreen10 font-medium text-white py-4 px-10 text-center  rounded-full"
           >
             Read More
           </Button>

@@ -19,7 +19,7 @@ const InputField = (props: InputFieldIF) => {
       value={props.value}
       name={props.name}
       placeholder={props.placeholderText}
-      className={` text-lg w-full bg-lightGrey pl-10 py-6 font-medium text-cyanblue placeholder-cyanblue focus:outline-none rounded-md`}
+      className={` text-base w-full bg-none border-b-2 border-gray-500 p-2 text-cyanblue placeholder-cyanblue focus:outline-none`}
     />
   );
 };

@@ -59,14 +59,14 @@ const HomeCarousel = () => {
 
                   <Button
                     onClick={() => router.push("/service")}
-                    className="font-semibold text-base text-white bg-lightblue rounded-full w-28 md:w-48 py-4 md:py-8 px-4 md:px-8 shadow-2xl hover:bg-orange "
+                    className=" w-28 md:w-48 rounded-full bg-primarygreen hover:bg-primarygreen10 font-medium text-white py-4 px-5 text-center  "
                   >
                     Our Services
                   </Button>
 
                   <Button
                     onClick={() => router.push("/appointment")}
-                    className="font-semibold text-base text-white bg-lightblue rounded-full w-48 md:w-56 py-4 md:py-8 px-4 md:px-8 shadow-2xl hover:bg-orange "
+                    className=" bg-primarygreen hover:bg-primarygreen10 font-medium text-white py-4 px-5 text-center rounded-full w-48 md:w-56 shadow-2xl  "
                   >
                     Book An Appointment
                   </Button>
