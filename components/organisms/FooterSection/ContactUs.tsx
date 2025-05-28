@@ -24,8 +24,7 @@ const ContactUs = () => {
                 Get Free Estimate
               </h5>
               <span className="text-lg md:text-3xl font-semibold text-white">
-                0434549209
-              </span>
+                0451656360              </span>
             </div>
 
             {/* <Phone size={44} className="text-mangoyellow -rotate-90" /> */}
@@ -39,8 +38,7 @@ const ContactUs = () => {
           <div className="flex group">
             <span className="text-cyanblue font-semibold ">T:</span>
             {/* <span className="font-semibold group-hover:text-skyblue">
-              0434549209
-            </span> */}
+              0451656360            </span> */}
             <Link
               className="font-semibold group-hover:text-skyblue cursor-pointer"
               href={`tel:${"0434549209"}`}
@@ -48,8 +46,7 @@ const ContactUs = () => {
               // rel="noopener noreferrer"
             >
               {" "}
-              0434549209
-            </Link>
+              0451656360            </Link>
           </div>
           <div className="flex group">
             <span className="text-cyanblue font-semibold">E:</span>
